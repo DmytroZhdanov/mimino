@@ -1,25 +1,35 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+/* Utils */
+@import url("./utils/variables.css");
+@import url("./utils/visually-hidden.css");
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+/* Base */
+@import url("./base/reset.css");
+@import url("./base/common.css");
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+/* Components */
+@import url("./components/button.css");
+@import url("./components/container.css");
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+/* Layout */
+@import url("./layout/header.css");
+@import url("./layout/hero-main.css");
+@import url("./layout/about-main.css");
+@import url("./layout/restaurant-main.css");
+@import url("./layout/welcome-main.css");
+@import url("./layout/hotel-main.css");
+@import url("./layout/location-main.css");
+@import url("./layout/footer.css");
+
+/* Pages */
+@import url("./pages/restaurant/hero-restaurant.css");
+@import url("./pages/restaurant/about-restaurant.css");
+@import url("./pages/restaurant/menu-restaurant.css");
+@import url("./pages/hotel/hero-hotel.css");
+@import url("./pages/hotel/double-room-hotel.css");
+@import url("./pages/hotel/triple-room-hotel.css");
+@import url("./pages/hotel/four-seater-room-hotel.css");
+@import url("./pages/room/hero-room.css");
+@import url("./pages/room/amenities-room.css");
+@import url("./pages/modals/book-a-room-modal.css");
+@import url("./pages/modals/book-a-table.css");
+@import url("./pages/modals/prices-per-room.css");
