@@ -1,6 +1,50 @@
 /* Common styles */
 
-/* fonts
-background-color
+/*=================================================== fonts=====================================*/
+@font-face{
+    font-family: 'DMSans', sans-serif;
+    src: url(/fonts/DMSans-Regular.woff), url(/fonts/DMSans-Regular.woff2);
+    font-weight: 400;
+    font-style: normal;
+    
+}
+@font-face{
+    font-family: 'DMSans', sans-serif;
+    src: url(/fonts/DMSans-Italic.woff), url(/fonts/DMSans-Italic.woff2);
+    font-weight: 400;
+    font-style: italic;   
+}
+@font-face{
+    font-family: 'DMSans', sans-serif;
+    src: url(/fonts/DMSans-Medium.woff), url(/fonts/DMSans-Medium.woff2);
+    font-weight: 500;
+    font-style: normal;   
+}
+@font-face{
+    font-family: 'DMSans', sans-serif;
+    src: url(/fonts/DMSans-MediumItalic.woff), url(/fonts/DMSans-MediumItalic.woff2);
+    font-weight: 500;
+    font-style: italic;   
+}
+@font-face{
+    font-family: 'DMSans', sans-serif;
+    src: url(/fonts/DMSans-Bold.woff), url(/fonts/DMSans-Bold.woff2);
+    font-weight: 700;
+    font-style: normal;   
+}
+@font-face{
+    font-family: 'DMSans', sans-serif;
+    src: url(/fonts/DMSans-BoldItalic.woff), url(/fonts/DMSans-BoldItalic.woff2);
+    font-weight: 700;
+    font-style: italic;   
+}
+@font-face{
+    font-family: 'Geometria', sans-serif;
+    src: url(/fonts/Geometria-Regular.woff), url(/fonts/Geometria-Regular.woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+   /*=========================================fonts==================================================*/
 
-*/
+
+
