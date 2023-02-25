@@ -1,1 +1,31 @@
 <!-- Book a Table Modal window -->
+<div class="backdrop" data-modal>
+        <div class="modal">
+            <button  data-modal-close type="button" class="modal-close">
+                </button>
+                <p>BOOK A TABLE</p>
+                <form action="" name="book-a-table">
+                <input type="text" class="" placeholder=" YOUR NAME"  name="custom-name" id="Name" required>
+                <label for="Name"><span>Who should book a table for?</span></label>
+                <select placeholder="NUMBER OF PEOPLE" id="booking_number_input" name="seats" required="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option></select>
+                <select name="data-reservation" id="data_booking_input">
+                    <option value="today" selected>TODAY</option>
+                    <option value="tomorrow">TOMORROW</option>
+                </select>
+                <label for="data_booking_input"><span>What date to book?</span></label>
+                <input type="text" class="" placeholder="+38()"  name="custom-phone" id="phone" required>
+                <label for="phone"><span>Phone number</span> </label>
+                    <button type="submit" class="reserv">Make a reservation</button>
+            </form>
+        </div>
+    </div>

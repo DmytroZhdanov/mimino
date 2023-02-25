@@ -1,1 +1,30 @@
 <!-- Book a Room Modal Window -->
+<div class="backdrop" data-modal>
+        <div class="modal">
+            <button  data-modal-close type="button" class="modal-close">
+                </button>
+                <p>BOOK A ROOM</p>
+                <form action="" name="book-a-room">
+                <input type="text" class="" placeholder=" YOUR NAME"  name="custom-name" id="Name" required>
+                <label for="Name"><span>Who should book a table for?</span></label>
+                <input type="text" class="" placeholder="+38()"  name="custom-phone" id="phone" required>
+                <label for="phone"><span>Phone number</span> </label>
+                <select  name="bookind-data-reservation" id="booking_data_input">
+                    <option value="today" selected>TODAY</option>
+                    <option value="tomorrow">TOMORROW</option>
+                </select>
+                <label for="booking_data_input"><span>Check-in date</span></label>
+                <input type="date" id="data_reservation_input" name="trip-start"
+                value="2023-04-25"
+                min="2023-02-01" max="2023-12-31">
+                <label for="data_reservation_input"><span>Check-in date</span></label>
+                    <select  name="room-reservation" id="booking_room_input">
+                    <option value=" double-room" selected>DOUBLE SUITE</option>
+                    <option value="tomorrow">FOUR SEATER ROOM</option>
+                    <option value="tomorrow">TRIPLE ROOM</option>
+                </select>
+                <label for="booking_room_input"><span>Number category</span></label>
+                    <button type="submit" class="reserv">Make a reservation</button>
+            </form>
+        </div>
+    </div>
