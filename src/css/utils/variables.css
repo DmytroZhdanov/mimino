@@ -1,6 +1,8 @@
 /* CSS variables for colors and transitions */
 :root {
-  --light-theme-color: #f6f6f6;
-  --dark-theme-color: #121212;
+  --light-theme-color-primary: #f6f6f6;
+  --dark-theme-color-primary: #121212;
+  --light-theme-color-secondary: #ffffff;
+  --dark-theme-color-non-active: #1212124d;
   --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
