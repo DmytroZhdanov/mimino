@@ -1,5 +1,8 @@
 /* Button styles Dark */
+
 .button-black {
+    display: block;
+    cursor: pointer;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -26,6 +29,8 @@
 
 
 .button-white {
+    display: block;
+    cursor: pointer;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
