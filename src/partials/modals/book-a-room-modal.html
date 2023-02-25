@@ -1,38 +1,39 @@
 <!-- Book a Room Modal Window -->
 <div class="backdrop" data-modal>
 <div class="modal">
+        <p>BOOK A <span>ROOM</span></p>
     <button data-modal-close type="button" class="modal-close"></button>
-    <p>BOOK A <span>ROOM</span></p>
     <form class="modal-form" name="book-a-room">
     <input
         type="text"
-        class="input-name"
+        class="modal-name"
         placeholder=" YOUR NAME"
         name="custom-name"
         id="Name"
-        pattern = "[A-Za-z0-9]{6,}"
-        title ="Name coudn`t be less than 6 Latin characters"
+        pattern = "[A-Za-z0-9]{2,}"
+        title ="Name coudn`t be less than 2 Latin characters"
         required
     />
     <label class="label-name" for="Name">Who should book a table for?</label>
     <input
         type="text"
-        class="input-name"
+        class="modal-name"
         placeholder="+38()"
         name="custom-phone"
         id="phone"
-        pattern="[0-9]{10,}"
-        title ="Phone coudn`t contain characters and be less than 10 digits"
+        pattern="[0-9]{12,}"
+        title ="Phone coudn`t contain characters and be less than 12 digits"
         required/>
     <label class="label-name" for="phone">Phone number </label>
-    <input
-        placeholder="DATA"
-        class="textbox-n"
-        type="text"
-        onfocus="(this.type='date')"
-        id="booking_data_input" />
-    <label class="label-name" for="booking_data_input">Check-in date</label>
     <input class="input-name"
+        type="date"
+        id="data_reservation_input"
+        name="trip-end"
+        min="2023-02-01"
+        max="2023-12-31"
+    />
+    <label class="label-name" for="booking_data_input">Check-in date</label>
+    <input class="modal-name"
         type="date"
         id="data_reservation_input"
         name="trip-end"
@@ -43,8 +44,8 @@
     <label for="data_reservation_input">Check-out date</label>
     <select name="room-reservation" id="booking_room_input">
         <option value=" double-room" selected>DOUBLE SUITE</option>
-        <option value="four-room">FOUR SEATER SUITE</option>
         <option value="triple-room">TRIPLE SUITE</option>
+        <option value="four-room">FOUR SEATER SUITE</option>
     </select>
     <label for="booking_room_input">Number category</label>
     <button type="submit" class="reserv">Make a reservation</button>
