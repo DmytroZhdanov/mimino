@@ -13,6 +13,7 @@
     border: 0.8px solid #F7F7F7;
     border-radius: 32px;
     color: #F7F7F7;
+    background: none;
 }
 
 .button-black:hover,
@@ -41,6 +42,7 @@
     border: 0.8px solid #121212;
     border-radius: 32px;
     color: rgba(18, 18, 18, 1);
+    background: none;
 }
 
 .button-white:hover,
