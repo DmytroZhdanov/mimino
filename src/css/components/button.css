@@ -1,6 +1,6 @@
 /* Button styles Dark */
 
-.button {
+.btn {
     display: block;
     cursor: pointer;
     font-family: 'DM Sans';
@@ -44,7 +44,7 @@
 }
 
 @media screen and (min-width:768px) {
-    .button {
+    .btn {
         line-height: 24px;
     }
     
