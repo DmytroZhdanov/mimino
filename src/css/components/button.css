@@ -1,4 +1,66 @@
 /* Button styles Dark */
 
+.btn {
+    display: block;
+    cursor: pointer;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;  
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    border-radius: 32px;
+    background: none;
+}
+
+.button-black {
+
+    border: 0.8px solid #F7F7F7;
+    color: #F7F7F7;
+
+}
+
+.button-black:hover,
+.button-black:focus {
+    background: #FFFFFF;
+    color: #121212;
+}
+
 
 /* Button styles Light */
+
+
+
+.button-white {
+    border: 0.8px solid #121212;
+    color: rgba(18, 18, 18, 1);
+}
+
+.button-white:hover,
+.button-white:focus {
+    background: #121212;
+    color: #F7F7F7;
+}
+
+@media screen and (min-width:768px) {
+    .btn {
+        line-height: 24px;
+    }
+    
+    .button-black:hover,
+    .button-black:focus {
+        background: #FFFFFF;
+        color: #121212;
+    }
+
+    /* Button styles Light */
+    
+    
+    
+    .button-white:hover,
+    .button-white:focus {
+        background: #121212;
+        color: #F7F7F7;
+    }
+}
