@@ -1,4 +1,140 @@
 /* Button styles Dark */
+.hero-button {
+    padding: 8px 18px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;  
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    border: 0.8px solid #F7F7F7;
+    border-radius: 32px;
+    color: #F7F7F7;
+    background-color: rgba(18, 18, 18, 1);
+    /* сюди дописати клас 2 кнопок з hotel-main */
+}
+.restaurant-menu>.button {
+    padding: 8px 24px;
+    border: 0.8px solid #F7F7F7;
+    border-radius: 32px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
 
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #F7F7F7;
+}
+
+.room-section>.button {
+    padding: 8px 40px;
+    border: 0.8px solid #F7F7F7;
+    border-radius: 32px;
+    color: #F7F7F7;
+}
+
+.modal-close {
+    padding: 14px 49px 14px 48px;
+    border: 0.8px solid #F7F7F7;
+    border-radius: 32px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+color: #F7F7F7;
+}
 
 /* Button styles Light */
+
+
+/* плюс всі кнопки на строінці готелю та мейн сторінці*/
+
+
+.hero2-button,
+.hero3-button-link,
+.hero3-button,
+.hero4-button {
+    padding: 8px 18px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;  
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    border: 0.8px solid #121212;
+    border-radius: 32px;
+    color: rgba(18, 18, 18, 1);
+    background-color: #D8D8D8;;
+}
+
+@media screen and (min-width:768px) {
+    .hero-button,
+    .restaurant-menu>.button,
+    .room-section>.button {
+        padding: 8px 24px;
+        line-height: 24px;
+        /* сюди дописати клас 2 кнопок з hotel-main */
+    }
+    
+    .modal-close {
+        padding: 14px 134px 14px 133px;
+
+        line-height: 24px;
+    }
+    
+    /* Button styles Light */
+    
+    
+    /* плюс всі кнопки на сторінці готелю та мейн сторінці*/
+    
+    
+    .hero2-button,
+    .hero3-button-link,
+    .hero3-button,
+    .hero4-button {
+        padding: 8px 24px;
+        line-height: 24px;  
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    .hero-button {
+        background-color: none;
+    }
+    
+    .hero-button,
+    .restaurant-menu>.button,
+    .room-section>.button {
+        padding: 9px 24px;
+        /* сюди дописати клас 2 кнопок з hotel-main */
+    }
+    
+    .modal-close {
+        padding: 14px 134px 14px 133px;
+
+    }
+    
+    /* Button styles Light */
+    
+    
+    /* плюс всі кнопки на сторінці готелю та мейн сторінці*/
+    
+    
+    .hero2-button,
+    .hero3-button-link,
+    .hero3-button,
+    .hero4-button {
+        padding: 9px 24px;
+    }
+}
