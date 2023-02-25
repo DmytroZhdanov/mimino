@@ -54,3 +54,11 @@
     color: #F7F7F7;
 
 }
+
+@media screen and (min-width:768px) {
+    .hero-title {
+        background: url(../img/#);
+        
+    }
+    
+}

@@ -110,9 +110,9 @@ color: #F7F7F7;
 @media screen and (min-width:1440px) {
 
     .hero-button {
-        background-color: none;
+        background: none;
     }
-    
+
     .hero-button,
     .restaurant-menu>.button,
     .room-section>.button {
