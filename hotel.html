@@ -226,6 +226,90 @@
 </footer>
 
     <!-- Book a Room Modal Window -->
+<div class="backdrop" data-modal>
+<div class="modal">
+        <p>BOOK A <span>ROOM</span></p>
+    <button data-modal-close type="button" class="modal-close"></button>
+    <form class="modal-form" name="book-a-room">
+    <input
+        type="text"
+        class="modal-name"
+        placeholder=" YOUR NAME"
+        name="custom-name"
+        id="Name"
+        pattern = "[A-Za-z0-9]{2,}"
+        title ="Name coudn`t be less than 2 Latin characters"
+        required
+    />
+    <label class="label-name" for="Name">Who should book a table for?</label>
+    <input
+        type="tel"
+        class="modal-name"
+        placeholder="+38()"
+        name="custom-phone"
+        id="phone"
+        pattern="[0-9+]{13,}"
+        title ="Phone coudn`t contain characters and be less than 12 digits"
+        required/>
+    <label class="label-name" for="phone">Phone number </label>
+    <input
+    name="trip-start"
+    placeholder="TODAY"
+    class="textbox-n"
+    type="text"
+    onfocus="(this.type='date')"
+    id="date" />
+    <label class="label-name" for="date">Check-in date</label>
+    <input class="modal-name"
+        type="date"
+        id="data_reservation_input"
+        name="trip-end"
+        value="2023-04-25"
+        min="2023-02-01"
+        max="2023-12-31"
+    />
+    <label for="data_reservation_input">Check-out date</label>
+    <select name="room-reservation" id="booking_room_input">
+        <option value=" double-room" selected>DOUBLE SUITE</option>
+        <option value="triple-room">TRIPLE SUITE</option>
+        <option value="four-room">FOUR SEATER SUITE</option>
+    </select>
+    <label for="booking_room_input">Number category</label>
+    <button type="submit" class="reserv">Make a reservation</button>
+    </form>
+</div>
+</div>
+
     <!-- Prices per Room Modal window -->
+<div class="backdrop">
+<div class="modal">
+        <p>PRICES PER <span>ROOM</span></p>
+    <button data-modal-close type="button" class="modal-close"></button>
+    <form class="modal-form" name="room-price">
+        <h2 class="room-to-book">DOUBLE SUITE</h2>
+        <select  id="booking_number_input" name="seats" required>
+        <option  value="1" selected>1</option>
+        <option  value="2">2</option>
+        <option  value="3">3</option>
+        <option  value="4">4</option>
+        <option  value="5">5</option>
+        <option  value="6">6</option>
+        <option  value="7">7</option>
+        <option  value="8">8</option>
+        <option  value="9">9</option>
+        <option  value="10">10</option>
+        <option  value="11">11</option>
+        <option  value="12">12</option>
+        <option  value="13">13</option>
+        <option  value="14">14</option>
+    </select>
+    <label class="label-name" for="booking_number_input"
+        >NUMBER OF NIGHTS</label>
+    <p class="total-price">1000</p>
+    <hr />
+    <button type="submit" class="reserv">Make a reservation</button>
+    </form>
+</div>
+</div>
   </body>
 </html>
