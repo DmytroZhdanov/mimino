@@ -5,8 +5,22 @@
     background-color: #121212;
 }
 
+.hero-main-mob {
+    display: block;
+    top: 50%;
+    left:50%;
+    transform: translate(50%, 50%);
+    width: 100%;
+    z-index:0;
+}
+.hero-main-tab {
+    display:none;
+}
+.hero-main-desc {
+    display:none;
+}
+
 .hero-title {
-    background-image: url(../);
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -19,6 +33,7 @@
     text-align: center;
     color: #F7F7F7;
     margin-bottom: 24px;
+    z-index: 1;
 }
 
 .hero-info {
