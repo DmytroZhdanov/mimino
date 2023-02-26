@@ -45,6 +45,27 @@
     margin-right: 14px;
 }
 
+.room-four__link {
+    padding: 9px 24px;
+    gap: 10px;
+
+    height: 42px;
+
+    border: 0.8px solid var(--);
+    background-color: #fff;
+    border-radius: 32px;
+
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.25;
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: var(--);
+}
+
 .room-four__button {
     padding: 9px 24px;
     gap: 10px;
