@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MIMINO Complex</title>
     
-    <link rel="stylesheet" href="/mimino/assets/styles-48060efd.css">
+    <script type="module" crossorigin src="/mimino/assets/index-f337c58f.js"></script>
+    <link rel="stylesheet" href="/mimino/assets/styles-176fa223.css">
   </head>
   <body>
     <!-- Header -->
@@ -142,10 +143,10 @@
         </ul>
         <ul class="hero-buttons">
           <li class="hero-buttons-item">
-            <button type="button" class="hero-button btn button-black">Book a room</button>
+            <button type="button" class="hero-button btn button-black" data-modal-room-open>Book a room</button>
           </li>
           <li class="hero-buttons-item">
-            <button type="button" class="hero-button btn button-black">Book a table</button>
+            <button type="button" class="hero-button btn button-black" data-modal-table-open>Book a table</button>
           </li>
         </ul>
       </div>
@@ -273,7 +274,7 @@
                 </p>
             </div>
             <div>
-                <button type="button">BOOK A TABLE</button>
+                <button type="button" data-modal-table-open>BOOK A TABLE</button>
                 <a href="">VIEW THE MENU</a>  
             </div> 
         </div> 
@@ -432,7 +433,7 @@
       luxury at our hotel. We guarantee you'll be thrilled with your decision.
     </p>
     <div class="hotel-main-btn">
-      <button type="button" class="btn book-btn">Book a room</button>
+      <button type="button" class="btn book-btn" data-modal-room-open>Book a room</button>
       <a href="./hotel.html" class="view-btn link">View rooms</a>
     </div>
     <div class="hotel-main-img">
@@ -541,10 +542,10 @@
 </footer>
 
     <!-- Book a Room Modal Window -->
-<div class="backdrop" data-modal>
+<div class="backdrop is-hidden" data-modal-room>
 <div class="modal">
         <p>BOOK A <span>ROOM</span></p>
-    <button data-modal-close type="button" class="modal-close"></button>
+    <button data-modal-room-close type="button" class="modal-close"></button>
     <form class="modal-form" name="book-a-room">
     <input
         type="text"
@@ -596,10 +597,10 @@
 </div>
 
     <!-- Book a Table Modal window -->
-<div class="backdrop" data-modal>
+<div class="backdrop is-hidden" data-modal-table>
     <div class="modal">
         <p>BOOK A <span>TABLE</span></p>
-    <button data-modal-close type="button" class="modal-close"></button>
+    <button data-modal-table-close type="button" class="modal-close"></button>
     <form class="modal-form" name="book-a-table">
     <input
         type="text"
@@ -650,5 +651,8 @@
 </div>
 </div>
 
+
+
+    
   </body>
 </html>

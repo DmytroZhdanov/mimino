@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MIMINO Room</title>
     
-    <link rel="stylesheet" href="/mimino/assets/styles-48060efd.css">
+    <link rel="stylesheet" href="/mimino/assets/styles-176fa223.css">
   </head>
   <body>
     <!-- Header -->
@@ -109,7 +109,7 @@
       <!-- Hero Section Room page -->
 <section class="hero4">
     <h1 class="hero4-title">Double luxury room</h1>
-    <button class="hero4-button">View prices</button>
+    <button class="hero4-button" data-modal-prices-open>View prices</button>
     <p class="hero4-text">The Mimino hotel features spacious and stylish double luxury rooms with modern amenities for a comfortable stay.</p>
     <ul class="hero4-images">
       <li class="hero4-images-item">
@@ -191,7 +191,7 @@
     <source media="(min-width: 1440px)" srcset="#" />
     <img class="bath-img" src="#" alt="Bathroom" width="408" />
   </picture>
-  <button type="button">Book a room</button>
+  <button type="button" data-modal-room-open>Book a room</button>
 </section>
 
     </main>
@@ -239,10 +239,10 @@
 </footer>
 
     <!-- Prices per Room Modal window -->
-<div class="backdrop">
+<div class="backdrop is-hidden" data-modal-prices>
 <div class="modal">
         <p>PRICES PER <span>ROOM</span></p>
-    <button data-modal-close type="button" class="modal-close"></button>
+    <button data-modal-prices-close type="button" class="modal-close"></button>
     <form class="modal-form" name="room-price">
         <h2 class="room-to-book">DOUBLE SUITE</h2>
         <select  id="booking_number_input" name="seats" required>
@@ -270,10 +270,10 @@
 </div>
 </div>
     <!-- Book a Room Modal Window -->
-<div class="backdrop" data-modal>
+<div class="backdrop is-hidden" data-modal-room>
 <div class="modal">
         <p>BOOK A <span>ROOM</span></p>
-    <button data-modal-close type="button" class="modal-close"></button>
+    <button data-modal-room-close type="button" class="modal-close"></button>
     <form class="modal-form" name="book-a-room">
     <input
         type="text"

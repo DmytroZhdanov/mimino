@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MIMINO Hotel</title>
     
-    <link rel="stylesheet" href="/mimino/assets/styles-48060efd.css">
+    <link rel="stylesheet" href="/mimino/assets/styles-176fa223.css">
   </head>
   <body>
     <!-- Header -->
@@ -110,8 +110,8 @@
 <section class="hero2">
     <h1 class="hero2-title">Hotel</h1>
     <ul class="hero2-buttons">
-        <li class="hero2-buttons-item"><button class="hero2-button">Book a room</button></li>
-        <li class="hero2-buttons-item"><button class="hero2-button">View prices</button></li>
+        <li class="hero2-buttons-item"><button class="hero2-button" data-modal-room-open>Book a room</button></li>
+        <li class="hero2-buttons-item"><button class="hero2-button" data-modal-prices-open>View prices</button></li>
     </ul>
     <p class="hero2-text">Whether you're in the mood for a hearty breakfast, a light lunch, or a romantic dinner, our menu has something for everyone.</p>
     <ul class="hero2-images">
@@ -174,7 +174,7 @@
           <a class="room-four__link" href="./room.html">More details</a>
         </li>
         <li class="room-four__item">
-          <button class="room-four__button">View prices</button>
+          <button class="room-four__button" data-modal-prices-open>View prices</button>
         </li>
       </ul>
     </div>
@@ -226,10 +226,10 @@
 </footer>
 
     <!-- Book a Room Modal Window -->
-<div class="backdrop" data-modal>
+<div class="backdrop is-hidden" data-modal-room>
 <div class="modal">
         <p>BOOK A <span>ROOM</span></p>
-    <button data-modal-close type="button" class="modal-close"></button>
+    <button data-modal-room-close type="button" class="modal-close"></button>
     <form class="modal-form" name="book-a-room">
     <input
         type="text"
@@ -281,10 +281,10 @@
 </div>
 
     <!-- Prices per Room Modal window -->
-<div class="backdrop">
+<div class="backdrop is-hidden" data-modal-prices>
 <div class="modal">
         <p>PRICES PER <span>ROOM</span></p>
-    <button data-modal-close type="button" class="modal-close"></button>
+    <button data-modal-prices-close type="button" class="modal-close"></button>
     <form class="modal-form" name="room-price">
         <h2 class="room-to-book">DOUBLE SUITE</h2>
         <select  id="booking_number_input" name="seats" required>
