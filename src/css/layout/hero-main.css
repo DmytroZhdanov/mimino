@@ -1,12 +1,13 @@
+
 /* Hero Section Main page */
 .hero {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #121212;
+    
 }
 
 .hero-title {
-    background-image: url(./img/#);
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -19,6 +20,7 @@
     text-align: center;
     color: #F7F7F7;
     margin-bottom: 24px;
+
 }
 
 .hero-info {
@@ -34,6 +36,10 @@
     gap:14px;
 }
 
+.hero-button {
+    padding: 8px 18px;
+}
+
 .hero-text {
     display: flex;
     flex-direction: column;
@@ -42,7 +48,7 @@
 }
 .hero-text-item {
     font-family: 'DM Sans';
-    font-style: normal;
+    font-style: italic;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
