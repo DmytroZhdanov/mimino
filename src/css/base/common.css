@@ -58,5 +58,5 @@
 body {
   background-color: var(--light-background-color-primary);
   color: var(--dark-theme-color-primary);
-  font-style: var(--primary-font-family);
+  font-family: var(--primary-font-family);
 }
