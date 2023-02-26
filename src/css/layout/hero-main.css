@@ -6,7 +6,7 @@
 }
 
 .hero-title {
-    background-image: url(./img/#);
+    background-image: url(../);
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -34,6 +34,10 @@
     gap:14px;
 }
 
+.hero-button {
+    padding: 8px 18px;
+}
+
 .hero-text {
     display: flex;
     flex-direction: column;
@@ -42,7 +46,7 @@
 }
 .hero-text-item {
     font-family: 'DM Sans';
-    font-style: normal;
+    font-style: italic;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
