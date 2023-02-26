@@ -1,10 +1,11 @@
 <!-- Book a Table Modal window -->
 <div class="backdrop is-hidden" >
     <div class="modal">
-        <p class="modal-title">BOOK A <span>TABLE</span></p>
+        
     <button data-modal-close type="button" class="modal-close"><svg class="icon-clos" width="28" height="28">
         <use href="./img/icons.svg#icon-closeblack"></use>
     </svg></button>
+    <p class="modal-title">BOOK A <span class="text">TABLE</span></p>
     <form class="modal-form" name="book-a-table">
     <input
         type="text"
@@ -16,21 +17,21 @@
         title ="Name coudn`t be less than 2 Latin characters"
         required/>
     <label class="label-name" for="Name">Who should book a table for?</label>
-    <select
+    <select class="modal-name"
         placeholder="NUMBER OF PEOPLE"
         id="booking_number_input"
         name="seats"
         required>
-        <option value="1" selected>1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
+        <option class="option-style" value="1" selected>1</option>
+        <option class="option-style" value="2">2</option>
+        <option class="option-style" value="3">3</option>
+        <option class="option-style" value="4">4</option>
+        <option class="option-style" value="5">5</option>
+        <option class="option-style" value="6">6</option>
+        <option class="option-style" value="7">7</option>
+        <option class="option-style" value="8">8</option>
+        <option class="option-style" value="9">9</option>
+        <option class="option-style" value="10">10</option>
     </select>
     <input
         type="tel"
