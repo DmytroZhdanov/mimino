@@ -1,10 +1,10 @@
 <!-- Book a Room Modal Window -->
-<div class="backdrop is-hidden " data-modal>
+<div class="backdrop  " data-modal>
 <div class="modal">
-        <p class="modal-title">BOOK A <span>ROOM</span></p>
     <button data-modal-close type="button" class="modal-close"><svg class="icon-clos" width="28" height="28">
         <use href="./img/icons.svg#icon-closeblack"></use>
     </svg></button>
+        <p class="modal-title">BOOK A <span>ROOM</span></p>
     <form class="modal-form" name="book-a-room">
     <input
         type="text"
@@ -26,15 +26,15 @@
         pattern="[0-9+]{13,}"
         title ="Phone coudn`t contain characters and be less than 12 digits"
         required/>
-    <label class="label-name" for="phone">Phone number </label>
-    <input
+    <label  for="phone">Phone number </label>
+    <input 
     name="trip-start"
     placeholder="TODAY"
-    class="textbox-n"
+    class="modal-name"
     type="text"
     onfocus="(this.type='date')"
     id="date" />
-    <label class="label-name" for="date">Check-in date</label>
+    <label for="date"><span class="label-name">Check-in date</spn ></label>
     <input class="modal-name"
         type="date"
         id="data_reservation_input"
@@ -43,13 +43,13 @@
         min="2023-02-01"
         max="2023-12-31"
     />
-    <label for="data_reservation_input">Check-out date</label>
-    <select name="room-reservation" id="booking_room_input">
-        <option value=" double-room" selected>DOUBLE SUITE</option>
-        <option value="triple-room">TRIPLE SUITE</option>
-        <option value="four-room">FOUR SEATER SUITE</option>
+    <label  for="data_reservation_input"><span class="label-name">Check-out date</span></label>
+    <select class="modal-name" name="room-reservation" id="booking_room_input">
+        <option class="option-style" value=" double-room" selected>DOUBLE SUITE</option>
+        <option class="option-style" value="triple-room">TRIPLE SUITE</option>
+        <option class="option-style" value="four-room">FOUR SEATER SUITE</option>
     </select>
-    <label for="booking_room_input">Number category</label>
+    <label  for="booking_room_input"><span class="label-name">Number category</span></label>
     <button type="submit" class="btn button-black">Make a reservation</button>
     </form>
 </div>
