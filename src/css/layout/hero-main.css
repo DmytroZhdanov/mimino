@@ -15,6 +15,14 @@
         justify-content: center;
         
     }
+
+    .hero-image-tab {
+        display: none;
+    }
+    
+    .hero-image-desc {
+        display:none;
+    }
     
     .hero-title {
         font-family: 'DM Sans';
@@ -29,9 +37,11 @@
         text-align: center;
         color: #F7F7F7;
         margin-bottom: 24px;
-        position: relative;
-        top: -50px;
         
+    }
+    .hero-test {
+        position:relative;
+        bottom: 50px;
     }
     
     .hero-info {
@@ -49,6 +59,8 @@
     
     .hero-button {
         padding: 8px 18px;
+        font-size: 14px;
+        line-height: 18px;
     }
     
     .hero-text {
@@ -76,11 +88,109 @@
 
 @media screen and (min-width:768px) {
     .hero {
-    
+        position: absolute;
+        width:100%;
         padding-top: 50px;
-        padding-bottom: 38px;
+        padding-bottom: -100px;
         background-color: #121212;
         max-width: 1439px;
+        
     }
+    
+    .hero-image {
+        display: none;
+    }
+
+    .hero-image-tab {
+        display:flex;
+        justify-content: center;
+    }
+
+    .hero-image-desc {
+        display:none;
+    }
+
+    .hero-test {
+        top:-232px;
+    }
+
+    .hero-title {
+        margin-bottom: 32px;
+        font-size: 150px;
+        line-height: 150px;
+    }
+
+    .hero-info {
+        gap:86px;
+    }
+
+    .hero-text {
+        flex-direction: row;
+        gap: 32px;
+        justify-content: start;
+        max-width: 684px;
+    }
+
+    .hero-text-item {
+        line-height: 18px;
+        font-style: normal;
+    }
+
+    .hero-button {
+        padding: 8px 24px;
+        line-height: 24px;
+    }
+
+
+}
+
+@media screen and (min-width:1440px) {
+    
+    .hero {
+        position: absolute;
+        width:100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-color: #121212;
+    }
+    
+    .hero-image {
+        display: none;
+    }
+
+    .hero-image-tab {
+        display:none;
+    }
+
+    .hero-image-desc {
+        display:flex;
+        position: relative;
+        justify-content: end;
+        height: 100%;
+    }
+
+    .hero-title {
+        font-size: 180px;
+        line-height: 180px;
+        position: absolute;
+        left:32px;
+        top: -376px;
+        margin-bottom: 0px;
+    }
+
+    .hero-info {
+        position: absolute;
+        flex-direction: row;
+        gap: 275px;
+        left:32px;
+        top:90px;
+    }
+
+    .hero-button {
+        padding: 9px 24px;
+        font-size: 18px;
+    }
+
+
     
 }
