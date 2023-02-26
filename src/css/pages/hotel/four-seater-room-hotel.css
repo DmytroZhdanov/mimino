@@ -1,1 +1,95 @@
-/* Section Four-seater room Hotel page */
+.image-collage {
+    margin-bottom: 50px;
+}
+
+.image-collage__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.room-four__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.room-four__text__header {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: var(--);
+    margin-bottom: 40px;
+}
+
+.room-four__text__additional {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+
+    color: var(--);
+    text-transform: uppercase;
+}
+
+.room-four__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.room-four__item:not(:last-child) {
+    margin-right: 14px;
+}
+
+.room-four__link {
+    padding: 9px 24px;
+    gap: 10px;
+
+    height: 42px;
+
+    border: 0.8px solid var(--);
+    background-color: #fff;
+    border-radius: 32px;
+
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.25;
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: var(--);
+}
+
+.room-four__button {
+    padding: 9px 24px;
+    gap: 10px;
+
+    height: 42px;
+
+    border: 0.8px solid var(--);
+    background-color: #fff;
+    border-radius: 32px;
+
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.25;
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: var(--);
+}
+
+.group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
