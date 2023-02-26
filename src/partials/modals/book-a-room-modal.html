@@ -21,18 +21,18 @@
         placeholder="+38()"
         name="custom-phone"
         id="phone"
-        pattern="[0-9]{12,}"
+        pattern="[0-9+]{13,}"
         title ="Phone coudn`t contain characters and be less than 12 digits"
         required/>
     <label class="label-name" for="phone">Phone number </label>
-    <input class="input-name"
-        type="date"
-        id="data_reservation_input"
-        name="trip-end"
-        min="2023-02-01"
-        max="2023-12-31"
-    />
-    <label class="label-name" for="booking_data_input">Check-in date</label>
+    <input
+    name="trip-start"
+    placeholder="TODAY"
+    class="textbox-n"
+    type="text"
+    onfocus="(this.type='date')"
+    id="date" />
+    <label class="label-name" for="date">Check-in date</label>
     <input class="modal-name"
         type="date"
         id="data_reservation_input"
