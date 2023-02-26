@@ -1,9 +1,9 @@
 <!-- Book a Table Modal window -->
 <div class="backdrop" data-modal>
     <div class="modal">
-        <p>BOOK A <span>TABLE</span></p>
-    <button data-modal-close type="button" class="modal-close"><svg>
-        <use></use>
+        <p class="modal-title">BOOK A <span>TABLE</span></p>
+    <button data-modal-close type="button" class="modal-close"><svg class="icon-clos" width="28" height="28">
+        <use href="./img/icons.svg#icon-closeblack"></use>
     </svg></button>
     <form class="modal-form" name="book-a-table">
     <input
@@ -50,7 +50,7 @@
     onfocus="(this.type='date')"
     id="date" />
     <label class="label-name" for="data_booking_input">What date to book?</label>
-    <button type="submit" class="btn">Make a reservation</button>
+    <button type="submit" class="btn button-black">Make a reservation</button>
     </form>
 </div>
 </div>
