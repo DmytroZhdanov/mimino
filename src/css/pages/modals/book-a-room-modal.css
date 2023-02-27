@@ -1,1 +1,7 @@
 /* Book a Room Modal Window */
+@media screen and (min-width:768px){
+    .modal{
+        width: 628px;
+        height: 430px;
+    }
+}
