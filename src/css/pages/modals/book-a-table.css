@@ -17,6 +17,7 @@
     padding: 24px;
     width: 320px;
     min-height: 414px;
+    border-radius: 2px;
 }
 .icon-clos{
     stroke: #ffff;
@@ -95,8 +96,5 @@
     font-style: italic;
 }
 .modal-form{
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 40px;
-
 }

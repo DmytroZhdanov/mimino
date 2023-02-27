@@ -6,31 +6,36 @@
     <button data-modal-prices-close type="button" class="modal-close"><svg class="icon-clos" width="28" height="28">
         <use href="./img/icons.svg#icon-close"></use>
     </svg></button>
-
     <form class="modal-form" name="room-price">
         <h2 class="room-to-book">DOUBLE SUITE</h2>
-    <div class="select">
-            <select  id="booking_number_input" name="seats" required>
-            <option  value="1" selected>1</option>
-            <option  value="2">2</option>
-            <option  value="3">3</option>
-            <option  value="4">4</option>
-            <option  value="5">5</option>
-            <option  value="6">6</option>
-            <option  value="7">7</option>
-            <option  value="8">8</option>
-            <option  value="9">9</option>
-            <option  value="10">10</option>
-            <option  value="11">11</option>
-            <option  value="12">12</option>
-            <option  value="13">13</option>
-            <option  value="14">14</option>
-        </select>
-    </div>
-    <label  for="booking_number_input"
-        ><span class="label-name">NUMBER OF NIGHTS</spn ></label>
-    <p class="total-price">1000</p>
-    <hr />
+<div class="modal-container">
+        <div class="select">
+                <select class="modal-name" id="booking_number_input" name="seats" required>
+                <option class="option-style"  value="1" selected>1</option>
+                <option class="option-style"  value="2">2</option>
+                <option class="option-style"  value="3">3</option>
+                <option class="option-style"  value="4">4</option>
+                <option class="option-style"  value="5">5</option>
+                <option class="option-style"  value="6">6</option>
+                <option class="option-style"  value="7">7</option>
+                <option class="option-style"  value="8">8</option>
+                <option class="option-style"  value="9">9</option>
+                <option class="option-style"  value="10">10</option>
+                <option class="option-style"  value="11">11</option>
+                <option class="option-style"  value="12">12</option>
+                <option class="option-style"  value="13">13</option>
+                <option class="option-style"  value="14">14</option>
+            </select>
+        <label  for="booking_number_input"><span class="label-name">NUMBER OF NIGHTS</spn ></label></div>
+        <div>
+            <input
+                class="modal-name"
+                type="text"
+                placeholder="1000"
+                id="price">
+            <label for="price"><span class="label-name">UAH</span></label>
+        </div>
+</div>
     <button type="submit" class="btn button-black">Make a reservation</button>
     </form>
 </div>
