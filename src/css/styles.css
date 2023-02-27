@@ -1,6 +1,8 @@
 /* Utils */
 @import url("./utils/variables.css");
 @import url("./utils/visually-hidden.css");
+@import url("./utils/is-hidden.css");
+
 
 /* Base */
 @import url("./base/reset.css");
