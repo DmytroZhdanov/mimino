@@ -140,8 +140,10 @@
     }
 
     .hero2-good {
-        position: absolute;
-        top:204px;
+        /* position: absolute;
+        top:204px; */
+        padding-top: 204px;
+        margin-bottom: 204px;
     }
 
     .hero2-buttons {
@@ -161,16 +163,17 @@
         position: absolute;
 
         gap:32px;
-        bottom: 82px;
+        top:30px;
         left: 737px;
         height: auto;
         width: calc((100%-32px)*3);
         
     }
 
-    .hero2-text {
-        position: absolute;
-        bottom:48px;
+    .hero2-text-a {
+        font-style: italic;
     }
+
+
     
 }
