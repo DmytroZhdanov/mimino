@@ -1,0 +1,1 @@
+(()=>{const e={openModalBtn:document.querySelector("[data-modal-prices-open]"),closeModalBtn:document.querySelector("[data-modal-prices-close]"),modal:document.querySelector("[data-modal-prices]")};e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o);function o(){e.modal.classList.toggle("is-hidden")}})();
