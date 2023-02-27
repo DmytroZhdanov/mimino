@@ -6,3 +6,37 @@
     font-size: 16px;
     margin-bottom: 24px;
 }
+.modal-price{
+    background-color: var(--dark-theme-color-primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    padding: 24px;
+    width: 320px;
+    min-height: 414px;
+    border-radius: 2px;
+}
+.modal-container-price{
+    width: 287px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+/*tablet*/
+@media screen and (min-width:768px){
+    .modal-price{
+        width: 628px;
+        height: 400px;
+    }
+    .modal-container-price{
+        max-width: 580px;
+        height: 68px;
+        flex-wrap: wrap;
+        gap: 40px;
+        column-gap: 32px;
+    }
+    .modal-name{
+        width: 266px;
+    }
+}

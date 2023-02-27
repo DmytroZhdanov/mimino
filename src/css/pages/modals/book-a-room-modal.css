@@ -1,7 +1,35 @@
 /* Book a Room Modal Window */
+/*table styles*/
+.modal-table{
+    background-color: var(--dark-theme-color-primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    padding: 24px;
+    width: 320px;
+    min-height: 414px;
+    border-radius: 2px;
+}
+.modal-container-table{  
+    width: 287px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}  
+
+
 @media screen and (min-width:768px){
-    .modal{
+    .modal-table{
         width: 628px;
-        height: 430px;
+        height: 441px;
+    }
+    .modal-container-table{
+        display: flex;
+        max-width: 580px;
+        height: 174px;
+        flex-wrap: wrap;
+        gap: 40px;
+        column-gap: 32px;
     }
 }
