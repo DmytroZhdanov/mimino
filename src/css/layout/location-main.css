@@ -1,1 +1,153 @@
 /* Section Location & Contacts Main page */
+.location{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.location-map{
+border: none;
+box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+filter: grayscale(1);
+}
+.map-box{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+.location-title {
+font-weight: 500;
+font-size: 40px;
+line-height: 1.0;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: var(--dark-theme-color-primary);
+}
+.address-item:not(:last-child) {
+    margin-bottom: 2px;
+}
+.address-link {
+display: block;
+font-family: var(--primary-font-family);
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.33;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #000000;
+margin-bottom: 28px;
+transition: transform var(--transition-dur-and-func);
+}
+.address-link:is(:hover, :focus){
+    transform: scale(1.05);
+}
+.location-txt {
+font-family: var(--primary-font-family);
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: var(--dark-theme-color-primary);
+margin-bottom: 12px;
+}
+.address-link-tel{
+    display: block;
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    color: var(--dark-theme-color-primary);
+    letter-spacing: -0.02em;  
+    transition: transform var(--transition-dur-and-func);
+}
+.address-link-tel:is(:hover, :focus){
+    transform: scale(1.05); 
+}
+@media screen and (min-width: 768px )  {
+    .location{
+        padding-top: 80px;
+        padding-bottom: 80px; 
+}
+.location-map {
+    width: 704px;
+    height: 576px;
+}
+.map-box{
+    gap: 40px;
+}
+.location-title {
+    font-size: 68px;
+    line-height: 1.00;
+}
+.location-contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.adress-box{
+    display: flex;
+}
+.address-link{
+    margin-bottom: 0;
+}
+.address-item:not(:last-child) {
+    margin-bottom: 2px;
+}
+.address-link-tel{
+    font-size: 18px;
+    line-height: 1.33;
+    
+}
+}
+@media screen and (min-width: 1440px ){
+    .location{
+        padding-top: 100px;
+        padding-bottom: 100px; 
+    }
+    .map-box{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 64px;
+        margin-bottom: 0;
+       
+    }
+    .location-map {
+        width: 640px;
+        height: 524px;
+        margin-bottom: 0;
+       
+    }
+    .location-title{
+        font-weight: 500;
+        font-size: 68px;
+        line-height: 1.00;
+        margin-bottom: 0;
+    }
+    .location-txt{
+        font-weight: 700;
+    }  
+    .tel-box{
+        display: flex;
+        gap: 12px;
+        justify-content: baseline;
+        position: absolute;
+        top: -45px;
+        left: 1013px    
+    }
+    .location-txt{
+        margin-bottom: 0;
+    }
+    .location-contacts{
+        position: relative;
+    }
+    .adress-box{
+        position: absolute;
+        top: -45px;
+        left: 703px;
+    }
+
+}

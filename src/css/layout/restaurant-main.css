@@ -1,1 +1,11 @@
 /* Section Restaurant's details Main page */
+.restaurant-menu-header{
+font-family: var(--primary-font-family);
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 1.10;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #F7F7F7;
+}
