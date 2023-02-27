@@ -12,10 +12,6 @@
   flex-wrap: wrap;
 }
 
-.mobile {
-    display: none;
-  }
-
 @media screen and (min-width: 375px) {
   .main-restaurant-slider-wrapp {
     width: 375px;
@@ -39,9 +35,5 @@
     width: 1458px;
     padding-right: 0px;
     padding-left: 0;
-  }
-
-  .mobile {
-    display: block;
   }
 }
