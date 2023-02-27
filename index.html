@@ -23,11 +23,12 @@
     />
     <!-- styles -->
     
+    
     <script type="module" crossorigin src="/mimino/assets/index-ed1116bb.js"></script>
     <link rel="modulepreload" crossorigin href="/mimino/assets/styles-fac82e35.js">
     <link rel="modulepreload" crossorigin href="/mimino/assets/modal-table-9e2be9ef.js">
     <link rel="modulepreload" crossorigin href="/mimino/assets/modal-room-43be12cc.js">
-    <link rel="stylesheet" href="/mimino/assets/styles-68202ede.css">
+    <link rel="stylesheet" href="/mimino/assets/styles-ae5d39df.css">
   </head>
 
   <body>
@@ -37,13 +38,13 @@
         <div class="header-box">
             <button type="button" class="mobile-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="mobile-menu-icon" width="28" height="28">
-                    <use href=""></use>
+                    <use href="/mimino/assets/icons-e40b9642.svg#icon-mob-menu-1"></use>
                 </svg>
             </button>
             <nav class="header-navigation">
                 <ul class="header-nav-list">
                     <li class="header-nav-item">
-                        <a href="./index.html" class="header-nav-link link">Home</a>
+                        <a href="./index.html" class="header-nav-link current link">Home</a>
                     </li>
                     <li class="header-nav-item">
                         <a href="./hotel.html" class="header-nav-link link">Hotel</a>
@@ -53,26 +54,26 @@
                     </li>
                 </ul>
             </nav>
-            <a href="./index.html"  class="logo-header link">Mimino<br><span class="logo-header-piece">restaurant-hotel complex</span></a>
+                <a href="./index.html"  class="logo-header link">Mimino<br><span class="logo-header-piece">restaurant-hotel complex</span></a>
             <ul class="header-soc-list">
                 <li class="header-soc-item">
                     <a href="https://www.instagram.com"  class="header-soc-link link" target="_blank" rel="noopener noreferrer nofollow">
                         <svg class="header-soc-icon" width="24" height="24">
-                            <use href=""></use>
+                            <use href="/mimino/assets/icons-e40b9642.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="header-soc-item">
                     <a href="https://www.facebook.com" class="header-soc-link link" target="_blank" rel="noopener noreferrer nofollow">
                         <svg class="header-soc-icon" width="24" height="24">
-                            <use href=""></use>
+                            <use href="/mimino/assets/icons-e40b9642.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="header-soc-item">
-                    <a href="https://www.twitter.com" class="header-header-soc-link link" target="_blank" rel="noopener noreferrer nofollow">
+                    <a href="https://www.twitter.com" class="header-soc-link link" target="_blank" rel="noopener noreferrer nofollow">
                         <svg class="header-soc-icon" width="24" height="24">
-                            <use href=""></use>
+                            <use href="/mimino/assets/icons-e40b9642.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>
@@ -626,25 +627,33 @@
 </section>
 
       <!-- Section Location & Contacts Main page -->
-<section class="Location">
+<section class="location">
     <div class="container">
+        <div class="map-box">
         <h2 class="location-title">location</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.923397025346!2d34.5265463!3d49.59919399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82601f3347a5f%3A0x36f3f9aeec44a6a!2z0YPQuy4g0JzQsNGA0YjQsNC70LAg0JHQuNGA0Y7Qt9C-0LLQsCwgMTUsINCf0L7Qu9GC0LDQstCwLCDQn9C-0LvRgtCw0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMzYwMDA!5e0!3m2!1sru!2sua!4v1677255810085!5m2!1sru!2sua" 
             width="335" height="384" 
             style="border:0;" 
             allowfullscreen="" 
             loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerpolicy="no-referrer-when-downgrade" class="location-map"></iframe>
+        </div>
         <address class="location-contacts">
-            <a class="address-link" 
+            <div class="adress-box">
+                <a class="address-link" 
                 href="https://goo.gl/maps/KEu9g1H4w57vBdB19" 
                 target="_blank" 
-                rel="noopener noreferrer nofollow">Ukraine, Poltava,<br>St. Marshal Biryuzov, 15,</a>
+                rel="noopener noreferrer nofollow">Ukraine, Poltava,
+                <br>St. Marshal Biryuzov, 15,
+                </a>
+            </div>
+                <div class="tel-box">
             <p class="location-txt">call us:</p>
             <ul class="address-list list">
-                <li class="address-item"><a class="address-link link" href="tel:+380955559533">(095) 555 95 33</a></li>
-                <li class="address-item"><a class="address-link link"  href="tel:+380668491089">(066) 849 10 89</a></li>
+                <li class="address-item"><a class="address-link-tel link" href="tel:+380955559533">(095) 555 95 33</a></li>
+                <li class="address-item"><a class="address-link-tel link"  href="tel:+380668491089">(066) 849 10 89</a></li>
             </ul>
+            </div>
         </address>   
     </div>
 </section>
@@ -670,22 +679,22 @@
         <ul class="footer-soc-list">
             <li class="footer-soc-item">
                 <a href="https://www.instagram.com" class="footer-soc-link link"  target="_blank" rel="noopener noreferrer nofollow">
-                    <svg class="footer-soc-icon" width="24" height="24">
-                        <use href=""></use>
+                    <svg class="footer-soc-icon" width="20" height="20">
+                        <use href="/mimino/assets/icons-e40b9642.svg#icon-instagram"></use>
                     </svg>
                 </a>
             </li>
             <li class="footer-soc-item">
                 <a href="https://www.facebook.com" class="footer-soc-link link"  target="_blank" rel="noopener noreferrer nofollow">
-                    <svg class="footer-soc-icon" width="24" height="24">
-                        <use href=""></use>
+                    <svg class="footer-soc-icon" width="20" height="20">
+                        <use href="/mimino/assets/icons-e40b9642.svg#icon-facebook"></use>
                     </svg>
                 </a>
             </li>
             <li class="footer-soc-item">
                 <a href="https://www.twitter.com" class="footer-soc-link link"  target="_blank" rel="noopener noreferrer nofollow">
-                    <svg class="footer-soc-icon" width="24" height="24">
-                        <use href=""></use>
+                    <svg class="footer-soc-icon" width="20" height="20">
+                        <use href="/mimino/assets/icons-e40b9642.svg#icon-twitter"></use>
                     </svg>
                 </a>
             </li>
