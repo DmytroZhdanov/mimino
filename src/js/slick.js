@@ -1,11 +1,10 @@
 $('.responsive').slick({
   dots: false,
-  arrows: false,
+  arrows: true,
   infinite: true,
   speed: 300,
   slidesToShow: 5,
   slidesToScroll: 1,
-  // appendArrows:
   responsive: [
     {
       breakpoint: 768,
@@ -13,16 +12,16 @@ $('.responsive').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
-        // dots: false,
+        dots: false,
       },
     },
-    // {
-    //   breakpoint: 600,
-    //   settings: {
-    //     slidesToShow: 2,
-    //     slidesToScroll: 2,
-    //   },
-    // },
+    {
+      breakpoint: 375,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
     // {
     //   breakpoint: 480,
     //   settings: {
