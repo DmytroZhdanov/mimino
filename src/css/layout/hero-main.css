@@ -14,13 +14,6 @@
     justify-content: center;    
 }
 
-.hero-image-tab {
-    display: none;
-}
-
-.hero-image-desc {
-    display:none;
-}
 
 .hero-title {
     font-family: 'DM Sans';
@@ -97,14 +90,6 @@
         
     }
 
-    .hero-image-tab {
-        display: none;
-    }
-    
-    .hero-image-desc {
-        display:none;
-    }
-    
     .hero-title {
         font-size: 80px;
         line-height: 1;
@@ -139,18 +124,12 @@
         height: 1024px;
     }
     
-    .hero-image {
-        display: none;
-    }
 
-    .hero-image-tab {
+    .hero-image {
         display:flex;
         justify-content: center;
     }
 
-    .hero-image-desc {
-        display:none;
-    }
 
     .hero-test {
         top:-232px;
@@ -193,15 +172,10 @@
         height: 770px;
     }
     
+
+
+
     .hero-image {
-        display: none;
-    }
-
-    .hero-image-tab {
-        display:none;
-    }
-
-    .hero-image-desc {
         display:flex;
         position: relative;
         justify-content: end;
