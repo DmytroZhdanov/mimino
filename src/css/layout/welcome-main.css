@@ -1,1 +1,98 @@
 /* Section Welcome Main page */
+.section-welcome-main {
+  background-color: var(--light-background-color-primary);
+  padding-bottom: 64px;
+}
+.welcome-container {
+  display: block;
+}
+.welcome-about {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 32px;
+  width: 335px;
+}
+.welcome-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.12;
+  margin-bottom: 32px;
+}
+.welcome-title-italic {
+  font-style: italic;
+}
+.welcome-subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  margin-bottom: 32px;
+}
+/*------- TABLET------- */
+@media screen and (min-width: 768px) {
+  .section-welcome-main {
+    padding-bottom: 80px;
+  }
+  .welcome-about {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  .welcome-title {
+    line-height: 1.11;
+    width: 434px;
+    margin-bottom: 50px;
+  }
+  .welcome-sub-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    width: 704px;
+  }
+  .welcome-subtitle {
+    margin-bottom: 0;
+    width: 50%;
+  }
+  .welcome-img {
+    height: auto;
+  }
+}
+/*------- DESCTOP------- */
+@media screen and (min-width: 1440px) {
+  .section-welcome-main {
+    padding-bottom: 100px;
+  }
+  .welcome-container {
+    display: flex;
+    max-width: 1240px;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 32px;
+    margin-left: 32px;
+    margin-right: 168px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .welcome-about {
+    display: flex;
+    width: 437px;
+    margin-bottom: 0;
+  }
+  .welcome-title {
+    font-size: 36px;
+    margin-bottom: auto;
+  }
+  .welcome-sub-container {
+    flex-direction: column;
+    width: 437px;
+    gap: 24px;
+  }
+  .welcome-subtitle {
+    width: 100%;
+  }
+  .welcome-img {
+    text-align: left;
+  }
+}
