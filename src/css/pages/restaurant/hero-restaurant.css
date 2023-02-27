@@ -10,7 +10,7 @@
 }
 
 .hero3-title {
-    font-family: 'DM Sans';
+    font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -48,7 +48,7 @@
 
 .hero3-button {
     padding: 8px 18px;
-    font-family: 'DM Sans';
+    font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -59,7 +59,7 @@
 }
 
 .hero3-text {
-    font-family: 'DM Sans';
+    font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
