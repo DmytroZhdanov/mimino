@@ -1,17 +1,47 @@
 /* Section Restaurant's details Main page */
 
+.main-restaurant-slider-wrapp {
+  width: 100vw;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .main-restaurant-slider {
   display: flex;
-  gap: 20px;
+  /* gap: 20px; */
   flex-wrap: wrap;
 }
 
+.mobile {
+    display: none;
+  }
+
+@media screen and (min-width: 375px) {
+  .main-restaurant-slider-wrapp {
+    width: 375px;
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .main-restaurant-slider-wrapp {
+  width: 744px;
+  }
+  
   .main-restaurant-slider {
     gap: 32px;
   }
 
+}
+@media screen and (min-width: 1440px) {
+  .main-restaurant-slider-wrapp {
+    width: 1458px;
+    padding-right: 0px;
+    padding-left: 0;
+  }
+
   .mobile {
-    display: none;
+    display: block;
   }
 }
