@@ -1,1 +1,0 @@
-import"./styles-fac82e35.js";import"./modal-table-9e2be9ef.js";import"./modal-room-43be12cc.js";$(".responsive").slick({dots:!1,arrows:!1,infinite:!0,speed:300,slidesToShow:5,slidesToScroll:1,responsive:[{breakpoint:768,settings:{slidesToShow:2,slidesToScroll:1,infinite:!0}}]});
