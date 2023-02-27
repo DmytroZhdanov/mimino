@@ -1,1 +1,17 @@
 /* Section Restaurant's details Main page */
+
+.main-restaurant-slider {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .main-restaurant-slider {
+    gap: 32px;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
