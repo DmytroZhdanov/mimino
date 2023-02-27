@@ -1,11 +1,40 @@
 /* Section Restaurant's details Main page */
-.restaurant-menu-header{
-font-family: var(--primary-font-family);
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 1.10;
-letter-spacing: -0.02em;
-text-transform: uppercase;
-color: #F7F7F7;
+
+.main-restaurant-slider {
+  width: 100vw;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.slick-prev,
+.slick-next {
+  top: calc(100% + 69px);
+  width: 36px;
+  height: 36px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  /* background: url(../img/icons.svg#icon-arrow) 0 0 / 100% no-repeat; */
+  background-image: url(../img/icons.svg#icon-arrow);
+}
+
+@media screen and (min-width: 375px) {
+  .main-restaurant-slider {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-restaurant-slider {
+    width: 704px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-restaurant-slider {
+    width: 1458px;
+    padding-right: 0px;
+    padding-left: 0;
+  }
 }
