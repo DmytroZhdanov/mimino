@@ -11,7 +11,7 @@
 }
 
 .hero4-title {
-    font-family: 'DM Sans';
+    font-family: var(--primary-font-family);
     font-style: italic;
     font-weight: 400;
     font-size: 30px;
@@ -40,7 +40,7 @@
 
 .hero4-button {
     padding: 8px 18px;
-    font-family: 'DM Sans';
+    font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -52,7 +52,7 @@
 }
 
 .hero4-text {
-    font-family: 'DM Sans';
+    font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
