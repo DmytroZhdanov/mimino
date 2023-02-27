@@ -14,7 +14,7 @@
     <script type="module" crossorigin src="/mimino/assets/styles-fac82e35.js"></script>
     <script type="module" crossorigin src="/mimino/assets/modal-prices-d937e924.js"></script>
     <script type="module" crossorigin src="/mimino/assets/modal-room-43be12cc.js"></script>
-    <link rel="stylesheet" href="/mimino/assets/styles-be9fc3f2.css">
+    <link rel="stylesheet" href="/mimino/assets/styles-ba1b1bc0.css">
   </head>
   <body>
     <!-- Header -->
@@ -319,10 +319,13 @@
 </footer>
 
     <!-- Book a Room Modal Window -->
+
 <div class="backdrop is-hidden" data-modal-room>
 <div class="modal">
-        <p>BOOK A <span>ROOM</span></p>
-    <button data-modal-room-close type="button" class="modal-close"></button>
+        <p class="modal-title">BOOK A <span class="text">ROOM</span></p>
+    <button data-modal-room-close type="button" class="modal-close"><svg class="icon-clos" width="28" height="28">
+        <use href="/mimino/assets/icons-e40b9642.svg#icon-closeblack"></use>
+    </svg></button>
     <form class="modal-form" name="book-a-room">
     <input
         type="text"
@@ -334,7 +337,7 @@
         title ="Name coudn`t be less than 2 Latin characters"
         required
     />
-    <label class="label-name" for="Name">Who should book a table for?</label>
+    <label for="Name"><span class="label-name">Who should book a table for?</spn ></label>
     <input
         type="tel"
         class="modal-name"
@@ -344,63 +347,75 @@
         pattern="[0-9+]{13,}"
         title ="Phone coudn`t contain characters and be less than 12 digits"
         required/>
-    <label class="label-name" for="phone">Phone number </label>
-    <input
-    name="trip-start"
-    placeholder="TODAY"
-    class="textbox-n"
-    type="text"
-    onfocus="(this.type='date')"
-    id="date" />
-    <label class="label-name" for="date">Check-in date</label>
-    <input class="modal-name"
-        type="date"
-        id="data_reservation_input"
-        name="trip-end"
-        value="2023-04-25"
-        min="2023-02-01"
-        max="2023-12-31"
-    />
-    <label for="data_reservation_input">Check-out date</label>
-    <select name="room-reservation" id="booking_room_input">
-        <option value=" double-room" selected>DOUBLE SUITE</option>
-        <option value="triple-room">TRIPLE SUITE</option>
-        <option value="four-room">FOUR SEATER SUITE</option>
-    </select>
-    <label for="booking_room_input">Number category</label>
-    <button type="submit" class="reserv">Make a reservation</button>
+    <label  for="phone"><span class="label-name">Phone number</span> </label>
+    <div class="select">
+        <input 
+        name="trip-start"
+        placeholder="TODAY"
+        class="modal-name"
+        type="text"
+        onfocus="(this.type='date')"
+        id="date" />
+    </div>
+    <label for="date"><span class="label-name">Check-in date</spn ></label>
+    <div class="select">
+        <input class="modal-name"
+            type="date"
+            id="data_reservation_input"
+            name="trip-end"
+            value="2023-04-25"
+            min="2023-02-01"
+            max="2023-12-31"
+        />
+    </div>
+    <label  for="data_reservation_input"><span class="label-name">Check-out date</span></label>
+    <div class="select">
+        <select class="modal-name" name="room-reservation" id="booking_room_input">
+            <option class="option-style" value=" double-room" selected>DOUBLE SUITE</option>
+            <option class="option-style" value="triple-room">TRIPLE SUITE</option>
+            <option class="option-style" value="four-room">FOUR SEATER SUITE</option>
+        </select>
+    </div>
+    <label  for="booking_room_input"><span class="label-name">Number category</span></label>
+    <button type="submit" class="btn button-black">Make a reservation</button>
     </form>
 </div>
 </div>
 
     <!-- Prices per Room Modal window -->
+
 <div class="backdrop is-hidden" data-modal-prices>
 <div class="modal">
-        <p>PRICES PER <span>ROOM</span></p>
-    <button data-modal-prices-close type="button" class="modal-close"></button>
+        <p class="modal-title">PRICES PER <span class="text">ROOM</span></p>
+    <button data-modal-prices-close type="button" class="modal-close"><svg class="icon-clos" width="28" height="28">
+        <use href="/mimino/assets/icons-e40b9642.svg#icon-closeblack"></use>
+    </svg></button>
+
     <form class="modal-form" name="room-price">
         <h2 class="room-to-book">DOUBLE SUITE</h2>
-        <select  id="booking_number_input" name="seats" required>
-        <option  value="1" selected>1</option>
-        <option  value="2">2</option>
-        <option  value="3">3</option>
-        <option  value="4">4</option>
-        <option  value="5">5</option>
-        <option  value="6">6</option>
-        <option  value="7">7</option>
-        <option  value="8">8</option>
-        <option  value="9">9</option>
-        <option  value="10">10</option>
-        <option  value="11">11</option>
-        <option  value="12">12</option>
-        <option  value="13">13</option>
-        <option  value="14">14</option>
-    </select>
-    <label class="label-name" for="booking_number_input"
-        >NUMBER OF NIGHTS</label>
+    <div class="select">
+            <select  id="booking_number_input" name="seats" required>
+            <option  value="1" selected>1</option>
+            <option  value="2">2</option>
+            <option  value="3">3</option>
+            <option  value="4">4</option>
+            <option  value="5">5</option>
+            <option  value="6">6</option>
+            <option  value="7">7</option>
+            <option  value="8">8</option>
+            <option  value="9">9</option>
+            <option  value="10">10</option>
+            <option  value="11">11</option>
+            <option  value="12">12</option>
+            <option  value="13">13</option>
+            <option  value="14">14</option>
+        </select>
+    </div>
+    <label  for="booking_number_input"
+        ><span class="label-name">NUMBER OF NIGHTS</spn ></label>
     <p class="total-price">1000</p>
     <hr />
-    <button type="submit" class="reserv">Make a reservation</button>
+    <button type="submit" class="btn button-black">Make a reservation</button>
     </form>
 </div>
 </div>
