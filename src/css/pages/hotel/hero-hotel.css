@@ -70,6 +70,9 @@
     color: #121212;
 
 }
+.hero2-text-a {
+    font-style: italic;
+}
 
 @media screen and (min-width:375px) {
     .hero2 {
@@ -169,11 +172,5 @@
         width: calc((100%-32px)*3);
         
     }
-
-    .hero2-text-a {
-        font-style: italic;
-    }
-
-
     
 }
