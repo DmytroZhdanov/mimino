@@ -47,6 +47,14 @@
 
 .hero2-button {
     padding: 8px 18px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,28;
+    
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
 }
 
 .hero2-text {
@@ -91,6 +99,7 @@
 
     .hero2-button {
         padding: 8px 24px;
+        line-height: 1,71;
     }
 
     .hero2-buttons {
@@ -120,7 +129,8 @@
         padding-bottom: 48px;
         padding-top: 30px;
         padding-left: 32px;
-        height: 770px;
+        height: 722px;
+        position: relative;
     }
 
     .hero2-title {
@@ -130,34 +140,37 @@
     }
 
     .hero2-good {
-        position: relative;
-        top:30%;
+        position: absolute;
+        top:204px;
     }
 
     .hero2-buttons {
+        margin: 0;
     }
 
     .hero2-button {
         padding:9px 24px;
+        font-size: 18px;
+        line-height: 1,33;
     }
     .hero-hotel-slider-tab {
         display: none;
     }
     .hero-hotel-slider-desc {
         display: flex;
-        position: relative;
+        position: absolute;
 
         gap:32px;
-        bottom: 25%;
-        left: 50%;
+        bottom: 82px;
+        left: 737px;
         height: auto;
         width: calc((100%-32px)*3);
         
     }
 
     .hero2-text {
-        position: relative;
-        bottom:25%;
+        position: absolute;
+        bottom:48px;
     }
     
 }
