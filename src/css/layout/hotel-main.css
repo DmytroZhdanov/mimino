@@ -52,6 +52,7 @@
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: -0.02em;
+
   display: flex;
   justify-content: center;
   padding: 0px;
@@ -104,6 +105,7 @@
   .img-three {
     height: calc((100% / 3) * 2);
   }
+  
   .hotel-main-item-last {
     display: flex;
     flex-direction: column;
@@ -111,12 +113,14 @@
     gap: 16px;
     width: 176px;
   }
+
   .img-four {
     height: 100%;
   }
   .hotel-main-btn {
     margin-top: 40px;
     padding-bottom: 44px;
+
   }
   .book-btn {
     padding: 8px 24px;
@@ -128,6 +132,7 @@
   }
 }
 @media screen and (min-width: 1440px) {
+
   .hotel-main-container {
     position: relative;
     max-width: 1376px;

@@ -1,3 +1,3 @@
-import './js/modal-table';
-import './js/modal-room';
-import './js/slick';
+import './js/modal-table-main';
+import './js/modal-room-main';
+import './js/slick-main-restaurant';
