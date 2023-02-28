@@ -128,7 +128,7 @@
     justify-content: start;
   }
 }
-
+/* desctop */
 @media screen and (min-width: 1440px) {
   .triple-foto-first {
     max-width: 539px;
