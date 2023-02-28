@@ -7,7 +7,7 @@
     transform: translate(-50%, -50%);
     padding: 14px 24px;
     width: 320px;
-    min-height: 90%;
+    height: 90%;
     border-radius: 2px;
     z-index: 1000;
 }
@@ -33,24 +33,25 @@
 	vertical-align: top;
 	width: 0.7em;
     color: #fff;
-    margin-left: 246px;
+    margin-left: 268px;
     margin-top: 3px;
     pointer-events: none;
 }
-
-@media screen and (min-width:375) {
+/* book a table */
+@media screen and (min-width:375px) {
     .modal-table{
         width: 335px;
+        height: 528px;}
+    .select::after{
+        margin-left: 268px;
     }
-    .modal {
-
     }
-}
 
 @media screen and (min-width:768px){
     .modal-table{
         width: 628px;
-        min-height: 441px;
+        height: 476px;
+        margin-top: 60px;
     }
     .modal-container-table{
         display: flex;
