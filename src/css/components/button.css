@@ -3,11 +3,11 @@
 .btn {
     display: block;
     cursor: pointer;
-    font-family: 'DM Sans';
+    font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;  
+    line-height: 1.29;  
     letter-spacing: -0.02em;
     text-transform: uppercase;
     border-radius: 32px;
@@ -16,15 +16,15 @@
 
 .button-black {
 
-    border: 0.8px solid #F7F7F7;
-    color: #F7F7F7;
+    border: 0.8px solid var(--light-text-color-primary);
+    color: var(--light-text-color-primary);
 
 }
 
 .button-black:hover,
 .button-black:focus {
     background: #FFFFFF;
-    color: #121212;
+    color: var( --dark-theme-color-primary);
 }
 
 
@@ -33,25 +33,25 @@
 
 
 .button-white {
-    border: 0.8px solid #121212;
+    border: 0.8px solid var( --dark-theme-color-primary);
     color: rgba(18, 18, 18, 1);
 }
 
 .button-white:hover,
 .button-white:focus {
-    background: #121212;
-    color: #F7F7F7;
+    background: var(--dark-theme-color-primary);
+    color: var(--light-text-color-primary);
 }
 
 @media screen and (min-width:768px) {
     .btn {
-        line-height: 24px;
+        line-height: 1.71;
     }
     
     .button-black:hover,
     .button-black:focus {
         background: #FFFFFF;
-        color: #121212;
+        color: var(--dark-theme-color-primary);
     }
 
     /* Button styles Light */
@@ -60,7 +60,7 @@
     
     .button-white:hover,
     .button-white:focus {
-        background: #121212;
-        color: #F7F7F7;
+        background: var( --dark-theme-color-primary);
+        color: var(--light-text-color-primary);
     }
 }
