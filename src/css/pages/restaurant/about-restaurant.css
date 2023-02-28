@@ -83,7 +83,7 @@ section.about-restaurant{
     .about-restaurant-list-text {
         display: flex;
         justify-content: space-between;
-        gap: 32px;
+        column-gap: 32px;
     }
 
     p.text-margin {
@@ -93,6 +93,9 @@ section.about-restaurant{
 
     @media screen and (min-width: 1440px) {
 
+        .container {
+            position: relative;
+        }
 
     section.about-restaurant {
         padding-top: 100px;
@@ -103,22 +106,25 @@ section.about-restaurant{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-end;
-
-        position: relative;
+        margin-bottom: 0;
     }
 
     .about-restaurant-list {
         flex-direction: row;
+        column-gap: 32px;
     }
 
     .about-restaurant-text {
-        max-width: 344px;
+        max-width: 453px;
     }
 
     .about-restaurant-list-text {
-    gap: 33px;
     position: absolute;
-    bottom: 10.7%;
-    right: 9%;
+    bottom: 5.9%;
+    right: 2.3%;
+    }
+
+    p.text-margin {
+    max-width: 334px;
     }
     }
