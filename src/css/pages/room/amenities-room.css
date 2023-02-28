@@ -78,6 +78,7 @@
 
   .mobile-room-button {
     position: absolute;
+    z-index: 2;
     top: 300px;
     left: 0;
   }
