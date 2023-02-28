@@ -10,9 +10,10 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/mimino/assets/styles-fac82e35.js"></script>
-    <script type="module" crossorigin src="/mimino/assets/modal-prices-d937e924.js"></script>
-    <script type="module" crossorigin src="/mimino/assets/modal-room-43be12cc.js"></script>
+    <script type="module" crossorigin src="/mimino/assets/hotel-9228aa47.js"></script>
+    <link rel="modulepreload" crossorigin href="/mimino/assets/styles-fac82e35.js">
+    <link rel="modulepreload" crossorigin href="/mimino/assets/modal-prices-d937e924.js">
+    <link rel="modulepreload" crossorigin href="/mimino/assets/modal-room-43be12cc.js">
     <link rel="stylesheet" href="/mimino/assets/styles-96d1aae8.css">
   </head>
   <body>
@@ -121,7 +122,7 @@
           <li class="hero2-buttons-item"><button class="hero2-button btn button-white" data-modal-prices-open-a>View prices</button></li>
       </ul>
     </div>
-    <div class="hero-hotel-slider">
+    <div class="hero-hotel-slider multiple-items">
       <picture>
         <source
           srcset="/mimino/assets/hotel-hero-slider-1-desc-1x-436-0c9f65ac.webp 1x, /mimino/assets/hotel-hero-slider-1-desc-2x-872-c9611bec.webp 2x, /mimino/assets/hotel-hero-slider-1-desc-3x-1308-d253500c.webp 3x"
@@ -296,7 +297,7 @@
     </p>
     <ul>
       <li><button type="button">More details</button></li>
-      <li><button type="button">View prices</button></li>
+      <li><button type="button" data-modal-prices-open-b>View prices</button></li>
     </ul>
   </div>
 </section>
@@ -386,7 +387,7 @@
   </p>
   <ul>
     <li><button type="button">More details</button></li>
-    <li><button type="button">View prices</button></li>
+    <li><button type="button" data-modal-prices-open-c>View prices</button></li>
   </ul>
 </section>
 
