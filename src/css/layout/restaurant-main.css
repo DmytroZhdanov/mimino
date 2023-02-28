@@ -13,8 +13,7 @@
 .slick-arrow {
   font-size: 0;
   width: 36px;
-  height: 36px;
-  
+  height: 36px; 
   opacity: 0.3;
   transition: opacity var(--transition-dur-and-func);
 }
