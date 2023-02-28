@@ -1,61 +1,68 @@
 <!-- Book a Table Modal window -->
 
 <div class="backdrop is-hidden" data-modal-table>
-    <div class="modal">
+    <div class="modal-table">
             <p class="modal-title">BOOK A <span class="text">TABLE</span></p>
     <button data-modal-table-close type="button" class="modal-close"><svg class="icon-clos" width="28" height="28">
-        <use href="./img/icons.svg#icon-closeblack"></use>
+        <use href="./img/icons.svg#icon-close"></use>
     </svg></button>
     <form class="modal-form" name="book-a-table">
-    <input
-        type="text"
-        class="modal-name"
-        placeholder=" YOUR NAME"
-        name="custom-name"
-        id="Name"
-        pattern = "[A-Za-z0-9]{2,}"
-        title ="Name coudn`t be less than 2 Latin characters"
-        required/>
-    <label class="label-name" for="Name">Who should book a table for?</label>
+    <div class="modal-container-table">
+        <div>
+            <input
+                type="text"
+                class="modal-name"
+                placeholder=" YOUR NAME"
+                name="custom-name"
+                id="Name"
+                pattern = "[A-Za-z0-9]{2,}"
+                title ="Name coudn`t be less than 2 Latin characters"
+                required/>
+            <label class="label-name" for="Name">Who should book a table for?</label>
+        </div>
+        <div class="select">
+            <select class="modal-name"
+                placeholder="NUMBER OF PEOPLE"
+                id="booking_number_input"
+                name="seats"
+                required>
+                <option class="option-style" value="NUMBER OF PEOPLE" >NUMBER OF PEOPLE</option>
+                <option class="option-style" value="1" >1</option>
+                <option class="option-style" value="2">2</option>
+                <option class="option-style" value="3">3</option>
+                <option class="option-style" value="4">4</option>
+                <option class="option-style" value="5">5</option>
+                <option class="option-style" value="6">6</option>
+                <option class="option-style" value="7">7</option>
+                <option class="option-style" value="8">8</option>
+                <option class="option-style" value="9">9</option>
+                <option class="option-style" value="10">10</option>
+            </select>
+        </div>
+        <div>
+            <input
+                type="tel"
+                class="modal-name"
+                placeholder="+38()"
+                name="custom-phone"
+                id="phone"
+                pattern="[0-9]{12,}"
+                title ="Phone coudn`t contain characters and be less than 12 digits"
+                required/>
+            <label class="label-name" for="phone">Phone number </label>
+        </div>
     <div class="select">
-        <select class="modal-name"
-            placeholder="NUMBER OF PEOPLE"
-            id="booking_number_input"
-            name="seats"
-            required>
-            <option class="option-style" value="1" selected>1</option>
-            <option class="option-style" value="2">2</option>
-            <option class="option-style" value="3">3</option>
-            <option class="option-style" value="4">4</option>
-            <option class="option-style" value="5">5</option>
-            <option class="option-style" value="6">6</option>
-            <option class="option-style" value="7">7</option>
-            <option class="option-style" value="8">8</option>
-            <option class="option-style" value="9">9</option>
-            <option class="option-style" value="10">10</option>
-        </select>
+            <input
+            name="trip-start"
+            placeholder="TODAY"
+            class="modal-name"
+            type="text"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+            id="date" />
+        <label class="label-name" for="data_booking_input">What date to book?</label></div>
     </div>
-    <input
-        type="tel"
-        class="modal-name"
-        placeholder="+38()"
-        name="custom-phone"
-        id="phone"
-        pattern="[0-9]{12,}"
-        title ="Phone coudn`t contain characters and be less than 12 digits"
-        required/>
-    <label class="label-name" for="phone">Phone number </label>
-<div class="select">
-        <input
-        name="trip-start"
-        placeholder="TODAY"
-        class="modal-name"
-        type="text"
-        onfocus="(this.type='date')"
-        id="date" />
-</div>
-    <label class="label-name" for="data_booking_input">What date to book?</label>
-    <button type="submit" class="btn button-black">Make a reservation</button>
+    <button type="submit" class="btn-modal button-black">Make a reservation</button>
     </form>
 </div>
 </div>
