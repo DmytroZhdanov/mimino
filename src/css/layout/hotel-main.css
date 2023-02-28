@@ -1,1 +1,186 @@
 /* Section Hotel's details Main page */
+.section-hotel-main {
+  background: var(--dark-theme-color-primary);
+  margin: 0 auto;
+}
+.hotel-main {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--light-text-color-primary);
+  margin-bottom: 33px;
+  padding-top: 32px;
+}
+.hotel-main-title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1;
+  margin-bottom: 32px;
+}
+.hotel-main-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+}
+.hotel-main-img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 27px;
+  margin: 0;
+}
+.hotel-main-item-first {
+  max-width: 335px;
+}
+.hotel-main-item-second {
+  display: flex;
+  height: 128px;
+  width: 335px;
+  column-gap: 20px;
+}
+.hotel-main-item-second img {
+  height: 100%;
+  width: auto;
+}
+.hotel-main-item-last {
+  display: none;
+}
+.hotel-main-btn {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  gap: 12px;
+  margin-top: 82px;
+  padding-bottom: 32px;
+}
+.book-btn {
+  background-color: transparent;
+  padding: 8px 18px;
+  min-width: 131px;
+  height: 34px;
+}
+.view-btn {
+  padding: 8px 18px;
+}
+@media screen and (min-width: 768px) {
+  .hotel-main {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 80px;
+    padding-top: 44px;
+  }
+  .hotel-main-title {
+    font-size: 68px;
+    margin-bottom: 0;
+  }
+  .hotel-main-img {
+    row-gap: 16px;
+    column-gap: 16px;
+    height: 433px;
+  }
+  .hotel-main-item-first {
+    order: 2;
+    max-width: 320px;
+  }
+  .hotel-main-item-first img {
+    width: 100%;
+  }
+  .hotel-main-item-second {
+    order: 1;
+    flex-direction: column;
+    height: auto;
+    width: 176px;
+    gap: 16px;
+  }
+
+  .img-three {
+    height: calc((100% / 3) * 2);
+  }
+  
+  .hotel-main-item-last {
+    display: flex;
+    flex-direction: column;
+    order: 3;
+    gap: 16px;
+    width: 176px;
+  }
+
+  .img-four {
+    height: 100%;
+  }
+  .hotel-main-btn {
+    margin-top: 40px;
+    padding-bottom: 44px;
+
+  }
+  .book-btn {
+    padding: 8px 24px;
+    min-width: 143px;
+    height: 40px;
+  }
+  .view-btn {
+    padding: 8px 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+
+  .hotel-main-container {
+    position: relative;
+    max-width: 1376px;
+  }
+  .hotel-main {
+    justify-content: flex-start;
+    width: 634px;
+    margin-right: 432px;
+  }
+  .hotel-main-img {
+    height: 608px;
+    row-gap: 32px;
+    column-gap: 32px;
+    padding-bottom: 60px;
+  }
+  .hotel-main-item-first {
+    max-width: 420px;
+  }
+  .hotel-main-item-second {
+    width: 320px;
+    gap: 32px;
+  }
+  .img-three {
+    height: auto;
+  }
+  .hotel-main-item-last {
+    width: 320px;
+    padding-bottom: 60px;
+    gap: 32px;
+  }
+  .img-four {
+    height: auto;
+  }
+  .hotel-main-btn {
+    position: absolute;
+    top: 44px;
+    left: 1068px;
+    z-index: 1;
+    margin-top: 0;
+    gap: 14px;
+    width: 342px;
+  }
+  .book-btn {
+    padding: 9px 24px;
+    min-width: 170px;
+    height: 42px;
+  }
+  .view-btn {
+    padding: 9px 24px;
+  }
+}
