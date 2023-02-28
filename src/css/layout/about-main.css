@@ -1,2 +1,195 @@
 /* Section About Main page */
 
+/* -------------------------Basic-------------------------- */
+.about-main-position{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+@media screen and (min-width: 1440px){
+    .section-2-part-1{
+        display: flex;
+    }
+    .section-2-part-2{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+/*--------------------------Pictures ---------------------------*/
+
+.first-picture{
+    margin-top: 64px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (min-width: 768px){
+    .first-picture{
+        margin-right: 222px;
+    }
+}
+
+.second-picture{
+    display: flex;
+    justify-content: center;
+    margin-left: -50px;
+}
+@media screen and (min-width: 768px){
+    .second-picture{
+        
+    }
+}
+.third-picture{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (min-width: 768px){
+    .third-picture{
+        margin-left: 206px;
+    }
+}
+.fourth-picture{
+    display: flex;
+    justify-content: center;
+    margin-left: -70px;
+    margin-bottom: 64px;
+}
+@media screen and (min-width: 768px){
+    .fourth-picture{
+        margin-top: 40px;
+        margin-left: 32px;
+    }
+}
+@media screen and (min-width: 768px){
+    .fourth-picture-content-position{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+/* -----------------------reviews------------------------- */
+
+.review-background-1{
+    position: absolute;
+    margin-left: 125px;
+    margin-bottom: 300px;
+    background: #121212;
+    box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    width: 212px;
+    height: 61px;
+}
+.review-background-2{
+    position: absolute;
+    margin-top: 200px;
+    background: #121212;
+    box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    width: 212px;
+    height: 61px;
+}
+.review-picture{
+    position: relative;
+    top: 10px;
+    left: 14px;
+}
+.review-content{
+    position: relative;
+    bottom: 27px;
+    left: 67px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 7px;
+}
+.review-title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(14 / 14);
+    color: var(--light-text-color-primary);
+}
+.review-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133.02%;
+    color: #575757;
+}
+.review-rating{
+    color: var(--light-text-color-primary);
+}
+
+/* ---------------------------about-main content */
+
+.about-main-content-1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 335px;
+    margin-top: 32px;
+    margin-bottom: 64px;
+    gap: 18px;
+}
+@media screen and (min-width: 1440px){
+    .about-main-content-1{
+        width: 473px;
+        margin-right: 89px;
+    }
+}
+.about-main-content-2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 263px;
+    margin-top: 54px;
+    margin-bottom: 40px;
+    gap: 18px;
+}
+@media screen and (min-width: 768px){
+    .about-main-content-2{
+        margin-left: 32px;
+    }
+}
+.about-main-title{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #484848;
+}
+
+.about-main-text-1{
+    gap: 14px;
+}
+.about-main-text-1-paragraph{
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--dark-theme-color-primary);
+}
+
+.about-main-text-2{
+    font-weight: 500;
+    font-weight: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--dark-theme-color-primary);
+}
+
+@media screen and (min-width: 768px){
+    .fourth-picture-content-position{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+}
+
+
+
