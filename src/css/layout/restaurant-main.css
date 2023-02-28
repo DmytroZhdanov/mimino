@@ -6,8 +6,6 @@
 
 .main-restaurant-slider {
   width: 100vw;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .slick-arrow {
@@ -72,7 +70,5 @@
 @media screen and (min-width: 1440px) {
   .main-restaurant-slider {
     width: 1458px;
-    padding-right: 0px;
-    padding-left: 0;
   }
 }
