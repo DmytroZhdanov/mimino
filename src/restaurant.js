@@ -1,1 +1,1 @@
-import './js/modal-table';
+import './js/modal-table-restaurant';
