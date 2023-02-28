@@ -1,9 +1,9 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-prices-open-a]'),
-    openSecondModalBtn: document.querySelector('[data-modal-room-open-b]'),
-    openThirdModalBtn: document.querySelector('[data-modal-room-open-c]'),
-    openFourthModalBtn: document.querySelector('[data-modal-room-open-d]'),
+    openSecondModalBtn: document.querySelector('[data-modal-prices-open-b]'),
+    openThirdModalBtn: document.querySelector('[data-modal-prices-open-c]'),
+    openFourthModalBtn: document.querySelector('[data-modal-prices-open-d]'),
     closeModalBtn: document.querySelector('[data-modal-prices-close]'),
     modal: document.querySelector('[data-modal-prices]'),
   };
