@@ -6,56 +6,6 @@
 
 .main-restaurant-slider {
   width: 100vw;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-bottom: 32px;
-}
-
-.slick-arrow {
-  font-size: 0;
-  width: 36px;
-  height: 36px; 
-  opacity: 0.3;
-  transition: opacity var(--transition-dur-and-func);
-}
-
-.slick-arrow:hover,
-.slick-arrow:focus {
-  opacity: 1;
-}
-
-.slick-prev,
-.slick-next {
-  top: calc(100% + 33px);
-  background-image: url(../img/arrow.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 14px 7px;
-}
-
-.slick-prev::before,
-.slick-next::before {
-  content: ' ';
-}
-
-.slick-prev {
-  left: calc(50% - 48px);
-  transform: rotate(90deg);
-}
-
-.slick-next {
-  right: calc(50% - 48px);
-  transform: rotate(-90deg);
-}
-
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
-  background-image: url(../img/arrow.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 14px 7px;
 }
 
 /*======стиллизация, выравнивание текста и кнопок====================*/
@@ -124,6 +74,7 @@ padding: 8px 18px;
   color: var(--light-text-color-primary);
 }
 /*================================================стиллизация, выравнивание текста и кнопок====================*/
+
 /* =========================================================адаптив текст кнопки=============================== */
 @media screen and (min-width: 768px) {
   .restoraunt-main-title{
@@ -157,10 +108,7 @@ padding: 8px 18px;
   
   }
 }
-
 /* ===============================================адаптив текст кнопки======================================= */
-
-
 
 /* ========================================адаптив слайдер=========================== */
 @media screen and (min-width: 375px) {
@@ -178,8 +126,6 @@ padding: 8px 18px;
 @media screen and (min-width: 1440px) {
   .main-restaurant-slider {
     width: 1458px;
-    padding-right: 0px;
-    padding-left: 0;
   }
 }
 /* ===========================адаптив слайдер========================================= */
