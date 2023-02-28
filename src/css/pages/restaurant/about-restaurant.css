@@ -1,26 +1,124 @@
 /* Section About kitchen Restaurant page */
 
+section.about-restaurant {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: var(--light-background-color-primary);
+}
+
+.pic-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin-bottom: 32px;
+}
+
+.about-restaurant-list {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+}
+
+.about-restaurant-text {
+    font-family:'DMSans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: start;
+}
+
+p.text-margin {
+    margin-bottom: 24px;
+}
+
+.italic {
+    font-family: 'DMSans', sans-serif;
+    src: url(/src/fonts/DMSans-Italic.woff), url(/src/fonts/DMSans-Italic.woff2);
+    font-weight: 400;
+    font-style: italic;
+}
+
 @media screen and (min-width: 375px) {
 
-    .rest-about-cooker {
-        margin-bottom: 20px;
+/* .container {
+        width: 375px;
         margin-left: auto;
         margin-right: auto;
-    }
+        } */
 
-    .about-restaurant-text {
-        font-family: var(--primary-font-family);
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.29;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
-        color: #000000;
+section.about-restaurant{
+    padding-bottom: 64px;
+    background-color: var(--light-background-color-primary);
+}
+
+}
+
+@media screen and (min-width: 768px) {
+
+    section.about-restaurant {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    } 
+
+    .pic-wrapper {
+    flex-direction: row-reverse;
+    column-gap: 32px;
+    row-gap: 40px;
     }
 
     .about-restaurant-list {
-        display: flex;
-        gap: 20px;
+    flex-direction: column;
+    row-gap: 16px;
     }
 
+    .about-restaurant-text {
+    font-size: 18px;
+    line-height: 1.33;
+    }
+
+    .about-restaurant-list-text {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+    p.text-margin {
+        margin-bottom: 0px;
+    }
 }
+
+    @media screen and (min-width: 1440px) {
+
+
+    section.about-restaurant {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .pic-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        position: relative;
+    }
+
+    .about-restaurant-list {
+        flex-direction: row;
+    }
+
+    .about-restaurant-text {
+        max-width: 344px;
+    }
+
+    .about-restaurant-list-text {
+    gap: 33px;
+    position: absolute;
+    bottom: 10.7%;
+    right: 9%;
+    }
+    }
