@@ -1,1 +1,109 @@
 /* Footer */
+.container-footer{
+    padding-top: 32px;
+    padding-bottom: 64px;
+    display: flex;
+    align-items: baseline;    
+}
+.site-footer{
+    position: relative;
+}
+.site-footer::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.5px;
+    top: 93px;
+    color: transparent;
+    border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+    border-radius: 68px;  
+}
+.footer-nav-list{
+    display: none;
+}
+.footer-soc-list{
+    display: flex;
+    gap: 14px;
+}
+.footer-soc-link{
+    display: block;
+}
+.footer-soc-icon{
+    fill: transparent;
+    stroke: var(--dark-theme-color-primary);
+}
+.logo-footer{
+    font-family: var(--primary-font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.20;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--dark-theme-color-primary);
+    margin-right: auto;
+}
+.logo-footer-peice{
+display: block;
+font-weight: 400;
+font-size: 8px;
+line-height: 1.25;
+letter-spacing: 0.18em;
+margin-top: 3px;
+}
+.footer-soc-link,
+.logo-footer,
+.logo-footer-peice{
+    transition: transform var(--transition-dur-and-func)  
+}
+.footer-soc-link:is(:hover, :focus),
+.logo-footer:is(:hover, :focus),
+.logo-footer-peice:is(:hover, :focus){
+    transform: scale(1.05);
+}
+@media screen and (min-width: 768px )  {
+    .container-footer{
+        padding-bottom: 80px;
+    }
+    .footer-soc-list{
+        gap: 16px;
+    }
+    .footer-soc-icon{
+        width: 24px;
+        height: 24px;
+    }
+    .site-footer::after{
+        top: 108px;
+    }
+}
+@media screen and (min-width: 1440px ){
+    .container-footer{
+        padding-top: 44px;
+        padding-bottom: 160px;
+    }
+    .footer-nav-list{
+        display: flex;
+        gap: 32px;
+        margin-right: 370px;
+    }
+    .footer-nav-link{
+    display: block;
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.05em; 
+    text-transform: uppercase;
+    color: var(--dark-theme-color-primary);
+    transition: transform var(--transition-dur-and-func);
+    }
+    .footer-nav-link:is(:hover, :focus){
+        transform: scale(1.05);
+    }
+    .logo-footer{
+        text-align: center;
+    }
+    .site-footer::after{
+        top: 161px;
+    }
+} 
