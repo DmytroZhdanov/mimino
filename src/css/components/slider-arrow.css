@@ -44,3 +44,41 @@
   background-position: center;
   background-size: 14px 7px;
 }
+
+.hero-slider .slick-prev {
+  left: calc(80vw - 36px);
+}
+
+.hero-slider .slick-next {
+  left: 80vw;
+}
+
+@media screen and (min-width: 375px) {
+  .hero-slider .slick-prev {
+    left: 231px;
+  }
+
+  .hero-slider .slick-next {
+    left: 299px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-slider .slick-prev {
+    left: 572px;
+  }
+
+  .hero-slider .slick-next {
+    left: 640px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-slider .slick-prev {
+    left: 0;
+  }
+
+  .hero-slider .slick-next {
+    left: 68px;
+  }
+}
