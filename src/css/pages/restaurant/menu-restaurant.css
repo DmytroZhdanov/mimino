@@ -91,6 +91,10 @@
     left: -12px;
 }
 
+.remove-marg {
+    margin-bottom: 0;
+}
+
 .weight {
     display: block;
     font-weight: 400;
@@ -228,7 +232,6 @@
 .restaurant-menu-list-wrap {
     width: 515px;
     flex-basis: calc((100% - 74px) / 2);
-    margin-bottom: 56px;
 }
 
 .meal-header {
@@ -251,19 +254,19 @@
 }
 
 .greek-marg {
-    margin-right: 34px;
+    margin-right: 37px;
 }
 
 .pork-marg {
-    margin-right: 30px;
+    margin-right: 34px;
 }
 
 .fries-marg {
-    margin-right: 36px;
+    margin-right: 37px;
 }
 
 .meat-marg {
-    margin-right: 44px;
+    margin-right: 47px;
 }
 .drinks {
     margin-top: 28px;
