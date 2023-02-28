@@ -103,10 +103,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .room-double-fotos {
-    /*display: inline-flex;*/
-  }
-
   .room-double-foto-box {
     flex-direction: column;
   }
@@ -127,6 +123,10 @@
   .double-foto-third {
     width: 341px;
     height: 175px;
+  }
+
+  .room-double-btn-list {
+    justify-content: end;
   }
 }
 
