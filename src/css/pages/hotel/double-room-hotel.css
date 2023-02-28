@@ -109,13 +109,13 @@
     max-width: 341px;
   }
 
-  .room-double-btn-list {
+  /*.room-double-btn-list {
     display: flex;
   }
 
   .room-foto-box {
     display: block;
-  }
+  }*/
 }
 
 @media screen and (min-width: 1440px) {
