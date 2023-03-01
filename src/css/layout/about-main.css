@@ -12,6 +12,13 @@
     align-items: center;    
 }
 
+.section-2-part-1{
+    position: relative;
+}
+.section-2-part-2{
+    position: relative;
+}
+
 
 @media screen and (min-width: 1440px){
     .section-2-part-1{
@@ -44,9 +51,19 @@
 }
 @media screen and (min-width: 768px){
     .second-picture{
-        
+        position: absolute;
+        z-index: 50;
+        top: 22%;
+        left: 45%;
     }
 }
+@media screen and (min-width: 1440px){
+    .second-picture{
+        left: 25%;
+        top: 37%;
+    }
+}
+
 .third-picture{
     display: flex;
     justify-content: center;
@@ -65,7 +82,7 @@
 @media screen and (min-width: 768px){
     .fourth-picture{
         margin-top: 40px;
-        margin-left: 32px;
+        margin-left: -70px;
     }
 }
 @media screen and (min-width: 768px){
@@ -79,22 +96,48 @@
 
 .review-background-1{
     position: absolute;
-    margin-left: 125px;
-    margin-bottom: 300px;
+    z-index: 100;
+    top: 45%;
+    left: 37%;
     background: #121212;
     box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     width: 212px;
     height: 61px;
 }
+@media screen and (min-width: 768px){
+    .review-background-1{
+        top: 18%;
+        left: 40%;
+    }
+}
+@media screen and (min-width: 1440px){
+    .review-background-1{
+        left: 25%;
+        top: 30%;
+    }
+}
 .review-background-2{
     position: absolute;
-    margin-top: 200px;
+    z-index: 2;
+    top: 30%;
     background: #121212;
     box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     width: 212px;
     height: 61px;
+}
+@media screen and (min-width: 768px){
+    .review-background-2{
+        left: 19%;
+        top: 26%;
+    }
+}
+@media screen and (min-width: 1440px){
+    .review-background-2{
+        top: 46%;
+        left: 56%;
+    }
 }
 .review-picture{
     position: relative;
@@ -139,8 +182,9 @@
 }
 @media screen and (min-width: 1440px){
     .about-main-content-1{
-        width: 473px;
+        width: 472px;
         margin-right: 89px;
+        margin-top: 169px;
     }
 }
 .about-main-content-2{
