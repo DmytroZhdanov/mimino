@@ -3,4 +3,5 @@ $('.multiple-items-restaurant').slick({
   slidesToShow: 2,
   slidesToScroll: 1,
   arrows: true,
+  autoplay: true,
 });
