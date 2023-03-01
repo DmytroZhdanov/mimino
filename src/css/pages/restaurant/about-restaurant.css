@@ -78,11 +78,11 @@ p.text-margin {
 
     @media screen and (min-width: 1440px) {
 
-    .tablet-cont {
+    .section-about-restaurant {
     position: relative;
     }
 
-    section.about-restaurant {
+    .section-about-restaurant {
     padding-top: 100px;
     padding-bottom: 100px;
     }
@@ -105,7 +105,7 @@ p.text-margin {
 
     .about-restaurant-list-text {
     position: absolute;
-    bottom: 11.5%;
+    bottom: 15%;
     right: 3%;
     }
 
