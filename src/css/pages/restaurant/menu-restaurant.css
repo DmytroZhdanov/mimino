@@ -2,15 +2,9 @@
 
 /* --------------MOBILE------------ */
 
-
-/* @media screen and (min-width: 375px) { */
-
-.section {
+.restaurant-menu-section {
     padding-top: 40px;
     padding-bottom: 64px;
-} 
-
-.restaurant-menu-section {
     background-color: #121212;
 }
 
@@ -62,7 +56,6 @@
     border-color: rgba(255, 255, 255, 0.5);
     padding: 14px 0;
 }
-
 
 .menu-item {
     font-family: 'DMSans', sans-serif;
@@ -142,20 +135,18 @@
 }
 
 
-/* } */
-
 /* -------- TABLET -------- */
 
 
 @media screen and (min-width:768px) {
 
-.tablet-cont {    
-        width: 744px;
-        padding-left: 127px;
-        padding-right: 127px;
+.tablet-cont { 
+    width: 515px;   
+    margin-left: auto;
+    margin-right: auto;
     }
 
-.section {
+.restaurant-menu-section {
     padding-top: 80px;
     padding-bottom: 80px;
 } 
@@ -170,14 +161,17 @@
     margin-bottom: 18px;
 }
 
-/* .restaurant-menu {
-    margin-bottom: 38px;
-}
- */
-
 .menu-item {
     font-size: 18px;
     line-height: 1.33;  
+}
+
+.meat-marg {
+    margin-right: 47px;
+}
+
+.pork-marg {
+    margin-right: 34px;
 }
 
 .weight {
@@ -204,18 +198,19 @@
 }
 
 
-
 /* _________DESKTOP______________ */
 
 
 @media screen and (min-width: 1440px) {
 
-.container {
-            width: 1416px;
-        }
-/* .section {
-    padding: 100px 168px;
-} */
+.tablet-cont {
+    width: 1104px;
+    } 
+
+.restaurant-menu-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 .restaurant-menu-header {
     margin-bottom: 100px;
@@ -225,9 +220,7 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 74px;
-
 }
-
 
 .restaurant-menu-list-wrap {
     width: 515px;
