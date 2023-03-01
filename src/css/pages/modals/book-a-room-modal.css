@@ -14,3 +14,14 @@
 .margin{
     margin-bottom: 32px;
 }
+
+
+@media screen and (min-width:375px){
+    .modal-price{
+        width: 335px;
+        height: 414px;
+    }
+    .modal-close{
+        margin-left: 272px;
+    }
+}

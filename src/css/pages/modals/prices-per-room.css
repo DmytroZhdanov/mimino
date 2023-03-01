@@ -13,7 +13,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 14px 24px;
-    width: 319px;
+    width: 320px;
     height: 90%;
     border-radius: 2px;
     z-index: 999;
@@ -44,9 +44,10 @@
     stroke: #ffff;
 }
 .modal-close{
-    position: relative;
+    position: absolute;
     width: 28px;
     height: 28px;
+    margin-left: 260px;
     display: flex;
     border:none;
     outline: none;
@@ -126,7 +127,7 @@
     font-style: italic;
 }
 .modal-form{
-    margin-top: 40px;
+    margin-top: 67px;
 }
 .date{
     margin-top: 16px;
@@ -135,8 +136,9 @@
 @media screen and (min-width:376px){
     .modal{
         height: 636px;
+        width: 335px;
     }
-    
+
 }
 @media screen and (min-width:768px){
     .modal{
@@ -149,7 +151,9 @@
         display: flex;
         flex-wrap: wrap;
     }
-
+.modal-title{
+    font-size: 38px;
+}
     .modal-container div {
         width: 287px;
     }
@@ -174,16 +178,13 @@
 
 
 /*price*/
-@media screen and (min-width:376px){
-    .modal-price{
-        width: 335px;
-        height: 414px;
-    }
-}
+
+
 @media screen and (min-width:768px){
     .modal-price{
         width: 628px;
         height: 400px;
+        margin-top: 50px;
     }
     .modal-container-price{
         max-width: 580px;
@@ -195,6 +196,7 @@
     .modal-name{
         width: 266px;
     }
-    .modal-price{  
-    margin-top: 50px;}
+    .modal-close{
+        margin-left: 552px;
+    }
 }

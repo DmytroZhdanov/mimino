@@ -43,8 +43,7 @@
         width: 335px;
         height: 528px;}
     .select::after{
-        margin-left: 268px;
-    }
+        margin-left: 268px;}
     }
 
 @media screen and (min-width:768px){
