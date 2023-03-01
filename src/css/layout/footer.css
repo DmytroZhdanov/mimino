@@ -58,7 +58,7 @@ margin-top: 3px;
 .footer-soc-link:is(:hover, :focus),
 .logo-footer:is(:hover, :focus),
 .logo-footer-peice:is(:hover, :focus){
-    transform: scale(1.05);
+    transform: scale(1.10);
 }
 @media screen and (min-width: 768px )  {
     .container-footer{
@@ -98,7 +98,7 @@ margin-top: 3px;
     transition: transform var(--transition-dur-and-func);
     }
     .footer-nav-link:is(:hover, :focus){
-        transform: scale(1.05);
+        transform: scale(1.10);
     }
     .logo-footer{
         text-align: center;
