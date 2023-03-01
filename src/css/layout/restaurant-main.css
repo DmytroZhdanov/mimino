@@ -124,19 +124,20 @@ padding: 8px 18px;
 /* ========================================адаптив слайдер=========================== */
 @media screen and (min-width: 375px) {
   .main-restaurant-slider {
-    width: 375px;
+    /* width: 375px; */
+    width: 355px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .main-restaurant-slider {
-    width: 704px;
+    width: 736px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .main-restaurant-slider {
-    width: 1458px;
+    width: 1490px;
   }
 }
 /* ===========================адаптив слайдер========================================= */
