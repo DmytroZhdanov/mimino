@@ -26,7 +26,7 @@
 
 .room-triple-foto-box {
   display: flex;
-  max-width: 335px;
+  width: 335px;
   height: 149px;
   column-gap: 19px;
 }
@@ -128,17 +128,42 @@
     justify-content: start;
   }
 }
+
+.btn-triple-price {
+  line-height: normal;
+}
 /* desctop */
 @media screen and (min-width: 1440px) {
+  .room-triple-foto-box {
+    position: absolute;
+    /*top: 0;*/
+
+    justify-content: space-between;
+    flex-direction: row;
+    width: 95%;
+    height: 100%;
+  }
+
   .triple-foto-first {
-    max-width: 539px;
+    width: 539px;
+    margin-right: 0;
   }
 
   .triple-foto-second {
-    max-width: 387px;
+    width: 387px;
+    position: absolute;
+    right: 0;
+    top: 151px;
+    height: 510px;
+    margin-right: 0;
+    margin-bottom: 0;
+    order: 2;
   }
 
   .triple-foto-third {
-    max-width: 386px;
+    position: absolute;
+    top: 196px;
+    width: 386px;
+    height: 395%;
   }
 }
