@@ -5,10 +5,10 @@
 
 /* @media screen and (min-width: 375px) { */
 
-.section {
+/* .section {
     padding-top: 40px;
     padding-bottom: 64px;
-} 
+}  НЕ МОЖНА ТАК РОБИТИ!!! НО-НО-НО !!!*/
 
 .restaurant-menu-section {
     background-color: #121212;
@@ -155,10 +155,10 @@
         padding-right: 127px;
     }
 
-.section {
+/* .section {
     padding-top: 80px;
     padding-bottom: 80px;
-} 
+} НЕ МОЖНА ТАК РОБИТИ!!! НО-НО-НО !!! */
 
 .restaurant-menu-header {
     margin-bottom: 64px;
@@ -210,9 +210,9 @@
 
 @media screen and (min-width: 1440px) {
 
-.container {
+/* .container {
             width: 1416px;
-        }
+        } І ТУТ ТАК ТЕЖ НЕ МОЖНА!!! АЙ-АЙ-АЙ!!! */
 /* .section {
     padding: 100px 168px;
 } */
