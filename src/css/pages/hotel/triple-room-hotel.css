@@ -4,16 +4,16 @@
 }
 
 .triple-foto-first {
-  max-width: 335px;
+  width: 335px;
 }
 
 .triple-foto-second {
-  max-width: 158px;
+  width: 158px;
   height: 100%;
 }
 
 .triple-foto-third {
-  max-width: 158px;
+  width: 158px;
   height: 100%;
 }
 .room-triple-fotos {
@@ -26,7 +26,7 @@
 
 .room-triple-foto-box {
   display: flex;
-  max-width: 335px;
+  width: 335px;
   height: 149px;
   column-gap: 19px;
 }
@@ -70,56 +70,100 @@
 
 .room-triple-btn-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
 }
 
-.room-triple-btn-list .item:not(:last-child) {
-  margin-right: 12px;
-}
-
-.room-triple-btn-list .btn-triple {
-  align-items: flex-start;
+.btn-triple-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 8px 18px;
-  gap: 10px;
-
-  width: 128px;
-  height: 34px;
-
-  border: 0.8px solid #121212;
   border-radius: 32px;
+  border: 0.8px solid var(--dark-theme-color-primary);
+}
+
+.triple-link-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--dark-theme-color-primary);
+  cursor: pointer;
+  border-radius: 32px;
+  border: 0.8px solid var(--dark-theme-color-primary);
 }
 
 @media screen and (min-width: 768px) {
+  .room-triple-foto-box {
+    flex-direction: column;
+  }
+
   .triple-foto-first {
-    max-width: 331px;
+    width: 331px;
+    margin-right: 32px;
   }
 
   .triple-foto-second {
-    max-width: 223px;
+    width: 223px;
+    height: 261px;
+    margin-bottom: 32px;
+    margin-right: 118px;
   }
 
   .triple-foto-third {
-    max-width: 341px;
+    width: 341px;
+    height: 175px;
   }
 
-  .room-double-btn-list {
-    display: flex;
-  }
-
-  .room-triple-foto-box {
-    display: block;
+  .room-triple-btn-list {
+    justify-content: start;
   }
 }
 
+.btn-triple-price {
+  line-height: normal;
+}
+/* desctop */
 @media screen and (min-width: 1440px) {
+  .room-triple-foto-box {
+    position: absolute;
+    /*top: 0;*/
+
+    justify-content: space-between;
+    flex-direction: row;
+    width: 95%;
+    height: 100%;
+  }
+
   .triple-foto-first {
-    max-width: 539px;
+    width: 539px;
+    margin-right: 0;
   }
 
   .triple-foto-second {
-    max-width: 387px;
+    width: 387px;
+    position: absolute;
+    right: 0;
+    top: 151px;
+    height: 510px;
+    margin-right: 0;
+    margin-bottom: 0;
+    order: 2;
   }
 
   .triple-foto-third {
-    max-width: 386px;
+    position: absolute;
+    top: 196px;
+    width: 386px;
+    height: 395%;
   }
 }
