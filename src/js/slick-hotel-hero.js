@@ -3,5 +3,8 @@ $('.multiple-items').slick({
   slidesToShow: 2,
   slidesToScroll: 1,
   arrows: true,
-  // centerPadding: "32px",
+  autoplay: true,
+  pauseOnHover: true,
+  pauseOnFocus: true,
+  touchThreshold: 10,
 });
