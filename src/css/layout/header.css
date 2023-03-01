@@ -87,7 +87,7 @@
 .logo-header-piece:is(:hover, :focus),
 .header-soc-link:is(:hover, :focus),                                                                                                                                                                   
 .header-nav-link:is(:hover, :focus){
-    transform: scale(1.05);
+    transform: scale(1.10);
 }
 @media screen and (min-width: 768px )  {
     .mobile-menu-icon{
@@ -119,14 +119,17 @@
 @media screen and (min-width: 1440px ) 
 {
     /* ===============================раскоментить для картинки герой======================================== */
-    /* .site-header{
+    .site-header{
+        width: 100%;
         position: absolute;
         background-color: transparent;
-    }
+        z-index: 5;
+        /* top: 0px;  */
+     }
     .light{
         position: static;
         background-color: #FFFFFF; 
-    } */
+    }
     /* ====================================================================================================== */
     .header-box{
         justify-content: flex-start;

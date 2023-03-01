@@ -88,13 +88,6 @@
   border-radius: 32px;
 }
 
-@media screen and (min-width: 375px) {
-  .container {
-    width: 375px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .triple-foto-first {
