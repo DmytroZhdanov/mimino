@@ -34,7 +34,7 @@
 .room-double-title {
   margin-bottom: 32px;
 
-  font-family: 'DM Sans';
+  font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -47,7 +47,7 @@
 }
 
 .roome-double-text {
-  font-family: 'DM Sans';
+  font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
