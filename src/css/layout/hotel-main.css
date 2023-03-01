@@ -10,6 +10,7 @@
   text-transform: uppercase;
   color: var(--light-text-color-primary);
   margin-bottom: 33px;
+  padding-top: 32px;
 }
 .hotel-main-title {
   font-weight: 500;
@@ -55,6 +56,7 @@
   justify-content: center;
   gap: 12px;
   margin-top: 82px;
+  padding-bottom: 32px;
 }
 .book-btn {
   background-color: transparent;
@@ -70,6 +72,7 @@
     padding-top: 44px;
     padding-bottom: 44px;
   }
+  
   .hotel-main {
     display: flex;
     gap: 32px;
@@ -77,6 +80,7 @@
     align-items: center;
     width: 100%;
     margin-bottom: 80px;
+    padding-top: 44px;
   }
   .hotel-main-title {
     font-size: 68px;
@@ -106,6 +110,7 @@
   .img-three {
     height: calc((100% / 3) * 2);
   }
+
   .hotel-main-item-last {
     display: flex;
     flex-direction: column;
@@ -120,6 +125,7 @@
     align-items: center;
     margin-top: 40px;
     gap: 14px;
+
   }
   .book-btn {
     padding: 8px 24px;
@@ -131,7 +137,6 @@
   }
 }
 @media screen and (min-width: 1440px) {
-
   .section {
     padding-bottom: 60px;
   }
@@ -174,6 +179,7 @@
     position: absolute;
     top: 4px;
     left: 1028px;
+
     z-index: 1;
     margin-top: 0;
     gap: 14px;

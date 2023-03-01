@@ -23,11 +23,13 @@
     />
     <!-- styles -->
     <link rel="stylesheet" href="./css/styles.css" />
-    
   </head>
 
   <body>
-    <load src="./partials/main/header.html" />
+    <header class="site-header">
+      <load src="./partials/main/header.html" />
+      <load src="./partials/mobile-menu/mobile-menu.html" />
+    </header>
     <main>
       <load src="./partials/main/hero-main.html" />
       <load src="./partials/main/about-main.html" />
@@ -37,7 +39,7 @@
       <load src="./partials/main/location-main.html" />
     </main>
     <load src="./partials/main/footer.html" />
-    
+
     <load src="./partials/modals/book-a-room-modal.html" />
     <load src="./partials/modals/book-a-table-modal.html" />
 
@@ -56,5 +58,6 @@
     ></script>
 
     <script type="module" src="./main.js"></script>
+    <!-- <script src="./js/mobile-menu.js"></script> -->
   </body>
 </html>

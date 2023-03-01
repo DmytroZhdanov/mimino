@@ -1,34 +1,273 @@
 /* Header */
 
-.site-header{
-    background-color: var(--dark-theme-color-primary); 
-    border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+.site-header {
+  background-color: var(--dark-theme-color-primary);
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
 }
-.light{
-    background-color: #FFFFFF;
-    border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+.light {
+  background-color: #ffffff;
+  border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
 }
 .header-box {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 .mobile-menu-btn {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.mobile-menu-icon {
+  display: block;
+  stroke: var(--light-text-color-primary);
+}
+.logo-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.58;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--light-text-color-primary);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo-header-piece {
+  display: block;
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 1.33;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--light-text-color-secondary);
+}
+.header-soc-icon {
+  fill: transparent;
+  stroke: var(--light-text-color-primary);
+}
+.header-nav-link {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: var(--light-text-color-primary);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.dark {
+  color: var(--dark-theme-color-primary);
+  stroke: var(--dark-theme-color-primary);
+}
+.header-soc-list {
+  display: none;
+}
+.header-nav-list {
+  display: none;
+}
+.logo-header,
+.logo-header-piece,
+.header-soc-link,
+.header-nav-link {
+  transition: transform var(--transition-dur-and-func);
+}
+.logo-header:is(:hover, :focus),
+.logo-header-piece:is(:hover, :focus),
+.header-soc-link:is(:hover, :focus),
+.header-nav-link:is(:hover, :focus) {
+  transform: scale(1.05);
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .header-box {
+    justify-content: flex-end;
+  }
+  .header-soc-list {
+    display: flex;
+    gap: 14px;
+  }
+  .header-soc-link {
     display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .logo-header {
+    font-size: 20px;
+    line-height: 1.22;
+    margin-right: 177px;
+  }
+  .logo-header-piece {
+    font-size: 8px;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* ===============================раскоментить для картинки герой======================================== */
+  /* .site-header{
+        position: absolute;
+        background-color: transparent;
+    }
+    .light{
+        position: static;
+        background-color: #FFFFFF; 
+    } */
+  /* ====================================================================================================== */
+  .header-box {
+    justify-content: flex-start;
+  }
+  .header-nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+  .current {
+    position: relative;
+  }
+  .current::after {
+    content: ' ';
     position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: currentColor;
+  }
+  .logo-header {
+    margin-right: 509px;
+  }
+  .header-soc-list {
+    margin-left: 0;
+  }
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-menu-close-btn {
+    display: none;
+  }
+}
+/* =====================================к мобильному меню====================================================== */
+
+/* =====================================не забыть закоментировать=============================================== */
+
+@media screen and (max-width: 1439px) {
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
     left: 0;
-    top: 25px;
-    cursor: pointer;
+    background-color: var(--dark-theme-color-primary);
+    color: var(--light-text-color-primary);
+    z-index: 1000;
+
+    /*---ховаємо мобільне меню---*/
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: var(--transition-dur-and-func);
+  }
+
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .mobile-menu-container {
+    position: relative;
+    padding-left: 25px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    height: 100%;
+  }
+
+  .mobile-menu-close-btn {
     background-color: transparent;
     border: none;
     padding: 0;
-}
-.mobile-menu-icon{
-    display: block;
+    line-height: 0;
+  }
+
+  .mobile-menu-close-icon {
     stroke: var(--light-text-color-primary);
-}
-    .logo-header{
+    transition: var(--transition-dur-and-func);
+  }
+
+  .mobile-menu-close-icon:hover,
+  .mobile-menu-close-icon:focus {
+    fill: var(--light-text-color-secondary);
+  }
+
+  .mob-menu-header-wrapper {
+    position: absolute;
+    top: 0;
+    left: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 83px;
+  }
+
+  .mobile-menu-item {
+    display: block;
+    color: var(--light-text-color-primary);
+    text-align: center;
+    font-family: var(--primary-font-family);
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  .mobile-menu-item:last-child {
+    margin-bottom: 150px;
+  }
+
+  .mobile-menu-list {
+    padding-top: 128px;
+    text-align: center;
+  }
+
+  .mobile-menu-soc-list {
+    padding-top: 24px;
+    display: flex;
+    gap: 14px;
+  }
+
+  .mobile-menu-soc-link {
+    display: block;
+  }
+
+  .mobile-menu-soc-icon {
+    fill: transparent;
+    stroke: #ffffff;
+  }
+
+  .mob-logo-header-link {
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: var(--primary-font-family);
@@ -38,12 +277,13 @@
     line-height: 1.58;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color:var(--light-text-color-primary);
-    text-align: center; 
+    color: var(--light-text-color-primary);
+    text-align: center;
     margin-left: auto;
-    margin-right: auto;    
-}
-.logo-header-piece{
+    margin-right: auto;
+  }
+
+  .mob-logo-header-piece {
     display: block;
     margin-top: 3px;
     font-weight: 400;
@@ -51,122 +291,29 @@
     line-height: 1.33;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color:var(--light-text-color-secondary);  
-} 
-.header-soc-icon{
-    fill: transparent;
-    stroke:var(--light-text-color-primary) ;
+    color: var(--light-text-color-secondary);
+  }
 }
-.header-nav-link{
-    display: block;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    text-transform: uppercase;
-    color: var(--light-text-color-primary);
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.dark{
-    color: var(--dark-theme-color-primary);
-    stroke: var(--dark-theme-color-primary);
-    }
-.header-soc-list{
-    display: none;
-}
-.header-nav-list{
-    display: none;
-}
-.logo-header,
-.logo-header-piece,
-.header-soc-link,
-.header-nav-link{
-    transition: transform var(--transition-dur-and-func);
-}
-.logo-header:is(:hover, :focus),
-.logo-header-piece:is(:hover, :focus),
-.header-soc-link:is(:hover, :focus),                                                                                                                                                                   
-.header-nav-link:is(:hover, :focus){
-    transform: scale(1.05);
-}
-@media screen and (min-width: 768px )  {
-    .mobile-menu-icon{
-        width: 32px;
-        height: 32px;
-    }
-    .header-box {
-        justify-content: flex-end;   
-    }
-    .header-soc-list {
-        display: flex;
-        gap: 14px;
-    }
-    .header-soc-link{
-        display: block;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .logo-header{
-        font-size: 20px;
-        line-height: 1.22;
-        margin-right: 177px;
-    }
-    .logo-header-piece {
-        font-size: 8px;
-        line-height: 1.25;
-    } 
-}
-@media screen and (min-width: 1440px ) 
-{
-    /* ===============================раскоментить для картинки герой======================================== */
-    /* .site-header{
-        position: absolute;
-        background-color: transparent;
-    }
-    .light{
-        position: static;
-        background-color: #FFFFFF; 
-    } */
-    /* ====================================================================================================== */
-    .header-box{
-        justify-content: flex-start;
-    }
-    .header-nav-list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 32px;
-    } 
-    .current {
-        position: relative;
-    }
-    .current::after {
-        content: " ";
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background-color: currentColor;
-    }
-    .logo-header{
-        margin-right: 509px;
-    }
-    .header-soc-list{
-        margin-left: 0;
-    } 
-    .mobile-menu-btn{
-        display: none;
-    }
-}
-/* =====================================к мобильному меню====================================================== */
-.mobile-menu {
-    display: none;
-}
-.mobile-menu-close-btn {
-    display: none;
-}
-/* =====================================не забыть закоментировать=============================================== */
 
+@media screen and (min-width: 767px) and (max-width: 1439px) {
+  .mobile-menu-soc-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .mob-menu-header-wrapper {
+    gap: 246px;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu-close-btn {
+    display: none;
+  }
+}

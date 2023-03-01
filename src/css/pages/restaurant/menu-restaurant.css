@@ -1,1 +1,286 @@
 /* Section Menu Restaurant page */
+
+/* --------------MOBILE------------ */
+.restaurant-menu-section {
+    padding-top: 40px;
+    padding-bottom: 64px;
+    background-color: #121212;
+}
+
+.restaurant-menu-header {
+    margin-bottom: 36px;
+
+    font-family: 'DMSans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F7F7F7;
+    
+}
+
+.restaurant-menu{
+    margin-bottom: 38px;
+}
+
+.restaurant-menu-item:nth-child(1) {
+    padding-top: 0;
+}
+
+/* .restaurant-menu-list-wrap {
+    margin-bottom:56px;
+} */
+
+.meal-header {
+    font-family: 'DMSans', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #F7F7F7;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.restaurant-menu-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    border-bottom: 1px solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    padding: 14px 0;
+}
+
+.menu-item {
+    font-family: 'DMSans', sans-serif;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.08em;
+    color: #F7F7F7;
+    margin-left: 20px;
+    margin-bottom: 8px;
+    position: relative;   
+}
+
+.menu-item::before {
+    display: block;
+    content: " ";
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    border: 1.25px solid #F7F7F7;
+    background-color: #F7F7F7;
+    margin-top: 5px;
+    margin-right: 5px;
+
+    position: absolute;
+    top: 3px;
+    left: -12px;
+}
+
+.remove-marg {
+    margin-bottom: 0;
+}
+
+.weight {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #D8D7D7;
+}
+
+.drinks {
+    margin-top: 28px;
+}
+
+.menu-descrip {
+    width: 233px;
+    font-family: 'DMSans', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0.18em;
+    color: rgba(216, 215, 215, 0.5);
+}
+
+.rate {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #F7F7F7;
+}
+
+.rest-button {
+    font-family: 'DM Sans', sans-serif;
+    padding: 8px 24px;
+    margin-top: 96px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rest-button:hover,
+.rest-button:focus {
+    background: #FFFFFF;
+    color: #121212;
+}
+
+
+/* -------- TABLET -------- */
+
+
+@media screen and (min-width:768px) {
+
+.tablet-cont { 
+    width: 515px;   
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.restaurant-menu-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.restaurant-menu-header {
+    margin-bottom: 64px;
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+.salad-header {
+    margin-bottom: 18px;
+}
+
+.menu-item {
+    font-size: 18px;
+    line-height: 1.33;  
+}
+
+.meat-marg {
+    margin-right: 47px;
+}
+
+.pork-marg {
+    margin-right: 34px;
+}
+
+.weight {
+    font-size: 14px;
+    line-height: 1.29;
+}
+
+.menu-descrip {
+    width: 362px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.rate {
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.rest-button {
+    margin-top: 108px;
+    margin-left: 0;
+    padding: 8px 24px;
+}
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 1439px) {
+    .restaurant-menu {
+        width: 535px;
+    }
+} */
+/* _________DESKTOP______________ */
+
+
+@media screen and (min-width: 1440px) {
+.tablet-cont {
+    width: 1104px;
+    } 
+
+.restaurant-menu-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.restaurant-menu-header {
+    margin-bottom: 100px;
+}
+
+.restaurant-menu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 74px;
+}
+
+.restaurant-menu-list-wrap {
+    width: 515px;
+    flex-basis: calc((100% - 74px) / 2);
+}
+
+.meal-header {
+    font-size: 24px;
+    line-height: 1.0;
+}
+
+.menu-item::before {
+    width: 5px;
+    height: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+
+    top: 5px;
+    left: -12px;
+}
+
+.borscht {
+    max-width: 345px;
+}
+
+.greek-marg {
+    margin-right: 37px;
+}
+
+.pork-marg {
+    margin-right: 34px;
+}
+
+.fries-marg {
+    margin-right: 37px;
+}
+
+.meat-marg {
+    margin-right: 47px;
+}
+.drinks {
+    margin-top: 28px;
+}
+
+.restaurant-menu-descr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desserts-drinks-wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 515px;
+}
+
+.rest-button {
+    margin-top: 50px;
+    padding: 9px 24px;
+}
+}

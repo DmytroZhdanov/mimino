@@ -1,27 +1,142 @@
 /* Section Restaurant's details Main page */
 
-.restaurant-section-main {
+/* .restaurant-section-main {
   padding-bottom: 113px;
-}
+} */
 
 .main-restaurant-slider {
   width: 100vw;
 }
 
+/*======стиллизация, выравнивание текста и кнопок====================*/
+.restoraunt-main-box{
+  display: flex;
+  flex-direction: column; 
+}
+
+.restoraunt-main-title{
+font-family: var(--primary-font-family);
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 1.00;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: var(--dark-theme-color-primary);
+margin-bottom: 24px;
+}
+.restoraunt-main-txt{
+max-width: 221px ;
+font-family: var(--primary-font-family);
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: var(--dark-theme-color-primary);
+}
+.restoraunt-main-textbox{
+  margin-bottom: 32px;
+}
+
+.restoraunt-main-btnbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;  
+}
+.restoraunt-main-link{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 8px 18px;
+font-family: var(--primary-font-family);
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: var(--dark-theme-color-primary);
+cursor: pointer;
+border-radius: 32px;
+border: 0.8px solid var(--dark-theme-color-primary);
+}
+.restoraunt-main-btn{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 8px 18px;
+}
+.restoraunt-main-link:is(:hover, :focus){
+  background: var(--dark-theme-color-primary);
+  color: var(--light-text-color-primary);
+}
+/*================================================стиллизация, выравнивание текста и кнопок====================*/
+
+/* =========================================================адаптив текст кнопки=============================== */
+@media screen and (max-width: 767px) {
+  .restoraunt-main-btnbox{
+    margin-top: 82px;}
+}
+
+@media screen and (min-width: 768px) {
+  .restoraunt-main-title{
+    font-size: 68px;
+    margin-bottom: 0;
+  }
+  .restoraunt-main-textbox{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 80px;
+  }
+  .restoraunt-main-link{
+    line-height: 1.71;
+  }
+  .restoraunt-main-btnbox{
+    gap: 26px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .restoraunt-main-btnbox{
+    margin-top: 108px;}
+}
+
+@media screen and (min-width: 1440px) {
+  .restoraunt-main-box{
+    position: relative;
+  }
+  .restoraunt-main-textbox{
+    margin-bottom: 125px;
+  }
+
+  .restoraunt-main-btnbox{
+  position: absolute;
+  right: 0px;
+  
+  }
+}
+/* ===============================================адаптив текст кнопки======================================= */
+
+/* ========================================адаптив слайдер=========================== */
 @media screen and (min-width: 375px) {
   .main-restaurant-slider {
-    width: 375px;
+    width: 355px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .main-restaurant-slider {
-    width: 704px;
+    width: 736px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .main-restaurant-slider {
-    width: 1458px;
+    width: 1490px;
   }
 }
+/* ===========================адаптив слайдер========================================= */

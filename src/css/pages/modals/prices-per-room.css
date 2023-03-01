@@ -8,14 +8,15 @@
 }
 .modal-price{
     background-color: var(--dark-theme-color-primary);
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-60%, -50%);
+    transform: translate(-50%, -50%);
     padding: 14px 24px;
-    width: 335px;
-    min-height: 414px;
+    width: 319px;
+    height: 90%;
     border-radius: 2px;
+    z-index: 999;
 }
 .modal-container-price{
     width: 287px;
@@ -29,7 +30,8 @@
 
 /*загальні стилі*/
 .backdrop {
-    background-color: rgba(46, 47, 66, 0.4);
+    overflow: scroll;
+    background-color: rgba(31, 31, 41, 0.603);
     position: fixed;
     top: 0;
     width: 100%;
@@ -37,17 +39,7 @@
     transition:var(--transition-dur-and-func)
 }
 
-.modal {
-    background-color: var(--dark-theme-color-primary);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 14px 24px;
-    width: 320px;
-    min-height: 414px;
-    border-radius: 2px;
-}
+
 .icon-clos{
     stroke: #ffff;
 }
@@ -63,10 +55,8 @@
 }
 .modal-container{
     width: 287px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
 }
+
 
 .modal-title{
     position: absolute;
@@ -104,7 +94,13 @@
     letter-spacing: -0.02em;
 }
 .btn-modal{
-    width: 235px;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    font-family: 'DM Sans';
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height:1.28;
     height: 46px;
     margin: 40px auto;
     display: flex;
@@ -133,30 +129,43 @@
 .modal-form{
     margin-top: 40px;
 }
+.date{
+    margin-top: 16px;
+}
 
-/*tablet*/
+@media screen and (min-width:376px){
+    .modal{
+        height: 636px;
+    }
+    
+}
 @media screen and (min-width:768px){
     .modal{
         width: 628px;
         height: 572px;
     }
     .modal-container{
-        max-width: 580px;
+        width: 580px;
         height: 304px;
+        display: flex;
         flex-wrap: wrap;
-        gap: 40px;
-        column-gap: 32px;
     }
+
+    .modal-container div {
+        width: 287px;
+    }
+
     .modal-name{
         width: 266px;
     }
     .btn-modal {
-        margin-top: 80px;
         width: 444px;
         line-height: 24px;
         margin-left: 58px;
     }
-    
+    .select::after{
+        margin-left: 246px;
+    }
     .button-black:hover,
     .button-black:focus {
         background: #FFFFFF;
@@ -165,7 +174,13 @@
 }
 
 
-/*tablet*/
+/*price*/
+@media screen and (min-width:376px){
+    .modal-price{
+        width: 335px;
+        height: 414px;
+    }
+}
 @media screen and (min-width:768px){
     .modal-price{
         width: 628px;
@@ -181,4 +196,6 @@
     .modal-name{
         width: 266px;
     }
+    .modal-price{  
+    margin-top: 50px;}
 }
