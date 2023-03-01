@@ -68,7 +68,7 @@
   padding: 8px 18px;
 }
 @media screen and (min-width: 768px) {
-  .section {
+  .section-hotel-main {
     padding-top: 44px;
     padding-bottom: 44px;
   }
@@ -137,7 +137,7 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .section {
+  .section-hotel-main {
     padding-bottom: 60px;
   }
   .hotel-main-container {
