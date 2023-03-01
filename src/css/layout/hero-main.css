@@ -59,6 +59,14 @@
     font-style: italic;
 }
 
+@media screen and (max-width:374px) {
+    .hero-title {
+        /* top: 319px; */
+        /* top: calc(100% - 50px); */
+        top: 389px;
+    }
+}
+
 @media screen and (min-width:768px) {
  .hero{
     padding-top: 50px;
