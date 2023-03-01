@@ -26,7 +26,7 @@
 
 .room-double-foto-box {
   display: flex;
-  max-width: 335px;
+  width: 335px;
   height: 149px;
   column-gap: 19px;
 }
@@ -128,18 +128,47 @@
   .room-double-btn-list {
     justify-content: end;
   }
+
+  .btn-double-price {
+    line-height: normal;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  .room-double-fotos {
+    /*position: relative;*/
+  }
+
+  .room-double-foto-box {
+    position: relative;
+    /*top: 0;*/
+
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
   .double-foto-first {
-    max-width: 539px;
+    width: 539px;
+    margin-left: 0;
   }
 
   .double-foto-second {
-    max-width: 387px;
+    position: absolute;
+    right: 0;
+    top: 151px;
+    width: 387px;
+    height: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+    order: 2;
   }
 
   .double-foto-third {
-    max-width: 386px;
+    position: absolute;
+    top: 196px;
+    width: 386px;
+    height: 100%;
   }
 }
