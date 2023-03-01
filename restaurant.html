@@ -25,7 +25,7 @@
     
     <script type="module" crossorigin src="/mimino/assets/restaurant-55bcef97.js"></script>
     <link rel="modulepreload" crossorigin href="/mimino/assets/styles-fac82e35.js">
-    <link rel="stylesheet" href="/mimino/assets/styles-2d2d65ec.css">
+    <link rel="stylesheet" href="/mimino/assets/styles-bb032096.css">
   </head>
   <body>
     <header class="site-header light">
@@ -611,19 +611,20 @@
                     placeholder="+38()"
                     name="custom-phone"
                     id="phone"
-                    pattern="[0-9+]{13,}"
-                    title ="Phone coudn`t contain characters and be less than 12 digits"
+                    pattern="[\+]\d{3}\d{2}\d{3}\d{2}\d{2}"
+                    title ="Phone should  contain +  and coudn`t be less than 12 digits"
                     autocomplete="on" 
                     required/>
             <label class="label-name" for="phone">Phone number </label>
         </div>
 <div class="select">
-            <select class="modal-name"
+            <select required 
+                class="modal-name"
                 placeholder="NUMBER OF PEOPLE"
                 id="booking_number_input"
                 name="seats"
-                required>
-                <option class="option-style" value="NUMBER OF PEOPLE">NUMBER OF PEOPLE</option>
+                >
+                <option class="option-style" value="">NUMBER OF PEOPLE</option>
                 <option class="option-style" value="1" >1</option>
                 <option class="option-style" value="2">2</option>
                 <option class="option-style" value="3">3</option>

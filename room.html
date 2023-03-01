@@ -25,7 +25,7 @@
     
     <script type="module" crossorigin src="/mimino/assets/room-76d5fada.js"></script>
     <link rel="modulepreload" crossorigin href="/mimino/assets/styles-fac82e35.js">
-    <link rel="stylesheet" href="/mimino/assets/styles-2d2d65ec.css">
+    <link rel="stylesheet" href="/mimino/assets/styles-bb032096.css">
   </head>
   <body>
     <header class="site-header light">
@@ -559,8 +559,8 @@
         <h2 class="room-to-book">DOUBLE SUITE</h2>
 <div class="modal-container-price">
         <div class="select">
-                <select class="modal-name" id="booking_number_input" name="seats" required>
-                <option class="option-style"  value="1" selected>1</option>
+                <select required class="modal-name" id="booking_number_input" name="seats" >
+                <option class="option-style"  value="" >1</option>
                 <option class="option-style"  value="2">2</option>
                 <option class="option-style"  value="3">3</option>
                 <option class="option-style"  value="4">4</option>
@@ -602,16 +602,15 @@
         <div class="modal-container">
             <div class="margin">
                 <input
-                    type="text"
-                    class="modal-name"
-                    placeholder=" YOUR NAME"
-                    name="custom-name"
-                    id="Name"
-                    pattern = "[A-Za-z0-9]{2,}"
-                    title ="Name coudn`t be less than 2 Latin characters"
-                    autocomplete="on" 
-                    required
-                />
+                type="text"
+                class="modal-name"
+                placeholder=" YOUR NAME"
+                name="custom-name"
+                id="Name"
+                pattern = "[A-Za-z0-9]{2,}"
+                title ="Name coudn`t be less than 2 Latin characters"
+                autocomplete="on" 
+                required/>
                 <label for="Name"><span class="label-name">Who should book a table for?</spn ></label>
             </div>
             <div class="margin">
@@ -621,8 +620,8 @@
                     placeholder="+38()"
                     name="custom-phone"
                     id="phone"
-                    pattern="[0-9+]{13,}"
-                    title ="Phone coudn`t contain characters and be less than 12 digits"
+                    pattern="[\+]\d{3}\d{2}\d{3}\d{2}\d{2}"
+                    title ="Phone should  contain +  and coudn`t be less than 12 digits"
                     autocomplete="on" 
                     required/>
                 <label  for="phone"><span class="label-name">Phone number</span> </label>
@@ -658,8 +657,11 @@
             </div>
             <div>
                 <div class="select">
-                    <select class="modal-name" name="room-reservation" id="booking_room_input">
-                        <option class="option-style" value=" double-room" selected>DOUBLE SUITE</option>
+                    <select required 
+                    class="modal-name"
+                    name="room-reservation" 
+                    id="booking_room_input">
+                        <option class="option-style" value="double-suite" selected>DOUBLE SUITE</option>
                         <option class="option-style" value="triple-room">TRIPLE SUITE</option>
                         <option class="option-style" value="four-room">FOUR SEATER SUITE</option>
                     </select>
@@ -667,7 +669,7 @@
                 <label  for="booking_room_input"><span class="label-name">Number category</span></label>
             </div>
         </div>
-        <button type="submit" class="btn-modal button-black">Make a reservation</button>
+        <button type="submit" class="btn-modal button-black" id="reservation-button">Make a reservation</button>
     </form>
 </div>
 </div>
