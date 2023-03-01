@@ -1,3 +1,3 @@
-import './js/slick-hero-hotel';
+import './js/slick-hotel-hero';
 import './js/modal-room-hotel';
 import './js/modal-prices-hotel';

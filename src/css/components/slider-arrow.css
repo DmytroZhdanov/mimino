@@ -13,10 +13,19 @@
 
 .slick-prev,
 .slick-next {
-  background-image: url(../img/arrow-dark.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 14px 7px;
+}
+
+.arrow-dark .slick-prev,
+.arrow-dark .slick-next {
+  background-image: url(../img/arrow-dark.svg);
+}
+
+.arrow-light .slick-prev,
+.arrow-light .slick-next {
+  background-image: url(../img/arrow-light.svg);
 }
 
 .slick-prev::before,
@@ -32,11 +41,21 @@
   transform: rotate(-90deg);
 }
 
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
+.arrow-dark .slick-prev:hover,
+.arrow-dark .slick-prev:focus,
+.arrow-dark .slick-next:hover,
+.arrow-dark .slick-next:focus {
   background-image: url(../img/arrow-dark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 7px;
+}
+
+.arrow-light .slick-prev:hover,
+.arrow-light .slick-prev:focus,
+.arrow-light .slick-next:hover,
+.arrow-light .slick-next:focus {
+  background-image: url(../img/arrow-light.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 14px 7px;
@@ -64,6 +83,19 @@
   left: 80vw;
 }
 
+.restaurant-menu .slick-arrow {
+  top: calc(100% + 32px);
+}
+
+.restaurant-menu .slick-prev {
+  left: calc(50% - 36px);
+}
+
+.restaurant-menu .slick-next {
+  right: calc(50% - 36px);
+}
+
+
 @media screen and (min-width: 375px) {
   .hero-slider .slick-prev {
     left: 231px;
@@ -72,6 +104,12 @@
   .hero-slider .slick-next {
     left: 299px;
   }
+
+  .main-restaurant-slider .slick-arrow {
+  top: calc(100% + 32px);
+  width: 36px;
+  height: 36px;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -98,6 +136,14 @@
   .hero-slider .slick-next {
     left: 640px;
   }
+
+  .restaurant-menu .slick-prev {
+  left: calc(50% - 52px);
+}
+
+.restaurant-menu .slick-next {
+  right: calc(50% - 52px);
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
