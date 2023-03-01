@@ -1,6 +1,10 @@
 /* Section About Main page */
 
 /* -------------------------Basic-------------------------- */
+.section-2-about-main{
+    background-color: var(--light-background-color-primary);
+}
+
 .about-main-position{
     display: flex;
     flex-direction: column;
