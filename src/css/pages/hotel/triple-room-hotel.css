@@ -137,7 +137,7 @@
   .roome-triple-text {
     font-weight: 400;
     font-size: 18px;
-    line-height: calc(24 / 20);
+    line-height: calc(24 / 18);
   }
 
   .room-triple-btn-list {
