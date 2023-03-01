@@ -1,4 +1,4 @@
-$('.responsive').slick({
+$('.responsive-main-restaurant').slick({
   dots: false,
   arrows: true,
   infinite: true,
@@ -6,6 +6,9 @@ $('.responsive').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
   autoplay: true,
+  pauseOnHover: true,
+  pauseOnFocus: true,
+  touchThreshold: 10,
   responsive: [
     {
       breakpoint: 1440,

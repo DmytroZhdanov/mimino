@@ -34,11 +34,11 @@
 .room-double-title {
   margin-bottom: 32px;
 
-  font-family: 'DM Sans';
+  font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  line-height: 40px;
+  line-height: calc(40 / 32);
 
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -47,11 +47,11 @@
 }
 
 .roome-double-text {
-  font-family: 'DM Sans';
+  font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: calc(18 / 14);
   /* or 129% */
 
   letter-spacing: -0.02em;
@@ -60,11 +60,11 @@
   color: #121212;
 }
 
-.roome-double-text:not(:last-child) {
+.double-list-text .item:not(:last-child) {
   margin-bottom: 24px;
 }
 
-.roome-double-text:last-child {
+.double-list-text {
   margin-bottom: 28px;
 }
 
@@ -125,18 +125,46 @@
     height: 175px;
   }
 
+  .room-double-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(44 / 40);
+  }
+
+  .roome-double-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+  }
+
   .room-double-btn-list {
     justify-content: end;
+    gap: 14px;
   }
 
   .btn-double-price {
-    line-height: normal;
+    /*line-height: normal;*/
+    padding: 8px 24px;
+  }
+  .double-link-details {
+    padding: 8px 24px;
+    line-height: unset;
+  }
+
+  .double-list-text {
+    display: flex;
+  }
+
+  .left-text {
+    width: 369px;
+    margin-right: 32px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .room-double-fotos {
-    /*position: relative;*/
+    row-gap: 0;
+    margin-bottom: 50px;
   }
 
   .room-double-foto-box {
@@ -170,5 +198,34 @@
     top: 196px;
     width: 386px;
     height: 100%;
+  }
+
+  .double-link-details {
+    font-size: 18px;
+    padding: 9px 24px;
+  }
+
+  .btn-double-price {
+    /*line-height: normal;*/
+    padding: 9px 24px;
+    font-size: 18px;
+  }
+
+  .double-room-discription {
+    position: relative;
+  }
+
+  .room-double-btn-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .right-text {
+    width: 299px;
+  }
+
+  .room-double-title {
+    margin-bottom: 40px;
   }
 }

@@ -1,16 +1,9 @@
 /* Section Menu Restaurant page */
 
 /* --------------MOBILE------------ */
-
-
-/* @media screen and (min-width: 375px) { */
-
-/* .section {
+.restaurant-menu-section {
     padding-top: 40px;
     padding-bottom: 64px;
-}  НЕ МОЖНА ТАК РОБИТИ!!! НО-НО-НО !!!*/
-
-.restaurant-menu-section {
     background-color: #121212;
 }
 
@@ -36,9 +29,9 @@
     padding-top: 0;
 }
 
-.restaurant-menu-list-wrap {
+/* .restaurant-menu-list-wrap {
     margin-bottom:56px;
-}
+} */
 
 .meal-header {
     font-family: 'DMSans', sans-serif;
@@ -62,7 +55,6 @@
     border-color: rgba(255, 255, 255, 0.5);
     padding: 14px 0;
 }
-
 
 .menu-item {
     font-family: 'DMSans', sans-serif;
@@ -131,6 +123,7 @@
 .rest-button {
     font-family: 'DM Sans', sans-serif;
     padding: 8px 24px;
+    margin-top: 96px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -142,23 +135,21 @@
 }
 
 
-/* } */
-
 /* -------- TABLET -------- */
 
 
 @media screen and (min-width:768px) {
 
-.tablet-cont {    
-        width: 744px;
-        padding-left: 127px;
-        padding-right: 127px;
+.tablet-cont { 
+    width: 515px;   
+    margin-left: auto;
+    margin-right: auto;
     }
 
-/* .section {
+.restaurant-menu-section {
     padding-top: 80px;
     padding-bottom: 80px;
-} НЕ МОЖНА ТАК РОБИТИ!!! НО-НО-НО !!! */
+}
 
 .restaurant-menu-header {
     margin-bottom: 64px;
@@ -170,14 +161,17 @@
     margin-bottom: 18px;
 }
 
-/* .restaurant-menu {
-    margin-bottom: 38px;
-}
- */
-
 .menu-item {
     font-size: 18px;
     line-height: 1.33;  
+}
+
+.meat-marg {
+    margin-right: 47px;
+}
+
+.pork-marg {
+    margin-right: 34px;
 }
 
 .weight {
@@ -197,25 +191,29 @@
 }
 
 .rest-button {
+    margin-top: 108px;
     margin-left: 0;
-    margin-right: auto;
     padding: 8px 24px;
 }
 }
 
-
-
+/* @media screen and (min-width: 768px) and (max-width: 1439px) {
+    .restaurant-menu {
+        width: 535px;
+    }
+} */
 /* _________DESKTOP______________ */
 
 
 @media screen and (min-width: 1440px) {
+.tablet-cont {
+    width: 1104px;
+    } 
 
-/* .container {
-            width: 1416px;
-        } І ТУТ ТАК ТЕЖ НЕ МОЖНА!!! АЙ-АЙ-АЙ!!! */
-/* .section {
-    padding: 100px 168px;
-} */
+.restaurant-menu-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 .restaurant-menu-header {
     margin-bottom: 100px;
@@ -225,9 +223,7 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 74px;
-
 }
-
 
 .restaurant-menu-list-wrap {
     width: 515px;
@@ -284,6 +280,7 @@
 }
 
 .rest-button {
+    margin-top: 50px;
     padding: 9px 24px;
 }
 }
