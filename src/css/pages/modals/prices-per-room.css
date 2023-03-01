@@ -14,7 +14,7 @@
     transform: translate(-50%, -50%);
     padding: 14px 24px;
     width: 319px;
-    min-height: 90%;
+    height: 90%;
     border-radius: 2px;
     z-index: 999;
 }
@@ -55,10 +55,8 @@
 }
 .modal-container{
     width: 287px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
 }
+
 
 .modal-title{
     position: absolute;
@@ -134,19 +132,29 @@
 .date{
     margin-top: 16px;
 }
-/*tablet*/
+
+@media screen and (min-width:376px){
+    .modal{
+        height: 636px;
+    }
+    
+}
 @media screen and (min-width:768px){
     .modal{
         width: 628px;
-        min-height: 572px;
+        height: 572px;
     }
     .modal-container{
-        max-width: 580px;
+        width: 580px;
         height: 304px;
+        display: flex;
         flex-wrap: wrap;
-        gap: 40px;
-        column-gap: 32px;
     }
+
+    .modal-container div {
+        width: 287px;
+    }
+
     .modal-name{
         width: 266px;
     }
@@ -155,7 +163,9 @@
         line-height: 24px;
         margin-left: 58px;
     }
-    
+    .select::after{
+        margin-left: 246px;
+    }
     .button-black:hover,
     .button-black:focus {
         background: #FFFFFF;
@@ -164,11 +174,17 @@
 }
 
 
-/*tablet*/
+/*price*/
+@media screen and (min-width:376px){
+    .modal-price{
+        width: 335px;
+        height: 414px;
+    }
+}
 @media screen and (min-width:768px){
     .modal-price{
         width: 628px;
-        min-height: 400px;
+        height: 400px;
     }
     .modal-container-price{
         max-width: 580px;
@@ -182,25 +198,4 @@
     }
     .modal-price{  
     margin-top: 50px;}
-    .modal{
-        margin-top: 50px;
-    }
-    .modal-table{
-        margin-top: 60px;
-    }
-}
-
-
-/*book table*/
-@media screen and (min-width:376px){
-    .modal-table {min-height: 528px;}
-    .select::after{
-        margin-left: 268px;
-    }
-}
-@media screen and (min-width:768px){
-    .modal-table{
-        min-height: 476px;
-    }
-    .select::after{margin-left: 247px;}
 }
