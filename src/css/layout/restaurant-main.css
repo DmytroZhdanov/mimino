@@ -124,7 +124,6 @@ padding: 8px 18px;
 /* ========================================адаптив слайдер=========================== */
 @media screen and (min-width: 375px) {
   .main-restaurant-slider {
-    /* width: 375px; */
     width: 355px;
   }
 }
