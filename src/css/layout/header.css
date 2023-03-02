@@ -86,7 +86,7 @@
 .logo-header:is(:hover, :focus),
 .header-soc-link:is(:hover, :focus),
 .header-nav-link:is(:hover, :focus),
-.logo-header-piece:focus{
+.logo-header-piece:focus {
   transform: scale(1.05);
 }
 @media screen and (min-width: 768px) {
@@ -198,9 +198,7 @@
 
   .mobile-menu-container {
     position: relative;
-    padding-left: 25px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-left: 20px;
     height: 100%;
   }
 
@@ -222,13 +220,14 @@
   }
 
   .mob-menu-header-wrapper {
-    position: absolute;
-    top: 0;
-    left: 27px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 83px;
+  }
+
+  .mob-menu-header-wrapper::after {
+    width: 100vw;
+    border-bottom: solid 1px var(--light-text-color-secondary);
   }
 
   .mobile-menu-item {
@@ -253,6 +252,8 @@
   }
 
   .mobile-menu-soc-list {
+    margin-top: auto;
+    margin-bottom: 24px;
     padding-top: 24px;
     display: flex;
     gap: 14px;
@@ -295,17 +296,20 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .mobile-menu-soc-list {
+    position: absolute;
+    bottom: 0;
+    left: 27px;
+  }
+}
+
 @media screen and (min-width: 767px) and (max-width: 1439px) {
   .mobile-menu-soc-list {
     position: absolute;
     top: 0;
     right: 0;
   }
-
-  .mob-menu-header-wrapper {
-    gap: 246px;
-  }
-
 }
 
 @media screen and (min-width: 1440px) {
