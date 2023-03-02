@@ -4,9 +4,10 @@
     padding-bottom: 64px;
 }
 .location-map{
-border: none;
-box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
-filter: grayscale(1);
+    border: none;
+    box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+    filter: grayscale(1);
+    width: 280px;
 }
 .map-box{
     display: flex;

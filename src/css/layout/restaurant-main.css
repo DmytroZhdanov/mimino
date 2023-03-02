@@ -44,8 +44,9 @@
 .restoraunt-main-btnbox {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 24px;
+  justify-content: space-between;
+  /* justify-content: center;
+  gap: 24px; */
 }
 .restoraunt-main-link {
   display: flex;
@@ -73,6 +74,13 @@
 .restoraunt-main-link:is(:hover, :focus) {
   background: var(--dark-theme-color-primary);
   color: var(--light-text-color-primary);
+}
+
+@media screen and (min-width: 375px) {
+  .restoraunt-main-btnbox {
+  justify-content: center;
+  gap: 24px;
+  }
 }
 /*================================================стиллизация, выравнивание текста и кнопок====================*/
 
