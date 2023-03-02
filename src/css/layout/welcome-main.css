@@ -1,6 +1,6 @@
 /* Section Welcome Main page */
 .section-welcome-main {
-  padding-top: 64px;
+  padding-top: 32px;
 }
 .welcome-about {
   display: flex;
@@ -37,7 +37,7 @@
 /*------- TABLET------- */
 @media screen and (min-width: 768px) {
   .section-welcome-main {
-    padding-top: 80px;
+    padding-top: 40px;
   }
   .welcome-about {
     flex-direction: column;
@@ -65,7 +65,7 @@
 /*------- DESCTOP------- */
 @media screen and (min-width: 1440px) {
   .section-welcome-main {
-    padding-top: 100px;
+    padding-top: 50px;
   }
   .welcome-container {
     display: flex;
