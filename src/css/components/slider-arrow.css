@@ -20,12 +20,12 @@
 
 .arrow-dark .slick-prev,
 .arrow-dark .slick-next {
-  background-image: url(../img/arrow-dark.svg);
+  background-image: url(../../img/arrow-dark.svg);
 }
 
 .arrow-light .slick-prev,
 .arrow-light .slick-next {
-  background-image: url(../img/arrow-light.svg);
+  background-image: url(../../img/arrow-light.svg);
 }
 
 .slick-prev::before,
