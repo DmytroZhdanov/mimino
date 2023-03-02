@@ -223,6 +223,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
   }
 
   .mob-menu-header-wrapper::after {
@@ -310,6 +311,18 @@
     top: 0;
     right: 0;
   }
+
+  .mobile-menu-item {
+    font-size: 24px;
+  }
+
+  .mob-logo-header-link {
+    font-size: 20px;
+  }
+  .mob-logo-header-piece {
+    font-size: 10px;
+  }
+
 }
 
 @media screen and (min-width: 1440px) {
