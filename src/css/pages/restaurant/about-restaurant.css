@@ -106,8 +106,10 @@ p.text-margin {
     .about-restaurant-list-text {
     position: absolute;
     bottom: 15%;
-    right: 3%;
-    }
+    /* right: 3%; */
+    left: 50%;
+    transform: translateX(-145px);
+}
 
     p.text-margin {
     max-width: 334px;
