@@ -90,9 +90,9 @@
     margin-bottom: 100px;
     gap: 70px;
   }
-}
 
-.room-list {
-  margin: 15px;
-  width: 473px;
+  .room-list {
+    margin: 15px;
+    width: 473px;
+  }
 }
