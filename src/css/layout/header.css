@@ -129,6 +129,10 @@
         position: static;
         background-color: #FFFFFF; 
     }
+
+.site-header.light {
+  transform: translateX(0);
+}
   .header-box {
     justify-content: flex-start;
   }
