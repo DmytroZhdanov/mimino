@@ -75,7 +75,7 @@
 
 @media screen and (min-width:768px) {
     .hero4 {
-        max-width:1439px;
+        max-width: 1439px;
         padding-left: 32px;
         padding-bottom: 120px;
     }
@@ -87,7 +87,7 @@
 
     .hero4-button {
         padding: 8px 24px;
-        line-height: 1,71;
+        line-height: 1.71;
         margin-bottom: 28px;
     }
 
@@ -127,12 +127,10 @@
     .hero-room-slider {
     display: flex;
     position: absolute;
-
     top: 30px;
     left: 737px;
     /* left: 736px; */
     }
-
     .hero4-text {
         max-width: 289px;
 
