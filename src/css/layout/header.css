@@ -84,9 +84,9 @@
   transition: transform var(--transition-dur-and-func);
 }
 .logo-header:is(:hover, :focus),
-.logo-header-piece:is(:hover, :focus),
 .header-soc-link:is(:hover, :focus),
-.header-nav-link:is(:hover, :focus) {
+.header-nav-link:is(:hover, :focus),
+.logo-header-piece:focus{
   transform: scale(1.05);
 }
 @media screen and (min-width: 768px) {
@@ -110,6 +110,7 @@
     font-size: 20px;
     line-height: 1.22;
     margin-right: 177px;
+    /* margin-right: auto; */
   }
   .logo-header-piece {
     font-size: 8px;
@@ -117,16 +118,15 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  /* ===============================раскоментить для картинки герой======================================== */
-  /* .site-header{
+  .site-header{
         position: absolute;
         background-color: transparent;
+        z-index: 2;
     }
     .light{
         position: static;
         background-color: #FFFFFF; 
-    } */
-  /* ====================================================================================================== */
+    }
   .header-box {
     justify-content: flex-start;
   }

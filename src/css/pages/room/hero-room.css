@@ -1,7 +1,7 @@
 /* Hero Section Room page */
 
 .hero4 {
-    max-width:374px;
+    max-width: 374px;
     padding-top: 40px;
     padding-bottom: 64px;
     padding-left: 20px;
@@ -9,18 +9,17 @@
 
 .hero4-title {
     font-family: var(--primary-font-family);
-    font-style: italic;
+    font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 1,33;
-  
+    line-height: 1.00;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    
-    color: #121212;
-    margin-bottom: 24px;
-    max-width: 270px;
-    
+    color: var(--dark-theme-color-primary);
+    margin-bottom: 24px;   
+}
+.hero4-title-piece{
+    font-style: italic;
 }
 
 .hero-room-slider {
@@ -49,7 +48,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1,5;
+    line-height: 1.5;
     
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -68,7 +67,7 @@
     
     .hero4-text {
         font-size: 14px;
-        line-height: 1,28;
+        line-height: 1.28;
         max-width: 289px;
 
     }
@@ -83,7 +82,7 @@
     .hero4-title {
         margin-bottom: 18px;
         font-size: 60px;
-        max-width: 406px;
+        /* max-width: 406px; */
     }
 
     .hero4-button {
@@ -111,7 +110,7 @@
     .hero4-title {
         font-size: 80px;
         margin-bottom: 32px;
-        max-width: 592px;
+        /* max-width: 592px; */
     }
 
     .hero4-good {
@@ -121,9 +120,9 @@
 
 
     .hero4-button {
-        padding:9px 24px;
+        padding: 9px 24px;
         font-size: 18px;
-        line-height: 1,33;
+        line-height: 1.33;
     }
     .hero-room-slider {
     display: flex;

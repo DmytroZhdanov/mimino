@@ -1,11 +1,12 @@
 /* Section Restaurant's details Main page */
 
-/* .restaurant-section-main {
-  padding-bottom: 113px;
-} */
-
 .main-restaurant-slider {
   width: 100vw;
+}
+
+.restaurant-section-main{
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 /*======стиллизация, выравнивание текста и кнопок====================*/
@@ -77,11 +78,19 @@ padding: 8px 18px;
 
 /* =========================================================адаптив текст кнопки=============================== */
 @media screen and (max-width: 767px) {
+
+  
   .restoraunt-main-btnbox{
     margin-top: 82px;}
 }
 
 @media screen and (min-width: 768px) {
+
+  .restaurant-section-main{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .restoraunt-main-title{
     font-size: 68px;
     margin-bottom: 0;
@@ -106,6 +115,11 @@ padding: 8px 18px;
 }
 
 @media screen and (min-width: 1440px) {
+
+  .restaurant-section-main{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   .restoraunt-main-box{
     position: relative;
   }
