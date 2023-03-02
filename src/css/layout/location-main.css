@@ -69,7 +69,7 @@ margin-bottom: 12px;
 @media screen and (min-width: 768px )  {
     .location{
         padding-top: 80px;
-        padding-bottom: 80px; 
+        padding-bottom: 80px;
 }
 .location-map {
     width: 704px;
@@ -105,21 +105,25 @@ margin-bottom: 12px;
 @media screen and (min-width: 1440px ){
     .location{
         padding-top: 100px;
-        padding-bottom: 100px; 
+        padding-bottom: 100px;
     }
+
+    .location-container {
+        position: relative;
+    }
+
     .map-box{
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-end;
         gap: 64px;
         margin-bottom: 0;
-       
+        position: relative;
     }
     .location-map {
         width: 640px;
         height: 524px;
         margin-bottom: 0;
-       
     }
     .location-title{
         font-weight: 500;
@@ -134,20 +138,17 @@ margin-bottom: 12px;
         display: flex;
         gap: 12px;
         justify-content: baseline;
-        position: absolute;
-        top: -45px;
-        left: 1013px    
     }
     .location-txt{
         margin-bottom: 0;
     }
     .location-contacts{
-        position: relative;
+        position: absolute;
+        bottom: 0;
+        left: 730px;
     }
     .adress-box{
-        position: absolute;
-        top: -45px;
-        left: 703px;
+        margin-right: 70px;
     }
 
 }
