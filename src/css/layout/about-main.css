@@ -3,6 +3,8 @@
 /* -------------------------Basic-------------------------- */
 .section-2-about-main{
     background-color: var(--light-background-color-primary);
+    padding-top: 64px;
+    padding-bottom: 32px;
 }
 
 .about-main-position{
@@ -33,7 +35,6 @@
 /*--------------------------Pictures ---------------------------*/
 
 .first-picture{
-    padding-top: 64px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -88,7 +89,6 @@
     display: flex;
     justify-content: center;
     margin-left: -70px;
-    padding-bottom: 64px;
 }
 @media screen and (max-width: 378px){
     .fourth-picture{
@@ -123,7 +123,8 @@
 }
 @media screen and (max-width: 378px){
     .review-background-1{
-        left: 20%;
+        left: 29%;
+        top: 38%;
     }
 }
 @media screen and (min-width: 768px){
@@ -211,7 +212,7 @@
     .about-main-content-1{
         width: 472px;
         margin-right: 89px;
-        margin-top: 169px;
+        margin-top: 100px;
     }
 }
 .about-main-content-2{
