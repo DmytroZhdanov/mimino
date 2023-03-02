@@ -118,7 +118,7 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .site-header{
+  /* .site-header{
         position: absolute;
         background-color: transparent;
         z-index: 2;
@@ -126,7 +126,7 @@
     .light{
         position: static;
         background-color: #FFFFFF; 
-    }
+    } */
   .header-box {
     justify-content: flex-start;
   }
