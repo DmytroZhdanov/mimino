@@ -86,7 +86,7 @@
 .logo-header:is(:hover, :focus),
 .header-soc-link:is(:hover, :focus),
 .header-nav-link:is(:hover, :focus),
-.logo-header-piece:focus{
+.logo-header-piece:focus {
   transform: scale(1.05);
 }
 @media screen and (min-width: 768px) {
@@ -228,7 +228,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 83px;
   }
 
   .mobile-menu-item {
@@ -302,10 +301,16 @@
     right: 0;
   }
 
-  .mob-menu-header-wrapper {
-    gap: 246px;
+  .mobile-menu-item {
+    font-size: 24px;
   }
 
+  .mob-logo-header-link {
+    font-size: 20px;
+  }
+  .mob-logo-header-piece {
+    font-size: 10px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
