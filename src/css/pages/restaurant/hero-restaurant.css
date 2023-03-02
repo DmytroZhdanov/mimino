@@ -131,6 +131,7 @@
         padding-left: 32px;
         height: 722px;
         position: relative;
+        overflow: hidden;
     }
 
     .hero3-title {
