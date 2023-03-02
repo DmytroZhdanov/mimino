@@ -3,6 +3,11 @@
     padding-top: 64px;
     padding-bottom: 64px;
 }
+
+.location-container {
+    overflow-x: visible;
+}
+
 .location-map{
     border: none;
     box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
