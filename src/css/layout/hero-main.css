@@ -1,108 +1,129 @@
-
 /* Hero Section Main page */
 
 .hero {
-    padding-top: 429px;
-    padding-bottom: 40px;
-    background-color: var(--dark-theme-color-primary);
+  padding-top: 429px;
+  padding-bottom: 40px;
+  background-color: var(--dark-theme-color-primary);
 }
 .hero-title {
-    font-family: var(--primary-font-family);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 1.00;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--light-text-color-primary);
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--light-text-color-primary);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
 }
-.hero-btn-box{
-    margin-bottom: 66px
+.hero-btn-box {
+  margin-bottom: 66px;
 }
 
-.hero-btn-list{
-    display: flex;
-    justify-content: center;
-    gap: 12px;
+.hero-btn-list {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
 }
 .hero-button {
-    height: 42px;
-    padding: 8px 18px;
-    font-size: 14px;
-    line-height: 1.28;   
+  height: 42px;
+  padding: 8px 18px;
+  font-size: 14px;
+  line-height: 1.28;
 }
-.hero-txt-list{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;    
+.hero-txt-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
-.hero-txt{
-    font-family: var(--primary-font-family);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13.5px;
-    line-height: 1.29;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--light-text-color-primary);  
+.hero-txt {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.5px;
+  line-height: 1.29;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--light-text-color-primary);
 }
-.hero-txt-piece{
-    font-style: italic;
+.hero-txt-piece {
+  font-style: italic;
 }
 
-@media screen and (min-width:768px) {
- .hero{
+/*.site-hero-img {
+  display: none;
+}*/
+
+@media screen and (min-width: 768px) {
+  .hero {
     padding-top: 528px;
- }
-  
- .hero-title{
-    font-size: 150px; 
-    
- } 
+  }
 
-.hero-txt-list{
-    flex-direction: row ;
+  .hero-title {
+    font-size: 150px;
+  }
+
+  .hero-txt-list {
+    flex-direction: row;
     margin-top: 76px;
-}
-.hero-button{
+  }
+  .hero-button {
     padding: 8px 24px;
-}
+  }
 }
 
-@media screen and (min-width:1440px) {
-    .hero-main-box{
-        position: relative;
-    }
-    .hero{
-        padding-top: 196px;
-        padding-bottom: 48px;
-    }
-    .hero-title{
-        font-size: 180px;
-        text-align: start;
-        margin-bottom: 196px;
-    }
-    .hero-txt{
-        max-width: 338px;
-    }
-    
-    .hero-btn-box{
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 80px;
-        gap: 14px;
-        position: absolute;
-        right: 0px;
-    }
-    .hero-txt-list{
-        margin-top: 0px;
-    }
-    
-    .hero-button{
-        font-weight: 18px;
-    }
+@media screen and (min-width: 1440px) {
+  /* =================картинка справа */
+  /*.hero-main-box {
+    position: relative;
+  }*/
+
+  /*body {
+    position: relative;
+  }
+
+  .site-hero-img {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .header-soc-list {
+    z-index: 111;
+  }*/
+
+  /* =================картинка справа  END */
+
+  .hero {
+    padding-top: 196px;
+    padding-bottom: 54px;
+  }
+  .hero-title {
+    font-size: 180px;
+    text-align: start;
+    margin-bottom: 196px;
+  }
+  .hero-txt {
+    max-width: 338px;
+  }
+
+  .hero-btn-box {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 80px;
+    gap: 14px;
+    position: absolute;
+    right: 0px;
+  }
+  .hero-txt-list {
+    margin-top: 0px;
+  }
+
+  .hero-button {
+    font-weight: 18px;
+  }
 }

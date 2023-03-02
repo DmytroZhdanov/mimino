@@ -5,8 +5,8 @@
 }
 
 .restaurant-section-main {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /*======стиллизация, выравнивание текста и кнопок====================*/
@@ -85,8 +85,8 @@
 
 @media screen and (min-width: 768px) {
   .restaurant-section-main {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .restoraunt-main-title {
@@ -115,12 +115,12 @@
 
 @media screen and (min-width: 1440px) {
   .restaurant-section-main {
-    padding-top: 44px;
-    padding-bottom: 113px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .restoraunt-main-box {
     position: relative;
-    height: 660px;
+    height: 590px;
   }
   .restoraunt-main-textbox {
     margin-bottom: 125px;
