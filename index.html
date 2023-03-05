@@ -223,7 +223,7 @@
           srcset="/mimino/assets/hero-main-img-mob-1x-335-0ed74f3a.jpg 1x, /mimino/assets/hero-main-img-mob-1x-670-58ae657d.jpg 2x, /mimino/assets/hero-main-img-mob-1x-1005-185de171.jpg 3x"
           type="image/jpg"
         />
-        <img class="main-img" src="/mimino/assets/hero-main-img-desc-1x-542-6fd50c67.jpg" alt="Mimino hotel complex" />
+        <img class="main-img" src="/mimino/assets/hero-main-img-desc-1x-542-6fd50c67.jpg" alt="Mimino hotel complex" loading="lazy"/>
       </picture>
       <h1 class="hero-title">Mimino</h1>
       <div class="hero-btn-box">
@@ -265,177 +265,208 @@
 
       <!-- Section About Main page -->
 
-
 <section class="section-2-about-main">
   <div class="container">
-      <div class="about-main-position">
-        <h2 class="visually-hidden">About restaurant and hotel</h2>
-          <!-- First picture -->
+    <div class="about-main-position">
+      <h2 class="visually-hidden">About restaurant and hotel</h2>
+      <!-- First picture -->
 
-        <div class="section-2-part-1">
-
-          <div class="first-picture">
-            <picture>
-              <source 
-              srcset="/mimino/assets/about-main-1-1x-335-47a6503f.jpg 1x, /mimino/assets/about-main-1-2x-670-19f9bf20.jpg 2x, /mimino/assets/about-main-1-3x-1005-4e14457f.jpg 3x" 
+      <div class="section-2-part-1">
+        <div class="first-picture">
+          <picture>
+            <source
+              srcset="/mimino/assets/about-main-1-1x-335-47a6503f.jpg 1x, /mimino/assets/about-main-1-2x-670-19f9bf20.jpg 2x, /mimino/assets/about-main-1-3x-1005-4e14457f.jpg 3x"
               type="image/jpeg"
-              >
-              <source
+            />
+            <source
               srcset="/mimino/assets/about-main-1-1x-482-8ac6cbb1.jpg 1x, /mimino/assets/about-main-1-2x-964-bb06076a.jpg 2x, /mimino/assets/about-main-1-3x-1446-88c44fb9.jpg 3x"
               type="image/jpeg"
-              >
-              <source 
-              srcset="/mimino/assets/about-main-1-1x-335-6c337c18.webp 1x, /mimino/assets/about-main-1-2x-670-01ef58da.webp 2x, /mimino/assets/about-main-1-3x-1005-26a69fa5.webp 3x" 
+            />
+            <source
+              srcset="/mimino/assets/about-main-1-1x-335-6c337c18.webp 1x, /mimino/assets/about-main-1-2x-670-01ef58da.webp 2x, /mimino/assets/about-main-1-3x-1005-26a69fa5.webp 3x"
               type="image/webp"
-              >
-              <source
+            />
+            <source
               srcset="/mimino/assets/about-main-1-1x-482-03d04e75.webp 1x, /mimino/assets/about-main-1-2x-964-ee836db3.webp 2x, /mimino/assets/about-main-1-3x-1446-86e6354b.webp 3x"
               type="image/webp"
-              >
-              <img>
-            </picture>
+            />
+            <img
+              src="/mimino/assets/about-main-1-1x-335-47a6503f.jpg"
+              alt="Recreation room"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <!-- Comment Maria-->
+        <div class="review-background-1">
+          <picture class="review-picture">
+            <source
+              srcset="/mimino/assets/about-main-comment-1-1x-41-fe0faebe.png 1x, /mimino/assets/about-main-comment-1-2x-82-7a6a0c99.png 2x, /mimino/assets/about-main-comment-1-3x-123-d16640fd.png 3x"
+              type="image/png"
+            />
+            <source
+              srcset="data:image/webp;base64,UklGRiYDAABXRUJQVlA4WAoAAAAQAAAAKAAAKAAAQUxQSN0AAAABf0AQQJo7gjMY5YiI6CllTBVwa2tynnzy3kQKdVSBjkoQZJ4WVAHQAXRAK96bjfE2/yNi72F3MDOzc6ggov8TAH7owNPeSBrq5jqxLqu6ITHJKpZJmaSFXtDQtPBK+gIzS5FzzHMMZQB0QlQXwDlFOwBPcZQHvEEbfTKcwaKFw4MFpZ5Msu8mpU+TqjepkWnjP3mT2pdJ5cOk9GSSvTdJL1o4DCym0AwGNeDFIAssxiUAOiGqCwBPUfk/8zELYN8iitwgqCYhXmpcWsK1dJuHdpVzLeiHtz2djKTAAwBWUDggIgIAADALAJ0BKikAKQA+kUKXSiWjoaGnLJCwEglAFwxsTil0YxlzZI3GWrpoWhFKYbxohZlSmh2qafIhjTCdkSEOkbNhEwT4wGk19iil29vUxSH1P6ogQyfQKlD88ng/bjnoHfgAAP7+h9MBzBDfkxQD7b4gY/av7S4gQY/QQgrcrNN2j+yUgml+HCZKf5lojLU4gzq6wIqWGWNLNyh7Ju95u9RelCeWXuA0Gn7HjQvK+Qlp6fk4BkqfqrI1tet6uQ7q3G17lzwek93JdwnqliafAwr1tFspsizUux+welHp+w87UXJffj94pgpzORupH9xg3giRNbFKs5KU8r2taF2XDCAQ2m8INHseIjs69ZZFk+gLNuIjKVfNUnOLaC0VMHgJ+Ex6CWiFO0rLwL9oAi8ErMbhVFlo7ipKXfITEeoW6CNozRgdKFcQrhvXPDmgxTf4e0+CgQk9kYDw2Fjwuia2uZLCZ1Yf3ESOp4A1wwz5OzrgIzhp/pkV3Xh62cOfVPpKET7wguiFETs9gBWTpPwgErwNTq9cQxFsn4ex9jYS+D477aQbUcMS1v8KKg1JpZMSqvW7aP8nFRpNxwz/6I3hk41EJVEeet6Vt0i4Je+n6pB3MufrAv8IpCABWELE8/yN7+yci9cgIyhCTUlhfqF8u5kaI1pgIBV+cLo8dHMSUTCLjzgeFJwm0BTPXukNiUQHoOKBK5cUE2TX7eUqKYG0DCAAAA== 1x, data:image/webp;base64,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 2x, data:image/webp;base64,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 3x"
+              type="image/webp"
+            />
+            <img
+              src="/mimino/assets/about-main-comment-1-1x-41-fe0faebe.png"
+              alt="Photo of Maria"
+              loading="lazy"
+            />
+          </picture>
+          <div class="review-content">
+            <p class="review-title">Maria</p>
+            <p class="review-text">
+              give rating <span class="review-rating">4.5</span>
+            </p>
           </div>
-          <!-- Comment Maria-->
-          <div class="review-background-1">
-            <picture class="review-picture">
-              <source 
-              srcset="/mimino/assets/about-main-comment-1-1x-41-fe0faebe.png 1x, /mimino/assets/about-main-comment-1-2x-82-7a6a0c99.png 2x, /mimino/assets/about-main-comment-1-3x-123-d16640fd.png 3x" 
-              type="image/png">
-              <source 
-              srcset="data:image/webp;base64,UklGRiYDAABXRUJQVlA4WAoAAAAQAAAAKAAAKAAAQUxQSN0AAAABf0AQQJo7gjMY5YiI6CllTBVwa2tynnzy3kQKdVSBjkoQZJ4WVAHQAXRAK96bjfE2/yNi72F3MDOzc6ggov8TAH7owNPeSBrq5jqxLqu6ITHJKpZJmaSFXtDQtPBK+gIzS5FzzHMMZQB0QlQXwDlFOwBPcZQHvEEbfTKcwaKFw4MFpZ5Msu8mpU+TqjepkWnjP3mT2pdJ5cOk9GSSvTdJL1o4DCym0AwGNeDFIAssxiUAOiGqCwBPUfk/8zELYN8iitwgqCYhXmpcWsK1dJuHdpVzLeiHtz2djKTAAwBWUDggIgIAADALAJ0BKikAKQA+kUKXSiWjoaGnLJCwEglAFwxsTil0YxlzZI3GWrpoWhFKYbxohZlSmh2qafIhjTCdkSEOkbNhEwT4wGk19iil29vUxSH1P6ogQyfQKlD88ng/bjnoHfgAAP7+h9MBzBDfkxQD7b4gY/av7S4gQY/QQgrcrNN2j+yUgml+HCZKf5lojLU4gzq6wIqWGWNLNyh7Ju95u9RelCeWXuA0Gn7HjQvK+Qlp6fk4BkqfqrI1tet6uQ7q3G17lzwek93JdwnqliafAwr1tFspsizUux+welHp+w87UXJffj94pgpzORupH9xg3giRNbFKs5KU8r2taF2XDCAQ2m8INHseIjs69ZZFk+gLNuIjKVfNUnOLaC0VMHgJ+Ex6CWiFO0rLwL9oAi8ErMbhVFlo7ipKXfITEeoW6CNozRgdKFcQrhvXPDmgxTf4e0+CgQk9kYDw2Fjwuia2uZLCZ1Yf3ESOp4A1wwz5OzrgIzhp/pkV3Xh62cOfVPpKET7wguiFETs9gBWTpPwgErwNTq9cQxFsn4ex9jYS+D477aQbUcMS1v8KKg1JpZMSqvW7aP8nFRpNxwz/6I3hk41EJVEeet6Vt0i4Je+n6pB3MufrAv8IpCABWELE8/yN7+yci9cgIyhCTUlhfqF8u5kaI1pgIBV+cLo8dHMSUTCLjzgeFJwm0BTPXukNiUQHoOKBK5cUE2TX7eUqKYG0DCAAAA== 1x, data:image/webp;base64,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 2x, data:image/webp;base64,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 3x" 
-              type="image/webp">
-              <img>
-            </picture>
-            <div class="review-content">
-              <p class="review-title">Maria</p>
-              <p class="review-text">give rating <span class="review-rating">4.5</span></p>
-            </div>
-          </div>
-          
-<!--------------------------- Second picture ------------------------------>
-          <div class="second-picture">
-            <picture>
-              <source 
-              srcset="/mimino/assets/about-main-2-1x-282-9a20fc0c.jpg 1x, /mimino/assets/about-main-2-2x-564-3f88b0c2.jpg 2x, /mimino/assets/about-main-2-3x-846-48bffab6.jpg 3x" 
+        </div>
+
+        <!--------------------------- Second picture ------------------------------>
+        <div class="second-picture">
+          <picture>
+            <source
+              srcset="/mimino/assets/about-main-2-1x-282-9a20fc0c.jpg 1x, /mimino/assets/about-main-2-2x-564-3f88b0c2.jpg 2x, /mimino/assets/about-main-2-3x-846-48bffab6.jpg 3x"
               type="image/jpeg"
-              >
-              <source
+            />
+            <source
               srcset="/mimino/assets/about-main-2-1x-404-2cf3688c.jpg 1x, /mimino/assets/about-main-2-2x-808-76e24a35.jpg 2x, /mimino/assets/about-main-2-3x-1212-d106d2cd.jpg 3x"
               type="image/jpeg"
-              >
-              <source
+            />
+            <source
               srcset="/mimino/assets/about-main-2-1x-439-c9fc69fb.jpg 1x, /mimino/assets/about-main-2-2x-878-beb80b60.jpg 2x, /mimino/assets/about-main-2-3x-1317-07f5ae21.jpg 3x"
               type="image/jpeg"
-              >
-              <source 
-              srcset="/mimino/assets/about-main-2-1x-282-0a730d79.webp 1x, /mimino/assets/about-main-2-2x-564-557a867b.webp 2x, /mimino/assets/about-main-2-3x-846-f72fdf7c.webp 3x" 
+            />
+            <source
+              srcset="/mimino/assets/about-main-2-1x-282-0a730d79.webp 1x, /mimino/assets/about-main-2-2x-564-557a867b.webp 2x, /mimino/assets/about-main-2-3x-846-f72fdf7c.webp 3x"
               type="image/webp"
-              >
-              <source
+            />
+            <source
               srcset="/mimino/assets/about-main-2-1x-404-b74a4dd6.webp 1x, /mimino/assets/about-main-2-2x-808-81f577f3.webp 2x, /mimino/assets/about-main-2-3x-1212-81d65533.webp 3x"
               type="image/webp"
-              >
-              <source
+            />
+            <source
               srcset="/mimino/assets/about-main-2-1x-439-3fd96c02.webp 1x, /mimino/assets/about-main-2-2x-878-31a2998c.webp 2x, /mimino/assets/about-main-2-3x-1317-fda42617.webp 3x"
               type="image/webp"
-              >
-              <img>
-            </picture>
-          </div>
-          <!-- Text about restaurant-hotel complex -->
-          <div class="about-main-content-1">
-            <h3 class="about-main-title">RESTAURANT-HOTEL COMPLEX</h3>
-            <div class="about-main-text-1">
-              <p class="about-main-text-1-paragraph">
-                  Indulge in a taste of luxury with every bite at Hotel Mimino. From the freshest seafood to the most succulent steaks, every dish is crafted with care to ensure that you enjoy a truly memorable dining experience.
-              </p>
-              <p class="about-main-text-1-paragraph">
-                  Treat yourself to a taste of the good life and come dine with us today!
-              </p>
-            </div>
-          </div>
-
+            />
+            <img
+              src="/mimino/assets/about-main-2-1x-282-9a20fc0c.jpg"
+              alt="Bathroom"
+              loading="lazy"
+            />
+          </picture>
         </div>
-        
-        
-    <!-------------------------- Third picture ---------------------------------->
-        <div class="section-2-part-2">
-          
-          <div class="third-picture">
-            <picture>
-              <source 
-              srcset="/mimino/assets/about-main-3-1x-335-cee9f6e9.jpg 1x, /mimino/assets/about-main-3-2x-670-8f04c33f.jpg 2x, /mimino/assets/about-main-3-3x-1005-84a03f60.jpg 3x" 
+        <!-- Text about restaurant-hotel complex -->
+        <div class="about-main-content-1">
+          <h3 class="about-main-title">RESTAURANT-HOTEL COMPLEX</h3>
+          <div class="about-main-text-1">
+            <p class="about-main-text-1-paragraph">
+              Indulge in a taste of luxury with every bite at Hotel Mimino. From
+              the freshest seafood to the most succulent steaks, every dish is
+              crafted with care to ensure that you enjoy a truly memorable
+              dining experience.
+            </p>
+            <p class="about-main-text-1-paragraph">
+              Treat yourself to a taste of the good life and come dine with us
+              today!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-------------------------- Third picture ---------------------------------->
+      <div class="section-2-part-2">
+        <div class="third-picture">
+          <picture>
+            <source
+              srcset="/mimino/assets/about-main-3-1x-335-cee9f6e9.jpg 1x, /mimino/assets/about-main-3-2x-670-8f04c33f.jpg 2x, /mimino/assets/about-main-3-3x-1005-84a03f60.jpg 3x"
               type="image/jpeg"
-              >
-              <source
+            />
+            <source
               srcset="/mimino/assets/about-main-3-1x-530-a098e4bf.jpg 1x, /mimino/assets/about-main-3-2x-1060-75bfe4c9.jpg 2x, /mimino/assets/about-main-3-3x-1590-7a8cb1d4.jpg 3x"
               type="image/jpeg"
-              >
-              <source 
-              srcset="/mimino/assets/about-main-3-1x-335-01b742ed.webp 1x, /mimino/assets/about-main-3-2x-670-5d46e241.webp 2x, /mimino/assets/about-main-3-3x-1005-9f40d8cd.webp 3x" 
+            />
+            <source
+              srcset="/mimino/assets/about-main-3-1x-335-01b742ed.webp 1x, /mimino/assets/about-main-3-2x-670-5d46e241.webp 2x, /mimino/assets/about-main-3-3x-1005-9f40d8cd.webp 3x"
               type="image/webp"
-              >
-              <source
+            />
+            <source
               srcset="/mimino/assets/about-main-3-1x-530-6ca41ddf.webp 1x, /mimino/assets/about-main-3-2x-1060-017ef916.webp 2x, /mimino/assets/about-main-3-3x-1590-cf6ed08e.webp 3x"
               type="image/webp"
-              >
-              <img>
-            </picture>
-          </div>
-            <!-- Comment Alexander -->
-          <div class="review-background-2">
-            <picture class="review-picture">
-              <source 
+            />
+            <img
+              src="/mimino/assets/about-main-3-1x-335-cee9f6e9.jpg"
+              alt="Cafe's interior"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <!-- Comment Alexander -->
+        <div class="review-background-2">
+          <picture class="review-picture">
+            <source
               srcset="data:image/png;base64,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 1x, /mimino/assets/about-main-comment-2-2x-82-c4b06dce.png 2x, /mimino/assets/about-main-comment-2-3x-123-0a6be06c.png 3x"
-              type="image/png">
-              <source 
-              srcset="data:image/webp;base64,UklGRjADAABXRUJQVlA4WAoAAAAQAAAAKAAAKAAAQUxQSN0AAAABf0AQQJo7gjMY5YiI6CllTBVwa2tynnzy3kQKdVSBjkoQZJ4WVAHQAXRAK96bjfE2/yNi72F3MDOzc6ggov8TAH7owNPeSBrq5jqxLqu6ITHJKpZJmaSFXtDQtPBK+gIzS5FzzHMMZQB0QlQXwDlFOwBPcZQHvEEbfTKcwaKFw4MFpZ5Msu8mpU+TqjepkWnjP3mT2pdJ5cOk9GSSvTdJL1o4DCym0AwGNeDFIAssxiUAOiGqCwBPUfk/8zELYN8iitwgqCYhXmpcWsK1dJuHdpVzLeiHtz2djKTAAwBWUDggLAIAAJALAJ0BKikAKQA+kUKcSiWjoqGnOApIsBIJYwCy7SCSDfkakEeHEp1k+ax1kSaKfGgYbL5GbOJoBIpWO+nBvfshoA/0pvgPD89R70+dm/2hCq4h8AS/ieYsQeOJUZG15Xb8IMgAAP77bKKw78lJ3HB8Z+rbsSNb4QCESh1qp5KwWNmlhZF4o3SG7/X58hyorNeP4CwcS7c/P5b0cfEaqPxl+NT5TThGzRhxKiJDed+tc0ZcvhYibbJYELKHAcXRy803MUOtByr4wLYNVPV4O0Vhk/3d00Cw1VCfOAC9PYLJdLxxCKuOYhwkZTfteE/IjuMtX01d8s8DMaCGF6l/hr7vnnJYU/54lFW/RSuUDyzGjGkdPiuLBdj/SNWKdrBk0nfvZBhhQhzXT+dcsPY8+7gOHjQrEQ8ac62isEnkAA5hX5fCZSp0IYDtGWGazg/iZINOo343blIygBkFbGdCRgHuLxVdZwf1JVi6u53k+CzHICOTF7nikfMUJ45jfIGd8c/RpX1ovhitPjThCVexlcbL7YYHdvC3Rzx07rz9WdM66wZ4JWoFY+AF0kjUL0PzAp3BFZz3vFfbP2Qri4ViUINOepUQ4+AD7JyZ05upD3ABvYbJ/6mgV7jOdyv56ERzCY12VoapRYi6wBZTtIbSCCJr/8XBx0PSZgjjp30yYbshdnxeEfbnp1aQqtSmMZ3zfZTUQBCb+A0/P3g3cD7E8b/p8Pz8F7NQ16AAAAA= 1x, data:image/webp;base64,UklGRjwGAABXRUJQVlA4WAoAAAAQAAAAUQAAUQAAQUxQSHgBAAABkFXbbt1aG4IgCEohGIIZnDCIGbQMHAY9DAxFEARB95G2sbXv4zMiJgDTtWx9mEVEuI1nK4rUUrvHhdarJpE6YuKoCWT3mGxd15IeS3ZdR3aPVfdVbhYLW11B7rH4XaapxfKmk4pHQi9TviLpPmGPtPtleyTeL9oj9XZJieTlAvVsrh+JRXqTT+5B8P5BDYq394yDyTt7kGxvaLB0edVpRH+hQVTOOpN2ZkxcfqtBtf42uAwAGmQFqGwq0Nl0wNg4NOhq4VMan+3Jpw8+w/iYE4r/xsbHCdngMw4+3xufVvgU5aNwNgYcbDpQ2VRA2CiAwWUAQOVSfxNnYjhtTPqZMNEzHDw6XorT0FdoLBreFONgePvGob6HB4MHPhTLZ/IJ1LO54vOSreDKLVfDtS1Tw9UtT8P1LcuGmcUzeMFctfVMMVseqz0EC1ZbyW5YtC3jTbCsHmt0wdJ62CxvgvXrmDGqIKfWw67wXgWptbTnMP/NbPStKKYDVlA4IJ4EAAAQGQCdASpSAFIAPpE+mUkloyIhKdRtGLASCWUAyxGUOCj+jdY/w18onw7eXfmYmrqRZh32ag/Rs9AA/lWI6qgjI9BgXY5arSVs/2PC5mi6V/tdd1nf53WHiLAZC2pVdVH/gKrl4w7r3pWLyBZH/ygKkqJG8w17KV3t6RjHOtb2hblq67n8lRZl666ZJ4dL35miiYAVDuNHaKpwMS6CVjDoavdfzIRf3ac1g6weDlFyIgOeooAzezseC3Wsv/vS9XVq441YC6VvVsu+BdUGsv+lAAD+yrs6IehevVehHEMXSO/kCN61NxdI+vJApMMNz+Iib9oPbuIDJhqxmI8AZgKRbk3Mf2W8afFoumg5mKvns9tKapxAdhA+Qda56Q+gO6lMM95IEAx8VdG+AqaKzx1WmTBOqif6Ww5mKUgoiIHhhgZ1mKLbPd1EXjZUx8sm+LMWyD2aknrLXDfNHAnhEl1jHxXpHC/YPL2kghz+YiEBU08u2Gvb5a7xFOWZ7bFiiOOthYIEISYwzqjoAcQwg3TvbYKDgZN1Ug+xtMffHN66XPl9KXUiJxTo+lWeWYSNf2MjxqyKA73hVuruSYjN9U852MIRpEhH0nBZWoRZkPtfoMyT+sJC0yO/gVdwaz4qdglkHBh9t+qDtTkg/ZkpsnJ8FGnW+ra2lTNnTgUbww7PJk3fK4/7xbVmxx4PBde1i6lsmxmVfWj4vwk6PMQxmFt9QxObvNmuD5gudtgnDrBiJru3n+UT3cmyWJRw5aZO/hxm4Vojeyvc1J9PExQfXUf//t/ZV8jcoKDdXnIaeKnuWbEuonPdrCps21TWrckrdNpKt+nJK2wBnnh2jMzDl9uygXJrdGxCELM/yc7AxdF48hpZwML9e7houiokjLj4hqFK4i9XRE+YvGxBrUz6GWx7B8/4sXVYVBmX6BPJxTtlnl6QmZKOmOc+WRJJhGZaojk+236VUK75fk0xqzlwUbDMKEJDGR0oPDCObH9ncRG/r/oEE5azXoPedFdQShp3uDz7rOwLb0WntPePI6iPnUJ1g43G/S6FX5V67EDBmWAAQGrlwTsBEiXy1403HWaMDxBhcLdQL6CWYfr03WQiHbwPt2iPfv1xF+cgUOKVqwbpREo4NveFLYOTydwp71zqMkdL5tJz+L9n2zuOfaYodjlA18l2vPUPVBVRR1jvOMz8ypK2hG2xH/y5dXrtMNhjNDmsaWtoOo+K8aLDILbxC7GEXkbuoaCGo0M66AbK6Pfu29XE9o33h8gyllSgLAajWetCPrZCOpwDEZqpu+tzobSvqbQz8IMTEZddHWZFWu5V4pAYW74+Wxdd3hCfOqKyyMpU7vG5SdGVa56PTAmy7WBbX+wYCeFdERve9+x1zkwauE4KDZTqesgQ8g9MhDF+JBTvHYHXkkI8czaHkaZgrHJ9iHLWBfrPYWvgL40F253NylsyblvR/41peB1jIAYVOiLuf1RpEewSUWlgJDoHT5ZA/rndxJ7oibAh58wyvS7RBCQ3XzJZ1PVnnkavR18Sm2rYFAZ3WnZCh8sa1ezKsEeXYBJyZ5teXMGBXugAAAA= 2x, data:image/webp;base64,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 3x" 
-              type="image/webp">
-              <img>
-            </picture>
-            <div class="review-content">
-              <p class="review-title">Alexander</p>
-              <p class="review-text">give rating <span class="review-rating">5.5</span></p>
-            </div>
+              type="image/png"
+            />
+            <source
+              srcset="data:image/webp;base64,UklGRjADAABXRUJQVlA4WAoAAAAQAAAAKAAAKAAAQUxQSN0AAAABf0AQQJo7gjMY5YiI6CllTBVwa2tynnzy3kQKdVSBjkoQZJ4WVAHQAXRAK96bjfE2/yNi72F3MDOzc6ggov8TAH7owNPeSBrq5jqxLqu6ITHJKpZJmaSFXtDQtPBK+gIzS5FzzHMMZQB0QlQXwDlFOwBPcZQHvEEbfTKcwaKFw4MFpZ5Msu8mpU+TqjepkWnjP3mT2pdJ5cOk9GSSvTdJL1o4DCym0AwGNeDFIAssxiUAOiGqCwBPUfk/8zELYN8iitwgqCYhXmpcWsK1dJuHdpVzLeiHtz2djKTAAwBWUDggLAIAAJALAJ0BKikAKQA+kUKcSiWjoqGnOApIsBIJYwCy7SCSDfkakEeHEp1k+ax1kSaKfGgYbL5GbOJoBIpWO+nBvfshoA/0pvgPD89R70+dm/2hCq4h8AS/ieYsQeOJUZG15Xb8IMgAAP77bKKw78lJ3HB8Z+rbsSNb4QCESh1qp5KwWNmlhZF4o3SG7/X58hyorNeP4CwcS7c/P5b0cfEaqPxl+NT5TThGzRhxKiJDed+tc0ZcvhYibbJYELKHAcXRy803MUOtByr4wLYNVPV4O0Vhk/3d00Cw1VCfOAC9PYLJdLxxCKuOYhwkZTfteE/IjuMtX01d8s8DMaCGF6l/hr7vnnJYU/54lFW/RSuUDyzGjGkdPiuLBdj/SNWKdrBk0nfvZBhhQhzXT+dcsPY8+7gOHjQrEQ8ac62isEnkAA5hX5fCZSp0IYDtGWGazg/iZINOo343blIygBkFbGdCRgHuLxVdZwf1JVi6u53k+CzHICOTF7nikfMUJ45jfIGd8c/RpX1ovhitPjThCVexlcbL7YYHdvC3Rzx07rz9WdM66wZ4JWoFY+AF0kjUL0PzAp3BFZz3vFfbP2Qri4ViUINOepUQ4+AD7JyZ05upD3ABvYbJ/6mgV7jOdyv56ERzCY12VoapRYi6wBZTtIbSCCJr/8XBx0PSZgjjp30yYbshdnxeEfbnp1aQqtSmMZ3zfZTUQBCb+A0/P3g3cD7E8b/p8Pz8F7NQ16AAAAA= 1x, data:image/webp;base64,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 2x, data:image/webp;base64,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 3x"
+              type="image/webp"
+            />
+            <img
+              src="data:image/png;base64,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"
+              alt="Photo of Alexander"
+              loading="lazy"
+            />
+          </picture>
+          <div class="review-content">
+            <p class="review-title">Alexander</p>
+            <p class="review-text">
+              give rating <span class="review-rating">5.5</span>
+            </p>
           </div>
-          
-          
-          <!-- Text about business class hotel -->
-          <div class="fourth-picture-content-position">
-            <div class="about-main-content-2">
-              <h3 class="about-main-title">BUSINESS CLASS HOTEL</h3>
-              <p class="about-main-text-2">
-                  The Mimino hotel features spacious and stylish double luxury rooms with modern amenities for a comfortable stay.
-              </p>
-            </div>
-            <!-------------------------- Fourth picture ---------------------------------->
-            <div class="fourth-picture">
-              <picture>
-                <source 
-                srcset="/mimino/assets/about-main-4-1x-266-dff71b19.jpg 1x, /mimino/assets/about-main-4-2x-532-9dae313a.jpg 2x, /mimino/assets/about-main-4-3x-798-8d9a1468.jpg 3x" 
+        </div>
+
+        <!-- Text about business class hotel -->
+        <div class="fourth-picture-content-position">
+          <div class="about-main-content-2">
+            <h3 class="about-main-title">BUSINESS CLASS HOTEL</h3>
+            <p class="about-main-text-2">
+              The Mimino hotel features spacious and stylish double luxury rooms
+              with modern amenities for a comfortable stay.
+            </p>
+          </div>
+          <!-------------------------- Fourth picture ---------------------------------->
+          <div class="fourth-picture">
+            <picture>
+              <source
+                srcset="/mimino/assets/about-main-4-1x-266-dff71b19.jpg 1x, /mimino/assets/about-main-4-2x-532-9dae313a.jpg 2x, /mimino/assets/about-main-4-3x-798-8d9a1468.jpg 3x"
                 type="image/jpeg"
-                >
-                <source
+              />
+              <source
                 srcset="/mimino/assets/about-main-4-1x-335-79db0821.jpg 1x, /mimino/assets/about-main-4-2x-670-eb896546.jpg 2x, /mimino/assets/about-main-4-3x-1005-9a6a873d.jpg 3x"
                 type="image/jpeg"
-                >
-                <source 
-                srcset="/mimino/assets/about-main-4-1x-266-cef2423a.webp 1x, /mimino/assets/about-main-4-2x-532-97e44af8.webp 2x, /mimino/assets/about-main-4-3x-798-308b1381.webp 3x" 
+              />
+              <source
+                srcset="/mimino/assets/about-main-4-1x-266-cef2423a.webp 1x, /mimino/assets/about-main-4-2x-532-97e44af8.webp 2x, /mimino/assets/about-main-4-3x-798-308b1381.webp 3x"
                 type="image/webp"
-                >
-                <source
+              />
+              <source
                 srcset="/mimino/assets/about-main-4-1x-335-974d43f7.webp 1x, /mimino/assets/about-main-4-2x-670-371b364f.webp 2x, /mimino/assets/about-main-4-3x-1005-f6b556d0.webp 3x"
                 type="image/webp"
-                >
-                <img>
-              </picture>
-            </div>
+              />
+              <img
+                src="/mimino/assets/about-main-4-1x-266-dff71b19.jpg"
+                alt="Served table"
+                loading="lazy"
+              />
+            </picture>
           </div>
-        
         </div>
       </div>
     </div>
+  </div>
 </section>
+
       <!-- Section Restaurant's details Main page -->
 
 <section class="restaurant-section-main">
@@ -448,213 +479,233 @@
           day.
         </p>
       </div>
-    <div class="main-restaurant-slider arrow-dark responsive responsive-main-restaurant">
-      <div>
-        <picture>
-          <source
-            srcset="data:image/webp;base64,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 157w, /mimino/assets/main-restaurant-slider-1-1x-266-5b9e5ad2.webp 266w, /mimino/assets/main-restaurant-slider-1-2x-314-a2a1621a.webp 314w, /mimino/assets/main-restaurant-slider-1-1x-336-db928909.webp 336w, /mimino/assets/main-restaurant-slider-1-3x-471-d38d5263.webp 471w, /mimino/assets/main-restaurant-slider-1-2x-532-ae867910.webp 532w, /mimino/assets/main-restaurant-slider-1-2x-672-a6e59c76.webp 672w, /mimino/assets/main-restaurant-slider-1-3x-798-38fba112.webp 798w, /mimino/assets/main-restaurant-slider-1-3x-1008-2438badf.webp 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/webp"
-          />
-          <source
-            srcset="/mimino/assets/main-restaurant-slider-1-1x-157-a3c0337d.jpg 157w, /mimino/assets/main-restaurant-slider-1-1x-266-2ea94edb.jpg 266w, /mimino/assets/main-restaurant-slider-1-2x-314-8937508f.jpg 314w, /mimino/assets/main-restaurant-slider-1-1x-336-a5bfbca3.jpg 336w, /mimino/assets/main-restaurant-slider-1-3x-471-93371a5c.jpg 471w, /mimino/assets/main-restaurant-slider-1-2x-532-3b6d829a.jpg 532w, /mimino/assets/main-restaurant-slider-1-2x-672-4bd85527.jpg 672w, /mimino/assets/main-restaurant-slider-1-3x-798-87942c2d.jpg 798w, /mimino/assets/main-restaurant-slider-1-3x-1008-5c773bdf.jpg 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/jpeg"
-          />
-          <img
-            src="/mimino/assets/main-restaurant-slider-1-1x-266-2ea94edb.jpg"
-            alt="cocktail"
-          />
-        </picture>
+      <div
+        class="main-restaurant-slider arrow-dark responsive responsive-main-restaurant"
+      >
+        <div>
+          <picture>
+            <source
+              srcset="data:image/webp;base64,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 157w, /mimino/assets/main-restaurant-slider-1-1x-266-5b9e5ad2.webp 266w, /mimino/assets/main-restaurant-slider-1-2x-314-a2a1621a.webp 314w, /mimino/assets/main-restaurant-slider-1-1x-336-db928909.webp 336w, /mimino/assets/main-restaurant-slider-1-3x-471-d38d5263.webp 471w, /mimino/assets/main-restaurant-slider-1-2x-532-ae867910.webp 532w, /mimino/assets/main-restaurant-slider-1-2x-672-a6e59c76.webp 672w, /mimino/assets/main-restaurant-slider-1-3x-798-38fba112.webp 798w, /mimino/assets/main-restaurant-slider-1-3x-1008-2438badf.webp 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/webp"
+            />
+            <source
+              srcset="/mimino/assets/main-restaurant-slider-1-1x-157-a3c0337d.jpg 157w, /mimino/assets/main-restaurant-slider-1-1x-266-2ea94edb.jpg 266w, /mimino/assets/main-restaurant-slider-1-2x-314-8937508f.jpg 314w, /mimino/assets/main-restaurant-slider-1-1x-336-a5bfbca3.jpg 336w, /mimino/assets/main-restaurant-slider-1-3x-471-93371a5c.jpg 471w, /mimino/assets/main-restaurant-slider-1-2x-532-3b6d829a.jpg 532w, /mimino/assets/main-restaurant-slider-1-2x-672-4bd85527.jpg 672w, /mimino/assets/main-restaurant-slider-1-3x-798-87942c2d.jpg 798w, /mimino/assets/main-restaurant-slider-1-3x-1008-5c773bdf.jpg 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/jpeg"
+            />
+            <img
+              src="/mimino/assets/main-restaurant-slider-1-1x-266-2ea94edb.jpg"
+              alt="cocktail"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source
+              srcset="data:image/webp;base64,UklGRs4PAABXRUJQVlA4IMIPAABQUACdASqdAMkAPpFCmkolo6IhpjesaLASCWIAy5xDE9y0eU+/MCfzPlee/99f0l7hXnl9PO3qj/CY6xLLbmAFmz0gu7SDWZfyyvwUYFuR7FWaO2uL8duhuXYrHi/yKWNGFbQ7w5tLMwu0MqA0I+fQnI0aB7lwCoC9yoywXl8wATomBVJ0uHE3qiBrXk/R9QvpPLVoSTINCt0Z/jbSOBBDkMbVE7J7dIdSiiGg+mM23+hAZiNThJn9b9ZFSgqJtMjA25gQtnZvhYhVleSF6WQd4OydqO9ff9bzSofYoOQd2p+8VIIAoOzN+jNTv0SWKBa0wbxLcb2rTOsXrSUOHJvJBt1bLs26HlLLp2B8jbNcQxJ7T4eDD8XNzumlYJX2f1MIff0xl0IuVVcM/B9nEp5bA6fjy4L41oGnNYkbDjrpGrJyQxrgSDcqr7g/tkdh+ImfGayYQ04jbnr6mYWdi/rKe1mjNdsohFayMkp/BS5Go2MyUpIFKW7EGPaNbvRBLXjdXzA+3W/dl242QEXS8MU9hSbgIOZUANc3rmszaDPbuECUnYoO3BE9S77rIGjZ/tSI4lHjipjVVu2FQeS8elSzyhy9v0oakxM/BBdfvpP7tL/2jwI51jjFYwrl2YvpV9SFzXoxV+tc9M7OWuF3boZOn5rcHVmmwoC0QgY8ThViRuYhevJpcwEZYOo5GZGDG8jsedxCn82yj+iIxc4CPXD5oVhhR3q5ze0FtqghkcXt/JQktDGUSjYxy9lNpkNEuMjnNQxNePhlz4GzHdxq1GGWh7THn8/XmXdmSz8YYAh/PNh90yxgCnpEJaciNJbQV0+gXVoxMpbWBvgiPsPplzp8K3a9RgKR21G+tPAA/vtRstNQn/FX9Dp33ooDghXtgyUbjsYkOroS/8rzT/9DgVe50t/gZeZkBYvuaaYF1jMR4c00Qh3mibADlwmvKM9vZpnTZFCooKnRjj2b6M7MQnzUPoObpuZ4Rzlxp3E5+YYDiBPnH0CSwEeR828iPOUgVhQf/ShQ/Z4FjwfwoiNNuyeWpHX3oorj46E7mtpLEWh7imIBYl/56L+dkqNdXIHzzq7oC2TpdG7xnTT/NL3ocLOhY40uknqqyFj05tFkbQ2u3t8BIrbfJ05CVWd2Jo4AQs9gacNgw3u+c/G8ot7bRRDc5PCUsDqdwM1xYRYhqXULGay56ypfmtDr5XWgzEfx8aOAAfomgfWy0MJv8hjCWZYLKXHevpJn1EbwYz1ofZsm+zJwQ0AdLxfvci7CgquDkA6vC9qbEDIAaImGpmIm1ZtQop5VO96Za8HNYX3BBcOZX7gxFPvSwyGlxQc4fCHDMBKGtF9Qhs6pn2sOfnMYfOzbGKue5eWXwms2erdXQsnczJ5rRbrqwI7dQ2CgmDhAdC3H863SS3501/I8DSVxFmQrYJOJH90DS2vlk4nJbzB2zGhlq9JjyUnc9qmPdyiiQGZP/jgiHL6A8rYLm25b9ZshuQTiow7rA1Oz2w3r5pBy4dLTD9KCSXKRaX9YR8vOEldGtfurwpF3+p1x5jTxr1uBQwYVKNSI8RG4ffIHo0KjlfEpK7of9AZT3RGasaOwcr+gOo7E6QpGFBv3KOMSraMzkvnT6H3RLTlNqec1d2JdZdNewXN8VT6fApY49P0S0SrUr3+m0vJGuC120jCTH8rEGEQPEEWtLEsfOe9KVNhj0HQpEelS3sGDu0DrUIpw1U8pbmBBdcZOry7FDreoLXalY3loUnqyc1TrUFKOhmovZ45nNF7GG7ky/ZLsOjEeSZdMxMuAnKxQc1oGE36FWwlRahhaKvmHSpHbSv6GF8fsxj8ayCeXgr1qbhsfezIj2cr3hbpgl9loA5Z6DEHW3ecrTIJOM2DxgFXsAxgfZoefj8OpvOW7QRQ+ythbNZT4HaCVZTh04tTsnRuLFNQFPPRk/q+k4x2yWLbPmdlnnBvbNlCI+vqwwACx83neOt+0m3W3g/rw0Qq25+3CiT+mbj9kBS6umuDLlPG8XjBrGnqoGpJyWKChQWnS62wrcoMgzLD25GDdgovStXhFx5A7rmC3UaF47lPtT9eAFmXb3Q5B5CH8N5tjoUlDTksHwXVF9zfqbR7KASRkFQkxuo5qimr46Hxp4P9CgozutexUMq9oTkfiZfWw7E6pxTFIWtPT/6Wy/7nEmlmaG+MP9+2suL0twWp5Eeb4sxiInDsuTNKsrZk8vdSxh8SEYHNXIOJPyf0YkecOw+jLOrs+Wbgg3pM9ME2y+Tj22FpgRYZ+cw5s/2O29d5u4ldZeYV1GgO/5Ph1FZgNJmf+FG5+ZxkPGHtEeYC5vLqcQiEyLzGaycDpG9PDfE+JrHGJjtccG6BQoO6Bnu/OYHtjEb+CgBeH/nLX81t0lhrfFhlN3wmHsJ+0FxsWTI/+WcgiohDxh5iEt5h0pHiBZ8hFGQC0eKtXguPAN1xd4gDh7nekGDRcmFKSxQhJwTsbJxqKoRWIgK5V6J1LcwdgB2CY2hoBwvQqhqRxZ+CsSqVF80B2nfS+3AeAEHpvjWh1l9+EW1oX5Rjzqfp0Td5/8GHIgg1Eh7UzqjkSn0KZZZ6xv7MfUEza1IERSzqd6+wz9nE4q2sfbKSNk7CWN9iDDQdOu2Y9hyqTSWml4W5CUWcvLLbd8WG3newV7cf22doCEf6LQFQVmfDcc/Js83/emkwKI5VzkqPSexfvVCyrfSFfYb2emeKzD9jZyMwJgYDHQfHwzxG3xlvCfcu5+fo94TGX0DRYyp/7M1h1sEP52hAuxJcl2J0vg0MVp+gYtradZwLSQm1Bthfy6q32JX7zPFHrlFBdsE3kIsN2lfXB2SH/48GnwMonLBvm2d/R1eUU39CW4uWC7iNBspI2HqIf8rXC46aChP2DybpbKY33IEvToCiCOmRM85T4Xg2ddyVCceN7ZpNli4r6Js/gaTwvtKfOiMemwCYI7cQXUX2xm87SZKcvKWlSWE+3m7k/Z82LWBIGGIYXPNSqrCPtqojZl5oLWPbA5N8H8Ck+0uB0liLy0LzB5zav0Xr8/bpZlUCznaSZIfTeKIbOBazcz1SlX6cZapOxq3K//ASIxrzfgp7gNPjA+ZOC8BkTq9kj29BjLWTZpiAm8Mu4Vn62M6bQai/CiTO9FDKgPs4FVeeAfrRj019Gw0AhnAV2bkBXHK1qpaUqqj3SWRgA9btR2cKgfmWBfOSBtFvB9XYy45pGosx13/vnoSll9Cvjm3CFLqD2bNr9qo+n4+q1WrAKKPKT297mleEbgu8xexZEV9NpfGCUepMnfS4cd1xVhzmUB7qZlOr2DE8ABQw1fP78J4IUkA1ApwOun/cZlw7xm+VO61h/ru3qKVOEM+NChnex2qcbwq9NcbD/0q8shUeJ1FsMrZwmb8ZbU2TMtuAFTEgKnlY+SKNAC2s5FalhN8LBeTLUpUNe6qGXvqiJR1KYZPXH8E+9LMN/5zUnY1HUKGdc3BtFjIMtSKiLPuSqwcyZW8d3b+3JxlkdYEdSvecRwwIIGgjtLFkOchmIvFvSjI3lIUD4Jjp3Qjp7umzNKb83Orf8xI3TiEL7i4d+B9AW3csxAumglGGFo4p7pvdcLE31ZDNjkMpZif4OSngnv/2b4Jn1D6HBVKnUlF72B2znHa/z0ZWY2NeB4KWPGPgOy08spOGEHLZbqirQFk9GFWKSXlWyR5NlVaXZG5DyPexY9RE5p8sNU6QSDz3I3NE6nA/0L4bPRHay01Ji+TfvFgtxmGg+g/E/+1lblAGXMN62mGrK27bAxb+FnoMHCfD9HnmtMS7IrZ+f8DTH2kgNEPTuoOv9k/tu7gzxyAUkPLRkBd33Mq2V157MEOdGSVZ/l+tRAIGKZZzhCoNWDIS5CUpmvc6YAlxrcWvZ3k1V1M8ty8kZkXxTpRbKpiKvoXZfVH+BA7JwNoDHOqkAieT4sENUF2/1G9KYiBv85X4uLoE6zk0ibKpgbTa0xdzZ8GrfMyWC/MqX/HkE0+ME2cFOoxG/29kleDVM4sZ+M1vGbWoL92mSEVAlEt/zLscWTDm+nQQ3Jrb+HmDyIfCwhzL5KQoI7S1xxz5vBlDLs6Uvqay7YUFxWjO6KmQeFeaSwsNIFwtQtYTbQzktwhKV0zzg3YBmMM1UThUh5khGLOCO987QBqdfs2QErO1172ZiXCA9IH+dRsbHjkFjm+CVApTqjwBxODnR+P5HwkDkF+YpGzJsR8nKZ+/grIb1Yavl7vprGj15/xWkbdcav1w3sap7HB48f0iVTUOnnkPlHS2PkKugRtZ0rEtuJP/XD8PlQgn6G1i98WT8BAuN7nlbC5/Hsvt8GC2Qw5CwbLsKRLjbFjgojSP990uFG35OiC063cS3IkqMdbI0sA3RclP9V3nQNOz1Xvk6PaGAxpE298tnOv5CugrCbOV7V1faBuPip1Ht2GKHEOO5pONxUpXv/Zx3xkJAoCefaQMnw8bg5vhqSzjgWzahCtgrL3u6DmuppOKpmYA1EhqwY8XFNUSDDwxTw+5l7qxaa7iDECnKOOcp6CXILOO8yZ8OvNLBeSERUasZ6Cn/OjrJs17E9uF8ryeVTsTthUXHx9/qxrX2U+sTBH/XO3RJB6Qa4uAJNtMm3mYuS6RQ2LvKBanGurzh9Qx/bDMKq/jFoK9l5isixZZnJNv6d+xm8wCbi21pkQIthjvuD6CZjwoixYWyKBa9qsIYPU8mX8kw3qNXp0NfjcL7cM0LwIcmChCjjM6ZEXyZncWMkCWEzECAHDxxFHb84d04qYtC9tBDXKaOMyPFMBy1L67py/A++oD9cDMBmGIaU6fKI1z0yQ5RAa5FKECLQlKFl9PIsAUOClpuZbhC47sAyj5j0cP8SCP+g21TXWDuiOMr/YmSC00Ph0XOUkZ+1roiiMsPVuUbh+Pxxra2UCJz/ocQn2/AGehRkUP+dLDl+BQaXa/dcxuBNjoFTRbqrrW5LBJMuFAz3+4SpDx4ItgGEqzu39NNJKjhU7KxWVtrGDx7jD7+GPDWFbWTITAJ5XUx8Z9Z8msudTQAyf4Bjaqy0hE5d06Atu8zJIuVbt7nt9rdmHUKwSdIrrRowXLTyaSEnPnpA1is8dwpnDjoTHMBFjHo/EHvfo4KrozLiomi1lzbppbiKBkDs0z6Cmewbg1cB3QINlqGwlhqwmq4koGmrhtMAmJcb+bJo72ntILDHCgeVsHtUNorBEGHzFfYWIl8s6FvG5VjwNpX/AzqMM60nRaYQD1Rn4QnTmLODJTjMQNCWbrFanKWEjurn9cogOs6aVMBcCst/51JBWylGLFJEoAK9keknNfzzF+5ezdAcNXBhAsju4Nt1hmZ3DX00Om8bKtqpZ+14KNpUAqQFhth5QAAAA== 157w, /mimino/assets/main-restaurant-slider-2-1x-266-a53fd8af.webp 266w, /mimino/assets/main-restaurant-slider-2-2x-314-e5e89349.webp 314w, /mimino/assets/main-restaurant-slider-2-1x-336-e6e228cb.webp 336w, /mimino/assets/main-restaurant-slider-2-3x-471-ab904269.webp 471w, /mimino/assets/main-restaurant-slider-2-2x-532-852714af.webp 532w, /mimino/assets/main-restaurant-slider-2-2x-672-d521f0d3.webp 672w, /mimino/assets/main-restaurant-slider-2-3x-798-c901e5ad.webp 798w, /mimino/assets/main-restaurant-slider-2-3x-1008-20317f52.webp 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/webp"
+            />
+            <source
+              srcset="/mimino/assets/main-restaurant-slider-2-1x-157-44f91e8e.jpg 157w, /mimino/assets/main-restaurant-slider-2-1x-266-93c5e0fe.jpg 266w, /mimino/assets/main-restaurant-slider-2-2x-314-0f82e4bf.jpg 314w, /mimino/assets/main-restaurant-slider-2-1x-336-49b61faf.jpg 336w, /mimino/assets/main-restaurant-slider-2-3x-471-69e39398.jpg 471w, /mimino/assets/main-restaurant-slider-2-2x-532-5fce00e2.jpg 532w, /mimino/assets/main-restaurant-slider-2-2x-672-bdb4d640.jpg 672w, /mimino/assets/main-restaurant-slider-2-3x-798-b55adb26.jpg 798w, /mimino/assets/main-restaurant-slider-2-3x-1008-ace1afa0.jpg 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/jpeg"
+            />
+            <img
+              src="/mimino/assets/main-restaurant-slider-2-1x-266-93c5e0fe.jpg"
+              alt="croissants"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source
+              srcset="/mimino/assets/main-restaurant-slider-3-1x-157-aeec20fa.webp 157w, /mimino/assets/main-restaurant-slider-3-1x-266-7439d61f.webp 266w, /mimino/assets/main-restaurant-slider-3-2x-314-050d69b0.webp 314w, /mimino/assets/main-restaurant-slider-3-1x-336-a38112b0.webp 336w, /mimino/assets/main-restaurant-slider-3-3x-471-74c643d9.webp 471w, /mimino/assets/main-restaurant-slider-3-2x-532-94015a88.webp 532w, /mimino/assets/main-restaurant-slider-3-2x-672-60958136.webp 672w, /mimino/assets/main-restaurant-slider-3-3x-798-fbb7535c.webp 798w, /mimino/assets/main-restaurant-slider-3-3x-1008-e5e66234.webp 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/webp"
+            />
+            <source
+              srcset="/mimino/assets/main-restaurant-slider-3-1x-157-14d9b569.jpg 157w, /mimino/assets/main-restaurant-slider-3-1x-266-18d8fb72.jpg 266w, /mimino/assets/main-restaurant-slider-3-2x-314-b3e06667.jpg 314w, /mimino/assets/main-restaurant-slider-3-1x-336-b3d36399.jpg 336w, /mimino/assets/main-restaurant-slider-3-3x-471-ada44753.jpg 471w, /mimino/assets/main-restaurant-slider-3-2x-532-f7deca1c.jpg 532w, /mimino/assets/main-restaurant-slider-3-2x-672-9035ebf9.jpg 672w, /mimino/assets/main-restaurant-slider-3-3x-798-9204bf85.jpg 798w, /mimino/assets/main-restaurant-slider-3-3x-1008-5b581355.jpg 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/jpeg"
+            />
+            <img
+              src="/mimino/assets/main-restaurant-slider-3-1x-266-18d8fb72.jpg"
+              alt="wine"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source
+              srcset="
+                ./img/main-restaurant/main-restaurant-slider-4-157.webp   157w,
+                ./img/main-restaurant/main-restaurant-slider-4-266.webp   266w,
+                ./img/main-restaurant/main-restaurant-slider-4-314.webp   314w,
+                ./img/main-restaurant/main-restaurant-slider-4-336.webp   336w,
+                ./img/main-restaurant/main-restaurant-slider-4-471.webp   471w,
+                ./img/main-restaurant/main-restaurant-slider-4-532.webp   532w,
+                ./img/main-restaurant/main-restaurant-slider-4-672.webp   672w,
+                ./img/main-restaurant/main-restaurant-slider-4-798.webp   798w,
+                ./img/main-restaurant/main-restaurant-slider-4-1008.webp 1008w
+              "
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./img/main-restaurant/main-restaurant-slider-4-157.jpg   157w,
+                ./img/main-restaurant/main-restaurant-slider-4-266.jpg   266w,
+                ./img/main-restaurant/main-restaurant-slider-4-314.jpg   314w,
+                ./img/main-restaurant/main-restaurant-slider-4-336.jpg   336w,
+                ./img/main-restaurant/main-restaurant-slider-4-471.jpg   471w,
+                ./img/main-restaurant/main-restaurant-slider-4-532.jpg   532w,
+                ./img/main-restaurant/main-restaurant-slider-4-672.jpg   672w,
+                ./img/main-restaurant/main-restaurant-slider-4-798.jpg   798w,
+                ./img/main-restaurant/main-restaurant-slider-4-1008.jpg 1008w
+              "
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/jpeg"
+            />
+            <img
+              src="/mimino/assets/main-restaurant-slider-4-266-bc1afd42.jpg"
+              alt="cook"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source
+              srcset="/mimino/assets/main-restaurant-slider-5-1x-157-86ee1b61.webp 157w, /mimino/assets/main-restaurant-slider-5-1x-266-fce0ec56.webp 266w, /mimino/assets/main-restaurant-slider-5-2x-314-cc5c4e8f.webp 314w, /mimino/assets/main-restaurant-slider-5-1x-336-72cbf40f.webp 336w, /mimino/assets/main-restaurant-slider-5-3x-471-c09f1d7c.webp 471w, /mimino/assets/main-restaurant-slider-5-2x-532-4ac29213.webp 532w, /mimino/assets/main-restaurant-slider-5-2x-672-e160a302.webp 672w, /mimino/assets/main-restaurant-slider-5-3x-798-59b61aba.webp 798w, /mimino/assets/main-restaurant-slider-5-3x-1008-15e873b7.webp 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/webp"
+            />
+            <source
+              srcset="/mimino/assets/main-restaurant-slider-5-1x-157-fd835977.jpg 157w, /mimino/assets/main-restaurant-slider-5-1x-266-471fe607.jpg 266w, /mimino/assets/main-restaurant-slider-5-2x-314-088512af.jpg 314w, /mimino/assets/main-restaurant-slider-5-1x-336-ec71585f.jpg 336w, /mimino/assets/main-restaurant-slider-5-3x-471-c4ef883b.jpg 471w, /mimino/assets/main-restaurant-slider-5-2x-532-3492c355.jpg 532w, /mimino/assets/main-restaurant-slider-5-2x-672-2dc2d66e.jpg 672w, /mimino/assets/main-restaurant-slider-5-3x-798-fb8433f0.jpg 798w, /mimino/assets/main-restaurant-slider-5-3x-1008-4541e5b0.jpg 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/jpeg"
+            />
+            <img
+              src="/mimino/assets/main-restaurant-slider-5-1x-266-471fe607.jpg"
+              alt="salmon dish"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source
+              srcset="/mimino/assets/main-restaurant-slider-6-1x-157-6cd9e346.webp 157w, /mimino/assets/main-restaurant-slider-6-1x-266-caf21076.webp 266w, /mimino/assets/main-restaurant-slider-6-2x-314-e9d59a8e.webp 314w, /mimino/assets/main-restaurant-slider-6-1x-336-af7024ef.webp 336w, /mimino/assets/main-restaurant-slider-6-3x-471-c50872d8.webp 471w, /mimino/assets/main-restaurant-slider-6-2x-532-7115caea.webp 532w, /mimino/assets/main-restaurant-slider-6-2x-672-6da0bba5.webp 672w, /mimino/assets/main-restaurant-slider-6-3x-798-601f2800.webp 798w, /mimino/assets/main-restaurant-slider-6-3x-1008-93b557b4.webp 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/webp"
+            />
+            <source
+              srcset="/mimino/assets/main-restaurant-slider-6-1x-157-bc1f24fa.jpg 157w, /mimino/assets/main-restaurant-slider-6-1x-266-296c0a75.jpg 266w, /mimino/assets/main-restaurant-slider-6-2x-314-8415df47.jpg 314w, /mimino/assets/main-restaurant-slider-6-1x-336-1453d40f.jpg 336w, /mimino/assets/main-restaurant-slider-6-3x-471-4d0dcb91.jpg 471w, /mimino/assets/main-restaurant-slider-6-2x-532-7f43966b.jpg 532w, /mimino/assets/main-restaurant-slider-6-2x-672-8b1fac8d.jpg 672w, /mimino/assets/main-restaurant-slider-6-3x-798-d95ef12a.jpg 798w, /mimino/assets/main-restaurant-slider-6-3x-1008-ddb4b4da.jpg 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/jpeg"
+            />
+            <img
+              src="/mimino/assets/main-restaurant-slider-6-1x-266-296c0a75.jpg"
+              alt="dinner with different wines"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source
+              srcset="/mimino/assets/main-restaurant-slider-7-1x-157-925c3a9b.webp 157w, /mimino/assets/main-restaurant-slider-7-1x-266-ca123707.webp 266w, /mimino/assets/main-restaurant-slider-7-2x-314-3c4e09ae.webp 314w, /mimino/assets/main-restaurant-slider-7-1x-336-faf22ec4.webp 336w, /mimino/assets/main-restaurant-slider-7-3x-471-17300d2a.webp 471w, /mimino/assets/main-restaurant-slider-7-2x-532-167f476f.webp 532w, /mimino/assets/main-restaurant-slider-7-2x-672-c5dbed48.webp 672w, /mimino/assets/main-restaurant-slider-7-3x-798-70f87ff9.webp 798w, /mimino/assets/main-restaurant-slider-7-3x-1008-96ac0a6e.webp 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/webp"
+            />
+            <source
+              srcset="/mimino/assets/main-restaurant-slider-7-1x-157-0c42ddac.jpg 157w, /mimino/assets/main-restaurant-slider-7-1x-266-5b5ddace.jpg 266w, /mimino/assets/main-restaurant-slider-7-2x-314-c9174341.jpg 314w, /mimino/assets/main-restaurant-slider-7-1x-336-ac1f4c32.jpg 336w, /mimino/assets/main-restaurant-slider-7-3x-471-0b918520.jpg 471w, /mimino/assets/main-restaurant-slider-7-2x-532-5549de00.jpg 532w, /mimino/assets/main-restaurant-slider-7-2x-672-b7d4504b.jpg 672w, /mimino/assets/main-restaurant-slider-7-3x-798-bbbdb417.jpg 798w, /mimino/assets/main-restaurant-slider-7-3x-1008-6cb24e62.jpg 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/jpeg"
+            />
+            <img
+              src="/mimino/assets/main-restaurant-slider-7-1x-266-5b5ddace.jpg"
+              alt="girl enjoing her breakfast"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source
+              srcset="/mimino/assets/main-restaurant-slider-8-1x-157-9d144743.webp 157w, /mimino/assets/main-restaurant-slider-8-1x-266-62802802.webp 266w, /mimino/assets/main-restaurant-slider-8-2x-314-abbc687a.webp 314w, /mimino/assets/main-restaurant-slider-8-1x-336-4aa87054.webp 336w, /mimino/assets/main-restaurant-slider-8-3x-471-f807c282.webp 471w, /mimino/assets/main-restaurant-slider-8-2x-532-d240ae5b.webp 532w, /mimino/assets/main-restaurant-slider-8-2x-672-580a9ba3.webp 672w, /mimino/assets/main-restaurant-slider-8-3x-798-9aa1b3b2.webp 798w, /mimino/assets/main-restaurant-slider-8-3x-1008-f9c1bdfe.webp 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/webp"
+            />
+            <source
+              srcset="/mimino/assets/main-restaurant-slider-8-1x-157-ca17dada.jpg 157w, /mimino/assets/main-restaurant-slider-8-1x-266-98f35c35.jpg 266w, /mimino/assets/main-restaurant-slider-8-2x-314-1270504a.jpg 314w, /mimino/assets/main-restaurant-slider-8-1x-336-ee211894.jpg 336w, /mimino/assets/main-restaurant-slider-8-3x-471-45e57aaa.jpg 471w, /mimino/assets/main-restaurant-slider-8-2x-532-9badf721.jpg 532w, /mimino/assets/main-restaurant-slider-8-2x-672-f5b6a5fd.jpg 672w, /mimino/assets/main-restaurant-slider-8-3x-798-b9c27077.jpg 798w, /mimino/assets/main-restaurant-slider-8-3x-1008-3ccdcdba.jpg 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/jpeg"
+            />
+            <img
+              src="/mimino/assets/main-restaurant-slider-8-1x-266-98f35c35.jpg"
+              alt="dish with shrimp"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source
+              srcset="data:image/webp;base64,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 157w, data:image/webp;base64,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 266w, /mimino/assets/main-restaurant-slider-9-2x-314-7411da6e.webp 314w, /mimino/assets/main-restaurant-slider-9-1x-336-09c1e7e5.webp 336w, /mimino/assets/main-restaurant-slider-9-3x-471-cf3619da.webp 471w, /mimino/assets/main-restaurant-slider-9-2x-532-ccea79fc.webp 532w, /mimino/assets/main-restaurant-slider-9-2x-672-f5e1d334.webp 672w, /mimino/assets/main-restaurant-slider-9-3x-798-7ede56e5.webp 798w, /mimino/assets/main-restaurant-slider-9-3x-1008-491e2040.webp 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/webp"
+            />
+            <source
+              srcset="data:image/jpeg;base64,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 157w, /mimino/assets/main-restaurant-slider-9-1x-266-a6f70e75.jpg 266w, /mimino/assets/main-restaurant-slider-9-2x-314-cd5a447a.jpg 314w, /mimino/assets/main-restaurant-slider-9-1x-336-17d201d6.jpg 336w, /mimino/assets/main-restaurant-slider-9-3x-471-ab6a1d25.jpg 471w, /mimino/assets/main-restaurant-slider-9-2x-532-0cadc483.jpg 532w, /mimino/assets/main-restaurant-slider-9-2x-672-d04a70fb.jpg 672w, /mimino/assets/main-restaurant-slider-9-3x-798-f355a4cf.jpg 798w, /mimino/assets/main-restaurant-slider-9-3x-1008-4b309dfe.jpg 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/jpeg"
+            />
+            <img
+              src="/mimino/assets/main-restaurant-slider-9-1x-266-a6f70e75.jpg"
+              alt="cocktail"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source
+              srcset="/mimino/assets/main-restaurant-slider-10-1x-157-f7fc56e6.webp 157w, /mimino/assets/main-restaurant-slider-10-1x-266-39db8f7e.webp 266w, /mimino/assets/main-restaurant-slider-10-2x-314-cb93b4d6.webp 314w, /mimino/assets/main-restaurant-slider-10-1x-336-5ffda2b9.webp 336w, /mimino/assets/main-restaurant-slider-10-3x-471-60e51f98.webp 471w, /mimino/assets/main-restaurant-slider-10-2x-532-ff27de86.webp 532w, /mimino/assets/main-restaurant-slider-10-2x-672-8978a32a.webp 672w, /mimino/assets/main-restaurant-slider-10-3x-798-eb172d02.webp 798w, /mimino/assets/main-restaurant-slider-10-3x-1008-3f11ad37.webp 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/webp"
+            />
+            <source
+              srcset="/mimino/assets/main-restaurant-slider-10-1x-157-3e887154.jpg 157w, /mimino/assets/main-restaurant-slider-10-1x-266-a21898a6.jpg 266w, /mimino/assets/main-restaurant-slider-10-2x-314-1e9185db.jpg 314w, /mimino/assets/main-restaurant-slider-10-1x-336-fb6e7427.jpg 336w, /mimino/assets/main-restaurant-slider-10-3x-471-3cda26ee.jpg 471w, /mimino/assets/main-restaurant-slider-10-2x-532-6e04e059.jpg 532w, /mimino/assets/main-restaurant-slider-10-2x-672-b5711a63.jpg 672w, /mimino/assets/main-restaurant-slider-10-3x-798-160bfe42.jpg 798w, /mimino/assets/main-restaurant-slider-10-3x-1008-2590c283.jpg 1008w"
+              sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
+              type="image/jpeg"
+            />
+            <img
+              src="/mimino/assets/main-restaurant-slider-10-1x-266-a21898a6.jpg"
+              alt="poached egg"
+              loading="lazy"
+            />
+          </picture>
+        </div>
       </div>
-      <div>
-        <picture>
-          <source
-            srcset="data:image/webp;base64,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 157w, /mimino/assets/main-restaurant-slider-2-1x-266-a53fd8af.webp 266w, /mimino/assets/main-restaurant-slider-2-2x-314-e5e89349.webp 314w, /mimino/assets/main-restaurant-slider-2-1x-336-e6e228cb.webp 336w, /mimino/assets/main-restaurant-slider-2-3x-471-ab904269.webp 471w, /mimino/assets/main-restaurant-slider-2-2x-532-852714af.webp 532w, /mimino/assets/main-restaurant-slider-2-2x-672-d521f0d3.webp 672w, /mimino/assets/main-restaurant-slider-2-3x-798-c901e5ad.webp 798w, /mimino/assets/main-restaurant-slider-2-3x-1008-20317f52.webp 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/webp"
-          />
-          <source
-            srcset="/mimino/assets/main-restaurant-slider-2-1x-157-44f91e8e.jpg 157w, /mimino/assets/main-restaurant-slider-2-1x-266-93c5e0fe.jpg 266w, /mimino/assets/main-restaurant-slider-2-2x-314-0f82e4bf.jpg 314w, /mimino/assets/main-restaurant-slider-2-1x-336-49b61faf.jpg 336w, /mimino/assets/main-restaurant-slider-2-3x-471-69e39398.jpg 471w, /mimino/assets/main-restaurant-slider-2-2x-532-5fce00e2.jpg 532w, /mimino/assets/main-restaurant-slider-2-2x-672-bdb4d640.jpg 672w, /mimino/assets/main-restaurant-slider-2-3x-798-b55adb26.jpg 798w, /mimino/assets/main-restaurant-slider-2-3x-1008-ace1afa0.jpg 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/jpeg"
-          />
-          <img
-            src="/mimino/assets/main-restaurant-slider-2-1x-266-93c5e0fe.jpg"
-            alt="croissants"
-          />
-        </picture>
-      </div>
-      <div>
-        <picture>
-          <source
-            srcset="/mimino/assets/main-restaurant-slider-3-1x-157-aeec20fa.webp 157w, /mimino/assets/main-restaurant-slider-3-1x-266-7439d61f.webp 266w, /mimino/assets/main-restaurant-slider-3-2x-314-050d69b0.webp 314w, /mimino/assets/main-restaurant-slider-3-1x-336-a38112b0.webp 336w, /mimino/assets/main-restaurant-slider-3-3x-471-74c643d9.webp 471w, /mimino/assets/main-restaurant-slider-3-2x-532-94015a88.webp 532w, /mimino/assets/main-restaurant-slider-3-2x-672-60958136.webp 672w, /mimino/assets/main-restaurant-slider-3-3x-798-fbb7535c.webp 798w, /mimino/assets/main-restaurant-slider-3-3x-1008-e5e66234.webp 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/webp"
-          />
-          <source
-            srcset="/mimino/assets/main-restaurant-slider-3-1x-157-14d9b569.jpg 157w, /mimino/assets/main-restaurant-slider-3-1x-266-18d8fb72.jpg 266w, /mimino/assets/main-restaurant-slider-3-2x-314-b3e06667.jpg 314w, /mimino/assets/main-restaurant-slider-3-1x-336-b3d36399.jpg 336w, /mimino/assets/main-restaurant-slider-3-3x-471-ada44753.jpg 471w, /mimino/assets/main-restaurant-slider-3-2x-532-f7deca1c.jpg 532w, /mimino/assets/main-restaurant-slider-3-2x-672-9035ebf9.jpg 672w, /mimino/assets/main-restaurant-slider-3-3x-798-9204bf85.jpg 798w, /mimino/assets/main-restaurant-slider-3-3x-1008-5b581355.jpg 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/jpeg"
-          />
-          <img
-            src="/mimino/assets/main-restaurant-slider-3-1x-266-18d8fb72.jpg"
-            alt="wine"
-          />
-        </picture>
-      </div>
-      <!-- <div>
-        <picture>
-          <source
-            srcset="
-              ./img/main-restaurant/main-restaurant-slider-4-157.webp   157w,
-              ./img/main-restaurant/main-restaurant-slider-4-266.webp   266w,
-              ./img/main-restaurant/main-restaurant-slider-4-314.webp   314w,
-              ./img/main-restaurant/main-restaurant-slider-4-336.webp   336w,
-              ./img/main-restaurant/main-restaurant-slider-4-471.webp   471w,
-              ./img/main-restaurant/main-restaurant-slider-4-532.webp   532w,
-              ./img/main-restaurant/main-restaurant-slider-4-672.webp   672w,
-              ./img/main-restaurant/main-restaurant-slider-4-798.webp   798w,
-              ./img/main-restaurant/main-restaurant-slider-4-1008.webp 1008w
-            "
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./img/main-restaurant/main-restaurant-slider-4-157.jpg   157w,
-              ./img/main-restaurant/main-restaurant-slider-4-266.jpg   266w,
-              ./img/main-restaurant/main-restaurant-slider-4-314.jpg   314w,
-              ./img/main-restaurant/main-restaurant-slider-4-336.jpg   336w,
-              ./img/main-restaurant/main-restaurant-slider-4-471.jpg   471w,
-              ./img/main-restaurant/main-restaurant-slider-4-532.jpg   532w,
-              ./img/main-restaurant/main-restaurant-slider-4-672.jpg   672w,
-              ./img/main-restaurant/main-restaurant-slider-4-798.jpg   798w,
-              ./img/main-restaurant/main-restaurant-slider-4-1008.jpg 1008w
-            "
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/jpeg"
-          />
-          <img
-            src="./img/main-restaurant/main-restaurant-slider-4-266.jpg"
-            alt="cook"
-          />
-        </picture>
-      </div> -->
-      <div>
-        <picture>
-          <source
-            srcset="/mimino/assets/main-restaurant-slider-5-1x-157-86ee1b61.webp 157w, /mimino/assets/main-restaurant-slider-5-1x-266-fce0ec56.webp 266w, /mimino/assets/main-restaurant-slider-5-2x-314-cc5c4e8f.webp 314w, /mimino/assets/main-restaurant-slider-5-1x-336-72cbf40f.webp 336w, /mimino/assets/main-restaurant-slider-5-3x-471-c09f1d7c.webp 471w, /mimino/assets/main-restaurant-slider-5-2x-532-4ac29213.webp 532w, /mimino/assets/main-restaurant-slider-5-2x-672-e160a302.webp 672w, /mimino/assets/main-restaurant-slider-5-3x-798-59b61aba.webp 798w, /mimino/assets/main-restaurant-slider-5-3x-1008-15e873b7.webp 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/webp"
-          />
-          <source
-            srcset="/mimino/assets/main-restaurant-slider-5-1x-157-fd835977.jpg 157w, /mimino/assets/main-restaurant-slider-5-1x-266-471fe607.jpg 266w, /mimino/assets/main-restaurant-slider-5-2x-314-088512af.jpg 314w, /mimino/assets/main-restaurant-slider-5-1x-336-ec71585f.jpg 336w, /mimino/assets/main-restaurant-slider-5-3x-471-c4ef883b.jpg 471w, /mimino/assets/main-restaurant-slider-5-2x-532-3492c355.jpg 532w, /mimino/assets/main-restaurant-slider-5-2x-672-2dc2d66e.jpg 672w, /mimino/assets/main-restaurant-slider-5-3x-798-fb8433f0.jpg 798w, /mimino/assets/main-restaurant-slider-5-3x-1008-4541e5b0.jpg 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/jpeg"
-          />
-          <img
-            src="/mimino/assets/main-restaurant-slider-5-1x-266-471fe607.jpg"
-            alt="salmon dish"
-          />
-        </picture>
-      </div>
-      <div>
-        <picture>
-          <source
-            srcset="/mimino/assets/main-restaurant-slider-6-1x-157-6cd9e346.webp 157w, /mimino/assets/main-restaurant-slider-6-1x-266-caf21076.webp 266w, /mimino/assets/main-restaurant-slider-6-2x-314-e9d59a8e.webp 314w, /mimino/assets/main-restaurant-slider-6-1x-336-af7024ef.webp 336w, /mimino/assets/main-restaurant-slider-6-3x-471-c50872d8.webp 471w, /mimino/assets/main-restaurant-slider-6-2x-532-7115caea.webp 532w, /mimino/assets/main-restaurant-slider-6-2x-672-6da0bba5.webp 672w, /mimino/assets/main-restaurant-slider-6-3x-798-601f2800.webp 798w, /mimino/assets/main-restaurant-slider-6-3x-1008-93b557b4.webp 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/webp"
-          />
-          <source
-            srcset="/mimino/assets/main-restaurant-slider-6-1x-157-bc1f24fa.jpg 157w, /mimino/assets/main-restaurant-slider-6-1x-266-296c0a75.jpg 266w, /mimino/assets/main-restaurant-slider-6-2x-314-8415df47.jpg 314w, /mimino/assets/main-restaurant-slider-6-1x-336-1453d40f.jpg 336w, /mimino/assets/main-restaurant-slider-6-3x-471-4d0dcb91.jpg 471w, /mimino/assets/main-restaurant-slider-6-2x-532-7f43966b.jpg 532w, /mimino/assets/main-restaurant-slider-6-2x-672-8b1fac8d.jpg 672w, /mimino/assets/main-restaurant-slider-6-3x-798-d95ef12a.jpg 798w, /mimino/assets/main-restaurant-slider-6-3x-1008-ddb4b4da.jpg 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/jpeg"
-          />
-          <img
-            src="/mimino/assets/main-restaurant-slider-6-1x-266-296c0a75.jpg"
-            alt="dinner with different wines"
-          />
-        </picture>
-      </div>
-      <div>
-        <picture>
-          <source
-            srcset="/mimino/assets/main-restaurant-slider-7-1x-157-925c3a9b.webp 157w, /mimino/assets/main-restaurant-slider-7-1x-266-ca123707.webp 266w, /mimino/assets/main-restaurant-slider-7-2x-314-3c4e09ae.webp 314w, /mimino/assets/main-restaurant-slider-7-1x-336-faf22ec4.webp 336w, /mimino/assets/main-restaurant-slider-7-3x-471-17300d2a.webp 471w, /mimino/assets/main-restaurant-slider-7-2x-532-167f476f.webp 532w, /mimino/assets/main-restaurant-slider-7-2x-672-c5dbed48.webp 672w, /mimino/assets/main-restaurant-slider-7-3x-798-70f87ff9.webp 798w, /mimino/assets/main-restaurant-slider-7-3x-1008-96ac0a6e.webp 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/webp"
-          />
-          <source
-            srcset="/mimino/assets/main-restaurant-slider-7-1x-157-0c42ddac.jpg 157w, /mimino/assets/main-restaurant-slider-7-1x-266-5b5ddace.jpg 266w, /mimino/assets/main-restaurant-slider-7-2x-314-c9174341.jpg 314w, /mimino/assets/main-restaurant-slider-7-1x-336-ac1f4c32.jpg 336w, /mimino/assets/main-restaurant-slider-7-3x-471-0b918520.jpg 471w, /mimino/assets/main-restaurant-slider-7-2x-532-5549de00.jpg 532w, /mimino/assets/main-restaurant-slider-7-2x-672-b7d4504b.jpg 672w, /mimino/assets/main-restaurant-slider-7-3x-798-bbbdb417.jpg 798w, /mimino/assets/main-restaurant-slider-7-3x-1008-6cb24e62.jpg 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/jpeg"
-          />
-          <img
-            src="/mimino/assets/main-restaurant-slider-7-1x-266-5b5ddace.jpg"
-            alt="girl enjoing her breakfast"
-          />
-        </picture>
-      </div>
-      <div>
-        <picture>
-          <source
-            srcset="/mimino/assets/main-restaurant-slider-8-1x-157-9d144743.webp 157w, /mimino/assets/main-restaurant-slider-8-1x-266-62802802.webp 266w, /mimino/assets/main-restaurant-slider-8-2x-314-abbc687a.webp 314w, /mimino/assets/main-restaurant-slider-8-1x-336-4aa87054.webp 336w, /mimino/assets/main-restaurant-slider-8-3x-471-f807c282.webp 471w, /mimino/assets/main-restaurant-slider-8-2x-532-d240ae5b.webp 532w, /mimino/assets/main-restaurant-slider-8-2x-672-580a9ba3.webp 672w, /mimino/assets/main-restaurant-slider-8-3x-798-9aa1b3b2.webp 798w, /mimino/assets/main-restaurant-slider-8-3x-1008-f9c1bdfe.webp 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/webp"
-          />
-          <source
-            srcset="/mimino/assets/main-restaurant-slider-8-1x-157-ca17dada.jpg 157w, /mimino/assets/main-restaurant-slider-8-1x-266-98f35c35.jpg 266w, /mimino/assets/main-restaurant-slider-8-2x-314-1270504a.jpg 314w, /mimino/assets/main-restaurant-slider-8-1x-336-ee211894.jpg 336w, /mimino/assets/main-restaurant-slider-8-3x-471-45e57aaa.jpg 471w, /mimino/assets/main-restaurant-slider-8-2x-532-9badf721.jpg 532w, /mimino/assets/main-restaurant-slider-8-2x-672-f5b6a5fd.jpg 672w, /mimino/assets/main-restaurant-slider-8-3x-798-b9c27077.jpg 798w, /mimino/assets/main-restaurant-slider-8-3x-1008-3ccdcdba.jpg 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/jpeg"
-          />
-          <img
-            src="/mimino/assets/main-restaurant-slider-8-1x-266-98f35c35.jpg"
-            alt="dish with shrimp"
-          />
-        </picture>
-      </div>
-      <div>
-        <picture>
-          <source
-            srcset="data:image/webp;base64,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 157w, data:image/webp;base64,UklGRmYPAABXRUJQVlA4IFoPAADwYACdASoKATUBPpFEnUulo6KvIpTKIeASCWVuvU0ew6fybgGDBOYBIPyP4OyVMl33jOD+u42nNj9VH876M3TcN6ojX3SAIFY0lAVIm1q/1zwHfQ7HRsqiZEyO1BGCdX//odaF0OgN4R0yBpkSafsmGcoGtg23ihqv2/RPNvDfLI3+snv11o0XW6pycj3yPV9u1TWSItsTVqOLRlskkDKAughM9kW4BniQErsT3LnjO7c1wOMzXOh/apw/badqRU8oDUzssm7BlKo/D68unzVYUOVZNtVLR4rrq2Yx6maEPvlnWrtFtFajgS1Ye5H+Gw7/VY7Z3XYlojgS1OR/b8t4YgSlViisZZpTecy6hcuw19ZZPIpf4dJYVFQxFbKt+L7TSP9VWyiKCnIjuq69Bnd2sYs5yh42nWhkQnDOoN4fPskx7r0mP0HYLn5/usKqMIWEaqtihkGG23L6O2u+ri5C0S9wGxRYRgPHCK8zfbOC5rrKKtzl+9mcB5mgrIK1AukMslhuYVJ4pMHVU6GC+B/T95gzwUgUY3YsGLh/6mza1HjQXdncS/KIyQU1EjPEMWswwLgk6sxQJxFXbC8zHQ4nLC17kD4Uyg/z26Bii+g5JAYBD4d3b/EGDec7JZN+cjxn01K63wSor2up/tr+9OlZeM+TL9Q2uuUlTmLLGW50iH+H573n95tuYuUtPD4XdjSvgQmWHzfGeq0MHbpV7j9Am0kpjMuRsR48P0zhK03503QDMqbAD6eUnYFM0+UJZpFZCmbd0/o7/B/BG7CpWtSRPG9TO9SQdK6LRjZC770eedwCXrby1vhumk2yWDvHGh6kPo52GV+SYWYqM7MxmFhERpVMg4C02zKrdKN7wu4e9NIvt9esiT7vM+HkCepF/psVIz8N/03f94ihj9f1iZHvOvOIQoYouD7fkzqaA9upsJgdFE8jf/QfwiLGUjTFwGg0OMd6jj5M1Fxo5By8F5qqWZW560ZT8ahFysjeElUR2eaQLavo9qnIpP0kFVWaO7qRf0QWny8ySQXJTry8C0goAP725yapvzh3SDy4dTxZoBiWRzpcVmVPzCbtcGPcykdoKDLtvbQpbZwACYbx4CC0oxC+dKVeYVdZAGgdXhuiWcAur1kANAWKv0ZrBEwUuEqEmZx+myG6JaSxFMYgBYPVvYhewmcjc8QoEjgPzQ8h2kq+6TY7QIR3gIp6oLJ0JrjfUee/Yiw2C+FyO3bNiKHO3mUS5+cfPr8d/+lONhP+ulhX+RfBqnC2AFSHwqj2LyiXHmkhDlhkgUC3ns7beNhauD3lp5gXqJgOGGfJtK1epGPa1IRg5RpmFlUXiyuvPM7keaxaPbcKigHE7BRH5546NV2i/EAtRTc78GudK9T7QgWl81R7TcOGNhc0nsrfZFKumhRvU2dETP8O5sOXt0J+E9ZCoh8ZFYO/99vj0+Dw+j3KBUurfJe6Rk6trzcuMrKSZm7fMW9x5F666sM0F7okd6aAZ5WxRVyPqn4g7b9CSS5VOXQ3AHByv5ZI5zUz/WtCekIq7L738h62Y56/5x+RFV/P+UIPP6/b/f1W/xIUoVZYX+nUzZnq12CGx9QpYmyo8J4yosYKTsgRvl+8Tvqqpz+9Hn6s9W2tXoH2H13YHRU9AWh2AQJO3fBEIOXloX3ENy6592bBpos98GHtM3PRVynI8mx4/y0fS/RFJWC5+UA3lG5plmTnkmoOlKzoVISHtTd2LB1yO7k+HVBZ6Gxl/ZcqZYjQKmXZ31WU7ZtNiWQPjnwa/uP2KU0ODMqmsyGja9gBKV0iQHprwGA82TGVh8IzaEUC1vo+spT7q87FQKMaTJLATgpBVD7gAuDiYde8YF43nasrk/bYCvDRBYQ9b705rnbr0XtDS/Bk6v74O11AZB3wIIqZ939lEwQhjA2xyS632X3h7xOFehH6T9AOVBeTWKqbhWRwp1bFBgzltqGQ4HFZtk8xY5GESyt6t21lenXy/QEoBcSvmkw8EOQYxFqckIfxvEjMPeSJfGua/jM63Cg8p43tBdWbjzAUv8ingqCieafexZ8WifvSkC0gV5IY4lBZtE0siDyVmiQ7ATlRx+j9bXQ+4yYPxwZh4UBhyGxwOPSg+hHfahVwRr3mAqSXbt7/aifmF/p/AbjZvc7ka+fU46ajPTJOj6aI7/oeLLDNj+rYK4RMUJTP9MfbwrRC8+Xk8x36YPEs7f5KTXZTQWX37ze5FQEPAM2QOU2jrYuR/i7pxUjbm58Jm9JRjeRFEIk1iczEOIqQXTbCXElTfSutXmhprRmQSBd7lBArUa8gPrgpmJCshw6rc9ZMTp3STrw+KVxub34sD6sbxuABI3wiaprWkgkIdLvY3lhIz7+VlUWT1muyGpRkdm/m15kc0WgqpcCpBdCEZggtw9LxbZrjsJyFeN+ShRMu1pNyJkc4ItousUAUpRPE+J8g041oeY5aooYPONcHY2vGIcJx7l6HiQDtZRHDBs2y0oBYhxg/LFq4gltp57F7xaCLTQixHhZMczhuCZuWYvWDaUrAqZUoavwVZL9cvSsmC9/X7mLRLhNp9x3fBNSbQRK/ngePRwgmmvZziQb9ATC/PArOKzoHQENz1sHOAFi/ZixxchE8AjRYgl19ZH2qmeXT7Zz3gl4SkzLDf/HUZiEqOD74zIEbdKRa0pahAtk9StR66f33jlKaZgd9AQaIqpt+dTPpkc4oSqWyNqiDhaCHrmoh9QCTzbZhsuWe8LhpW4GtFr9tex0bZ483taPRSvTpfn4QyLhAUwsANuAtwkbc2V93bl9hG896NPAB9gDUo9XiR/h1DtfYXwuIFRBTuXND3JZOordLEfShADiiPkPDquYwGCt2AgJi43n1fiwzyU+34CrE7fZM5x1gCw7WpQZuzm/tWSQ2p5YDmzdeAnGELsfrCdBeegnwrC7jT/rnSBzDH5nZbjx2QS+wx4zFVsx6exQ2o5pNTO3LFnG+xDquD3ExzetLF5IaPG0/zcwDCqZmPdVvzvzema3Ap3JoMMmQsEBR4xpLgUVPKw0ntKF0uEDJGr3N90/tNh/YoW8qSaFQSZgNvZvuVxl5Nw467n03CSr/irkct9ez1OWlWCFx+Pf/ziHmuzJ+C/bvXoeIkEll+zOObPkmKDKFtiqSK/29Dngue15Q8moxK7/vCF436jc7wew+fGNL5dPrxbQLszO3hdxQ3VFVSlIG1sQSwwXN28Yci9BNnxuSmJnprEaz0n6f4TYbPwUWDteIRfJTl3sxAa7zknP1a9SktGBdSpuTEN+9ITfpu54Q30L6y7nNHx8qjp7THApU/Qtx+w5btaskPPrNr0zUG7p9bs5po7uQfHDW+mYApR/HeJtTe+k9863EE66tsdmifOKpVYd6p+JP3s1P7DnNgWDcCmrDSSL0VF/QgyW0IeripoMuVcRGY5KAcofefpDQbqNQkJAULQymUbdvYQY10hjNJmF1oDN1lAx2JmlOOotZqCYUzYsFK9cMdOdjqN3yKsbPi1Dw1EsCzZGEY761abnr/IvtjQhnh1yrYdGZW+CrOlg0tTyLAHyG/ZE6Ote99x9XvjDOyapvflzssUVqFbfIMxD/FE6LHI4YKFYoURCl8twuWg21NwDXxrxRB4FGChvjUIqoTrulUU2v+YPmG+Vm5oYrtyHqD0J4gzkhAopR5Arl627C7mASTeaONkDglO4svv6ha4+MoE6Ou55p82DuydF+WRVPqj6F4aGyiPtyTSd4X8VqA7cYaLMVouoMwKF2+oZi4P6L5YtqVRGN9B9JlXnt/uzkY0xBuJjUTYUfEKQSSl1tDS8xFc8n9JqKHMzqkNHRXQvpYkZtAC/yqAhyyqGwllYliMlleaq5Bf/bIaH/zfT7UaSH2bjKzQ+6HkT1DwAvQIXL6b+NxG3G888uWRP879oA/Z1zt6dWSPP30Cb3Wxn19xVM4RzFCUlgzbSyZmLe3moskRXwRuZI0amUpYbQmtZaSH+5jdnR6ynz5jI3jovnZYsfUHe+1qBtHrqgUj1fnltKvNNQ1ETMvWtTY9eEtZb1Lyf9FefcqP8MURUnwffL4afVyjtaFaHUwYHH/bHI5VrE/b+pd+jzI8TCB/MDVbfKbLcPVekSiR47UFjcwKD+qVzkuzrSh3tbdFFe7SSwsgIlyH0g8+gHpsoiS9MOxaeUEAAZ4GG8NiyWKM8E2e9DeECEMN+Rm3a91Z4PAY2dRtYuL0F/RI+aBmf3e9CJNHHJRASLL76NYWTESt5w5Ff1fQST6ZiQWwST/biHb6zi3ett32bdv6oBT5O/Hwhb73vQwlhepTJJhWSziiCUdIL4woWr6H2wGxztkof05SnKmh+0vWzNAs/zNBqmcZTYyrbDsubx5iF+jzxi07CO+7WKqdSz0ZTUii0YUYpKJ7S9ik4B3kvgcd1gox/Tc89GEF73+BtTgX5P7P6dGhWRChQe2bPPs9547+nGn6EHD+FunGHmHb/A2HaKgdGXEGdlWPzwCF48vYSTZDdodz1BSveOMkyA2P7/pcpiu2kjQ04zxczg2JDkDIg2J7+Vzwk96kTaBwNq8PfXIPM3J62qrrWT6748qs3wcF2frthsO9N+8nAZFurLdsYCPqlkYqzcQ3zIdvNkZYH/Usn+1bdhf3QnsCUh5LJu7jXRdaWuKt3edRc/HEeTLeZ7va36vTPOe8ywDFPtuU/4zva0BZD1aFaF1AfBQVDWCmc/oZHIjaT+FgkjKwbFT+o7C9sou4UcOBGAH6Lfs/jeG/XGrIQRlFiMiMD2wakRP8QpTFnjm7WNBtpG5J1f1GlWEBJDQjxNN6gdU5HA4xIzRoQjQko2C5618NUBS89mzZmRlpdwVSWZVfu7N43wnxNMC/9DkyK34ZVqPNvDXpPcL3CBZ1o0gUM+XkgFI3pMUK9dNVVmV2X0eYm7it1DMJcEx2DymHme2slv/gKuSz/n6wvDSuUtLUsr7fyDuYGauANIebzhYcIjOqPOVdLHEWI6hsWBgZY9lPs+Ph57eD6lOTlZzAEXKc8j0QtBmjFDz3nkk4AEWM9q2MJZc22gSZW979TrVEXKLxEC9wZMlIvUnU/evdAjj/trgAKvQKkWy2gVYHOAB5iFjF8uXXkgxOfXTrBXJC9Ks0ZMnLUhsYxBNjK6QkLX9+F2tVOnisZ5DDxQAAMYI1opErKgppmdOSFJAAAA1z2KgKwAdA5RRu6r/R3kuayJh4CZVVyIsW3EN4AAAAA= 266w, /mimino/assets/main-restaurant-slider-9-2x-314-7411da6e.webp 314w, /mimino/assets/main-restaurant-slider-9-1x-336-09c1e7e5.webp 336w, /mimino/assets/main-restaurant-slider-9-3x-471-cf3619da.webp 471w, /mimino/assets/main-restaurant-slider-9-2x-532-ccea79fc.webp 532w, /mimino/assets/main-restaurant-slider-9-2x-672-f5e1d334.webp 672w, /mimino/assets/main-restaurant-slider-9-3x-798-7ede56e5.webp 798w, /mimino/assets/main-restaurant-slider-9-3x-1008-491e2040.webp 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/webp"
-          />
-          <source
-            srcset="data:image/jpeg;base64,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 157w, /mimino/assets/main-restaurant-slider-9-1x-266-a6f70e75.jpg 266w, /mimino/assets/main-restaurant-slider-9-2x-314-cd5a447a.jpg 314w, /mimino/assets/main-restaurant-slider-9-1x-336-17d201d6.jpg 336w, /mimino/assets/main-restaurant-slider-9-3x-471-ab6a1d25.jpg 471w, /mimino/assets/main-restaurant-slider-9-2x-532-0cadc483.jpg 532w, /mimino/assets/main-restaurant-slider-9-2x-672-d04a70fb.jpg 672w, /mimino/assets/main-restaurant-slider-9-3x-798-f355a4cf.jpg 798w, /mimino/assets/main-restaurant-slider-9-3x-1008-4b309dfe.jpg 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/jpeg"
-          />
-          <img
-            src="/mimino/assets/main-restaurant-slider-9-1x-266-a6f70e75.jpg"
-            alt="cocktail"
-          />
-        </picture>
-      </div>
-      <div>
-        <picture>
-          <source
-            srcset="/mimino/assets/main-restaurant-slider-10-1x-157-f7fc56e6.webp 157w, /mimino/assets/main-restaurant-slider-10-1x-266-39db8f7e.webp 266w, /mimino/assets/main-restaurant-slider-10-2x-314-cb93b4d6.webp 314w, /mimino/assets/main-restaurant-slider-10-1x-336-5ffda2b9.webp 336w, /mimino/assets/main-restaurant-slider-10-3x-471-60e51f98.webp 471w, /mimino/assets/main-restaurant-slider-10-2x-532-ff27de86.webp 532w, /mimino/assets/main-restaurant-slider-10-2x-672-8978a32a.webp 672w, /mimino/assets/main-restaurant-slider-10-3x-798-eb172d02.webp 798w, /mimino/assets/main-restaurant-slider-10-3x-1008-3f11ad37.webp 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/webp"
-          />
-          <source
-            srcset="/mimino/assets/main-restaurant-slider-10-1x-157-3e887154.jpg 157w, /mimino/assets/main-restaurant-slider-10-1x-266-a21898a6.jpg 266w, /mimino/assets/main-restaurant-slider-10-2x-314-1e9185db.jpg 314w, /mimino/assets/main-restaurant-slider-10-1x-336-fb6e7427.jpg 336w, /mimino/assets/main-restaurant-slider-10-3x-471-3cda26ee.jpg 471w, /mimino/assets/main-restaurant-slider-10-2x-532-6e04e059.jpg 532w, /mimino/assets/main-restaurant-slider-10-2x-672-b5711a63.jpg 672w, /mimino/assets/main-restaurant-slider-10-3x-798-160bfe42.jpg 798w, /mimino/assets/main-restaurant-slider-10-3x-1008-2590c283.jpg 1008w"
-            sizes="(min-width: 1440px) 266px, (min-width: 768px) 336px, (min-width: 375px) 157px, 100vw"
-            type="image/jpeg"
-          />
-          <img
-            src="/mimino/assets/main-restaurant-slider-10-1x-266-a21898a6.jpg"
-            alt="poached egg"
-          />
-        </picture>
+      <div class="restoraunt-main-btnbox">
+        <button
+          type="button"
+          class="restoraunt-main-btn btn button-white"
+          data-modal-table-open-b
+        >
+          BOOK A TABLE
+        </button>
+        <a class="restoraunt-main-link" href="./restaurant.html"
+          >VIEW THE MENU</a
+        >
       </div>
     </div>
-    <div class="restoraunt-main-btnbox" >
-      <button type="button" class="restoraunt-main-btn btn button-white" data-modal-table-open-b>BOOK A TABLE</button>
-      <a class="restoraunt-main-link" href="./restaurant.html">VIEW THE MENU</a>
-    </div>
-  </div>
   </div>
 </section>
 
@@ -693,7 +744,11 @@
           sizes="(min-width: 1440px) 672px, (min-width: 768px) 704px, (min-width: 375px) 335px, 100vw"
           type="image/jpeg"
         />
-        <img src="/mimino/assets/main-welcome-2x-1408-92b10220.jpg" alt="lounge" />
+        <img
+          src="/mimino/assets/main-welcome-2x-1408-92b10220.jpg"
+          alt="lounge"
+          loading="lazy"
+        />
       </picture>
     </div>
   </div>
@@ -732,7 +787,11 @@
             sizes="(min-width: 1440px) 420px, (min-width: 768px) 320px, (min-width: 375px) 335px, 100vw"
             type="image/jpeg"
           />
-          <img src="/mimino/assets/main-hotel-3-3x-1260-7dc026ce.jpg" alt="lounge" />
+          <img
+            src="/mimino/assets/main-hotel-3-3x-1260-7dc026ce.jpg"
+            alt="lounge"
+            loading="lazy"
+          />
         </picture>
       </div>
       <div class="hotel-main-item-second">
@@ -747,7 +806,11 @@
             sizes="(min-width: 1440px) 320px, (min-width: 768px) 176px, (min-width: 375px) 158px, 100vw"
             type="image/jpeg"
           />
-          <img src="/mimino/assets/main-hotel-1-3x-960-831d586e.jpg" alt="lounge" />
+          <img
+            src="/mimino/assets/main-hotel-1-3x-960-831d586e.jpg"
+            alt="lounge"
+            loading="lazy"
+          />
         </picture>
         <picture>
           <source
@@ -760,7 +823,11 @@
             sizes="(min-width: 1440px) 320px, (min-width: 768px) 176px, (min-width: 375px) 157px, 100vw"
             type="image/jpeg"
           />
-          <img src="/mimino/assets/main-hotel-2-3x-960-f3f402e7.jpg" alt="lounge" />
+          <img
+            src="/mimino/assets/main-hotel-2-3x-960-f3f402e7.jpg"
+            alt="lounge"
+            loading="lazy"
+          />
         </picture>
       </div>
       <div class="hotel-main-item-last">
@@ -775,7 +842,11 @@
             sizes="(min-width: 1440px) 320px, (min-width: 768px) 176px, (min-width: 375px) 158px, 100vw"
             type="image/jpeg"
           />
-          <img src="/mimino/assets/main-hotel-4-3x-960-78e3f1a7.jpg" alt="lounge" />
+          <img
+            src="/mimino/assets/main-hotel-4-3x-960-78e3f1a7.jpg"
+            alt="lounge"
+            loading="lazy"
+          />
         </picture>
         <picture>
           <source
@@ -788,7 +859,11 @@
             sizes="(min-width: 1440px) 320px, (min-width: 768px) 176px, (min-width: 375px) 158px, 100vw"
             type="image/jpeg"
           />
-          <img src="/mimino/assets/main-hotel-5-3x-960-44850fef.jpg" alt="lounge" />
+          <img
+            src="/mimino/assets/main-hotel-5-3x-960-44850fef.jpg"
+            alt="lounge"
+            loading="lazy"
+          />
         </picture>
       </div>
     </div>
@@ -841,45 +916,66 @@
     </main>
     <!-- Footer -->
 <footer class="site-footer">
-    <div class="container-footer container">
-        <nav class="footer-navigation">
-            <ul class="footer-nav-list">
-                <li class="footer-nav-item">
-                    <a href="./index.html" class="footer-nav-link link">Home</a>
-                </li>
-                <li class="footer-nav-item">
-                    <a href="./hotel.html" class="footer-nav-link link">Hotel</a>
-                </li>
-                <li class="footer-nav-item">
-                    <a href="./restaurant.html" class="footer-nav-link link">Restaurant</a>
-                </li>
-            </ul>
-        </nav>
-        <a href="./index.html"  class="logo-footer link">Mimino<br><span class="logo-footer-peice">restaurant-hotel complex</span></a>
-        <ul class="footer-soc-list">
-            <li class="footer-soc-item">
-                <a href="https://www.instagram.com" class="footer-soc-link link"  target="_blank" rel="noopener noreferrer nofollow">
-                    <svg class="footer-soc-icon" width="20" height="20">
-                        <use href="/mimino/assets/icons-e40b9642.svg#icon-instagram"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="footer-soc-item">
-                <a href="https://www.facebook.com" class="footer-soc-link link"  target="_blank" rel="noopener noreferrer nofollow">
-                    <svg class="footer-soc-icon" width="20" height="20">
-                        <use href="/mimino/assets/icons-e40b9642.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="footer-soc-item">
-                <a href="https://www.twitter.com" class="footer-soc-link link"  target="_blank" rel="noopener noreferrer nofollow">
-                    <svg class="footer-soc-icon" width="20" height="20">
-                        <use href="/mimino/assets/icons-e40b9642.svg#icon-twitter"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </div> 
+  <div class="container-footer container">
+    <nav class="footer-navigation">
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <a href="./index.html" class="footer-nav-link link">Home</a>
+        </li>
+        <li class="footer-nav-item">
+          <a href="./hotel.html" class="footer-nav-link link">Hotel</a>
+        </li>
+        <li class="footer-nav-item">
+          <a href="./restaurant.html" class="footer-nav-link link"
+            >Restaurant</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <a href="./index.html" class="logo-footer link"
+      >Mimino<br /><span class="logo-footer-peice"
+        >restaurant-hotel complex</span
+      ></a
+    >
+    <ul class="footer-soc-list">
+      <li class="footer-soc-item">
+        <a
+          href="https://www.instagram.com"
+          class="footer-soc-link link"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          <svg class="footer-soc-icon" width="20" height="20">
+            <use href="/mimino/assets/icons-e40b9642.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-soc-item">
+        <a
+          href="https://www.facebook.com"
+          class="footer-soc-link link"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          <svg class="footer-soc-icon" width="20" height="20">
+            <use href="/mimino/assets/icons-e40b9642.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-soc-item">
+        <a
+          href="https://www.twitter.com"
+          class="footer-soc-link link"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          <svg class="footer-soc-icon" width="20" height="20">
+            <use href="/mimino/assets/icons-e40b9642.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
 </footer>
 
 
@@ -970,76 +1066,89 @@
     <!-- Book a Table Modal window -->
 
 <div class="backdrop is-hidden" data-modal-table>
-    <div class="modal-table">
-            <p class="modal-title">BOOK A <span class="text">TABLE</span></p>
-    <button data-modal-table-close type="button" class="modal-close"><svg class="icon-clos" width="28" height="28">
+  <div class="modal-table">
+    <p class="modal-title">BOOK A <span class="text">TABLE</span></p>
+    <button data-modal-table-close type="button" class="modal-close">
+      <svg class="icon-clos" width="28" height="28">
         <use href="/mimino/assets/icons-e40b9642.svg#icon-close"></use>
-    </svg></button>
+      </svg>
+    </button>
     <form class="modal-form" name="book-a-table">
-    <div class="modal-container-table">
+      <div class="modal-container-table">
         <div>
-            <input
-                type="text"
-                class="modal-name"
-                placeholder=" YOUR NAME"
-                name="custom-name"
-                id="Name"
-                pattern = "[A-Za-z0-9]{2,}"
-                title ="Name coudn`t be less than 2 Latin characters"
-                autocomplete="on" 
-                required/>
-            <label class="label-name" for="Name">Who should book a table for?</label>
+          <input
+            type="text"
+            class="modal-name"
+            placeholder=" YOUR NAME"
+            name="custom-name"
+            id="Name"
+            pattern="[A-Za-z0-9]{2,}"
+            title="Name coudn`t be less than 2 Latin characters"
+            autocomplete="on"
+            required
+          />
+          <label class="label-name" for="Name"
+            >Who should book a table for?</label
+          >
         </div>
         <div>
-            <input
-                    type="tel"
-                    class="modal-name"
-                    placeholder="+38()"
-                    name="custom-phone"
-                    id="phone"
-                    pattern="[\+]\d{3}\d{2}\d{3}\d{2}\d{2}"
-                    title ="Phone should  contain +  and coudn`t be less than 12 digits"
-                    autocomplete="on" 
-                    required/>
-            <label class="label-name" for="phone">Phone number </label>
+          <input
+            type="tel"
+            class="modal-name"
+            placeholder="+38()"
+            name="custom-phone"
+            id="phone"
+            pattern="[\+]\d{3}\d{2}\d{3}\d{2}\d{2}"
+            title="Phone should  contain +  and coudn`t be less than 12 digits"
+            autocomplete="on"
+            required
+          />
+          <label class="label-name" for="phone">Phone number </label>
         </div>
-<div class="select">
-            <select required 
-                class="modal-name"
-                placeholder="NUMBER OF PEOPLE"
-                id="booking_number_input"
-                name="seats"
-                >
-                <option class="option-style" value="">NUMBER OF PEOPLE</option>
-                <option class="option-style" value="1" >1</option>
-                <option class="option-style" value="2">2</option>
-                <option class="option-style" value="3">3</option>
-                <option class="option-style" value="4">4</option>
-                <option class="option-style" value="5">5</option>
-                <option class="option-style" value="6">6</option>
-                <option class="option-style" value="7">7</option>
-                <option class="option-style" value="8">8</option>
-                <option class="option-style" value="9">9</option>
-                <option class="option-style" value="10">10</option>
-            </select>
-        </div>
-    <div class="date">
         <div class="select">
-                <input
-                name="book-date"
-                placeholder="TODAY"
-                class="modal-name"
-                type="text"
-                onfocus="(this.type='date')"
-                onblur="(this.type='text')"
-                id="date"
-                required/></div>
-            <label class="label-name" for="data_booking_input">What date to book?</label>
-    </div>
-    </div>
-    <button type="submit" class="btn-modal button-black">Make a reservation</button>
+          <select
+            required
+            class="modal-name"
+            placeholder="NUMBER OF PEOPLE"
+            id="booking_number_input"
+            name="seats"
+          >
+            <option class="option-style" value="">NUMBER OF PEOPLE</option>
+            <option class="option-style" value="1">1</option>
+            <option class="option-style" value="2">2</option>
+            <option class="option-style" value="3">3</option>
+            <option class="option-style" value="4">4</option>
+            <option class="option-style" value="5">5</option>
+            <option class="option-style" value="6">6</option>
+            <option class="option-style" value="7">7</option>
+            <option class="option-style" value="8">8</option>
+            <option class="option-style" value="9">9</option>
+            <option class="option-style" value="10">10</option>
+          </select>
+        </div>
+        <div class="date">
+          <div class="select">
+            <input
+              name="book-date"
+              placeholder="TODAY"
+              class="modal-name"
+              type="text"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              id="date"
+              required
+            />
+          </div>
+          <label class="label-name" for="data_booking_input"
+            >What date to book?</label
+          >
+        </div>
+      </div>
+      <button type="submit" class="btn-modal button-black">
+        Make a reservation
+      </button>
     </form>
-</div>
+  </div>
 </div>
 
 
