@@ -118,21 +118,21 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .site-header{
-        position: absolute;
-        background-color: transparent;
-        z-index: 2;
-        left: 50%;
-        transform: translate(-702px, 0);
-    }
-    .light{
-        position: static;
-        background-color: #FFFFFF; 
-    }
+  .site-header {
+    position: absolute;
+    background-color: transparent;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-702px, 0);
+  }
+  .light {
+    position: static;
+    background-color: #ffffff;
+  }
 
-.site-header.light {
-  transform: translateX(0);
-}
+  .site-header.light {
+    transform: translateX(0);
+  }
   .header-box {
     justify-content: flex-start;
   }
@@ -202,10 +202,8 @@
     pointer-events: auto;
   }
 
-  .mobile-menu-container {
+  .mob-menu-container {
     position: relative;
-    padding-left: 20px;
-    height: 100%;
   }
 
   .mobile-menu-close-btn {
@@ -213,11 +211,18 @@
     border: none;
     padding: 0;
     line-height: 0;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 32px;
+    height: 32px;
   }
 
   .mobile-menu-close-icon {
     stroke: var(--light-text-color-primary);
     transition: var(--transition-dur-and-func);
+    width: 32px;
+    height: 32px;
   }
 
   .mobile-menu-close-icon:hover,
@@ -226,15 +231,19 @@
   }
 
   .mob-menu-header-wrapper {
+    /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: center;
-
   }
 
-  .mob-menu-header-wrapper::after {
+  .mobile-menu::after {
+    content: '';
+    border-bottom: 1px solid rgba(247, 247, 247, 0.2);
     width: 100vw;
-    border-bottom: solid 1px var(--light-text-color-secondary);
+    position: absolute;
+    left: 0;
+    top: 77px;
   }
 
   .mobile-menu-item {
@@ -304,10 +313,14 @@
 }
 
 @media screen and (max-width: 767px) {
-  .mobile-menu-soc-list {
-    position: absolute;
-    bottom: 0;
-    left: 27px;
+  .mobile-menu-close-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .mobile-menu-soc-icon {
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -315,7 +328,7 @@
   .mobile-menu-soc-list {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 20px;
   }
 
   .mobile-menu-item {
@@ -324,11 +337,17 @@
 
   .mob-logo-header-link {
     font-size: 20px;
+    line-height: 1.2;
   }
   .mob-logo-header-piece {
-    font-size: 10px;
+    font-size: 8px;
+    line-height: 1.25;
   }
 
+  .mobile-menu-soc-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
