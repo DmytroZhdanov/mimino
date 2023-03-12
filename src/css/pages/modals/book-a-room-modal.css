@@ -6,11 +6,22 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 14px 24px;
-    width: 320px;
+    width: 329px;
     height: 90%;
     border-radius: 2px;
     z-index: 1000;
 }
 .margin{
     margin-bottom: 32px;
+}
+
+
+@media screen and (min-width:375px){
+    .modal-price{
+        width: 335px;
+        height: 414px;
+    }
+    .modal-close{
+        margin-left: 272px;
+    }
 }
