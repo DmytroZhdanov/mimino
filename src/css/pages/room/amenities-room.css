@@ -71,6 +71,12 @@
   left: 7px;
 }
 
+@media screen and (max-width: 1440px) {
+  .container-amenities {
+    overflow-x: unset;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .room-pic-btn-wrapper {
     position: relative;
@@ -90,9 +96,9 @@
     margin-bottom: 100px;
     gap: 70px;
   }
-}
 
-.room-list {
-  margin: 15px;
-  width: 473px;
+  .room-list {
+    margin: 15px;
+    width: 473px;
+  }
 }

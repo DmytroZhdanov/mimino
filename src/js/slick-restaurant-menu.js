@@ -1,5 +1,4 @@
 $('.responsive-restaurant-menu').slick({
-  mobileFirst: true,
   dots: false,
   arrows: true,
   infinite: true,
@@ -12,6 +11,6 @@ $('.responsive-restaurant-menu').slick({
       breakpoint: 1440,
       settings: 'unslick',
     },
-    
   ],
+  mobileFirst: true,
 });

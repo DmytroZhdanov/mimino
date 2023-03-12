@@ -26,7 +26,7 @@
     gap: 14px;
 }
 .footer-soc-link{
-    display: block;
+    display: flex;
 }
 .footer-soc-icon{
     fill: transparent;
@@ -57,7 +57,7 @@ margin-top: 3px;
 }
 .footer-soc-link:is(:hover, :focus),
 .logo-footer:is(:hover, :focus),
-.logo-footer-peice:is(:hover, :focus){
+.logo-footer-peice:focus{
     transform: scale(1.10);
 }
 @media screen and (min-width: 768px )  {

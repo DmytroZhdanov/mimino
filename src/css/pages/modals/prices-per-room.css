@@ -47,7 +47,7 @@
     position: absolute;
     width: 28px;
     height: 28px;
-    margin-left: 260px;
+    margin-left: auto;
     display: flex;
     border:none;
     outline: none;
@@ -195,6 +195,7 @@
     }
     .modal-name{
         width: 266px;
+        font-size: 15px;
     }
     .modal-close{
         margin-left: 552px;

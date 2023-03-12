@@ -1,26 +1,26 @@
 /* Hero Section Room page */
 
 .hero4 {
-    max-width:374px;
+    max-width: 374px;
     padding-top: 40px;
     padding-bottom: 64px;
     padding-left: 20px;
+    overflow-y: hidden;
 }
 
 .hero4-title {
     font-family: var(--primary-font-family);
-    font-style: italic;
+    font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 1,33;
-  
+    line-height: 1.00;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    
-    color: #121212;
-    margin-bottom: 24px;
-    max-width: 270px;
-    
+    color: var(--dark-theme-color-primary);
+    margin-bottom: 24px;   
+}
+.hero4-title-piece{
+    font-style: italic;
 }
 
 .hero-room-slider {
@@ -49,7 +49,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1,5;
+    line-height: 1.5;
     
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -68,7 +68,7 @@
     
     .hero4-text {
         font-size: 14px;
-        line-height: 1,28;
+        line-height: 1.28;
         max-width: 289px;
 
     }
@@ -76,19 +76,19 @@
 
 @media screen and (min-width:768px) {
     .hero4 {
-        max-width:1439px;
+        max-width: 1439px;
         padding-left: 32px;
         padding-bottom: 120px;
     }
     .hero4-title {
         margin-bottom: 18px;
         font-size: 60px;
-        max-width: 406px;
+        /* max-width: 406px; */
     }
 
     .hero4-button {
         padding: 8px 24px;
-        line-height: 1,71;
+        line-height: 1.71;
         margin-bottom: 28px;
     }
 
@@ -111,7 +111,7 @@
     .hero4-title {
         font-size: 80px;
         margin-bottom: 32px;
-        max-width: 592px;
+        /* max-width: 592px; */
     }
 
     .hero4-good {
@@ -121,19 +121,17 @@
 
 
     .hero4-button {
-        padding:9px 24px;
+        padding: 9px 24px;
         font-size: 18px;
-        line-height: 1,33;
+        line-height: 1.33;
     }
     .hero-room-slider {
     display: flex;
     position: absolute;
-
     top: 30px;
     left: 737px;
     /* left: 736px; */
     }
-
     .hero4-text {
         max-width: 289px;
 
