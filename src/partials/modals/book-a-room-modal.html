@@ -19,7 +19,7 @@
                 title ="Name coudn`t be less than 2 Latin characters"
                 autocomplete="on" 
                 required/>
-                <label for="Name"><span class="label-name">Who should book a table for?</spn ></label>
+                <label for="Name"><span class="label-name">Who should book a table for?</span ></label>
             </div>
             <div class="margin">
                 <input
@@ -32,7 +32,7 @@
                     title ="Phone should  contain +  and coudn`t be less than 12 digits"
                     autocomplete="on" 
                     required/>
-                <label  for="phone"><span class="label-name">Phone number</span> </label>
+                <label  for="phone"><span class="label-name">Phone number</span></label>
             </div>
             <div class="margin">
                 <div class="select">
@@ -44,10 +44,8 @@
                     onfocus="(this.type='date')"
                     onblur="(this.type='text')"
                     id="date" 
-                    min="2023-02-01"
-                    max="2025-12-31"
                     required/></div>
-                <label for="date"><span class="label-name">Check-in date</spn ></label>
+                <label for="date"><span class="label-name">Check-in date</span ></label>
             </div>
             <div class="margin">
                 <div class="select">
@@ -57,8 +55,6 @@
                         onfocus="(this.type='date')"
                         onblur="(this.type='text')"
                         id="data_reservation_input"
-                        min="2023-02-01"
-                        max="2025-12-31"
                         required/>
                 </div>
                 <label  for="data_reservation_input"><span class="label-name">Check-out date</span></label>
@@ -69,7 +65,8 @@
                     class="modal-name"
                     name="room-reservation" 
                     id="booking_room_input">
-                        <option class="option-style" value="double-suite" selected>DOUBLE SUITE</option>
+                        <option class="option-style" value="" selected>DOUBLE SUITE</option>
+                        <option class="option-style" value="double-suite">DOUBLE SUITE</option>
                         <option class="option-style" value="triple-room">TRIPLE SUITE</option>
                         <option class="option-style" value="four-room">FOUR SEATER SUITE</option>
                     </select>
