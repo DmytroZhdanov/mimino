@@ -1,8 +1,8 @@
 /* Section Amenities Room page */
 .room-section {
   background-color: #121212;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -18,8 +18,11 @@
   margin-bottom: 28px;
 }
 
-.room-list {
+.room-list-wrapper {
   margin-bottom: 40px;
+}
+
+.room-list {
   list-style-type: disc;
   list-style-position: inside;
 }
@@ -54,51 +57,105 @@
   transition: var(--transition-dur-and-func);
 }
 
-.room-pic-wrapper {
-  width: 100%;
-  display: flex;
-}
-
 .bath {
-  margin-bottom: 32px;
+  position: absolute;
+  width: 259px;
+  right: 0;
 }
 
 .shampoo {
-  position: relative;
-  box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
-  z-index: 2;
-  top: 93px;
-  left: 7px;
+  position: absolute;
+  width: 207px;
+  top: 144px;
+  left: 0px;
 }
 
+@media screen and (max-width: 767px) {
+  .room-pic-wrapper {
+    position: relative;
+    height: 357px;
+    margin-top: 64px;
+  }
+}
+/* 
 @media screen and (max-width: 1440px) {
   .container-amenities {
     overflow-x: unset;
   }
-}
+} */
 
 @media screen and (min-width: 768px) {
   .room-pic-btn-wrapper {
     position: relative;
+    height: 647px;
+  }
+
+  .bath {
+    width: 408px;
+    top: 82px;
+  }
+
+  .shampoo {
+    width: 365px;
+    top: 239px;
   }
 
   .mobile-room-button {
     position: absolute;
-    z-index: 2;
-    top: 300px;
+    top: 453px;
     left: 0;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1439px) {
+  .room-list-second {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .room-list-wrapper {
     display: flex;
     margin-bottom: 100px;
     gap: 70px;
   }
 
+  .room-list-wrapper-kitchen {
+    margin-left: 170px;
+  }
+
   .room-list {
     margin: 15px;
     width: 473px;
+  }
+
+  .room-title {
+    font-size: 40px;
+  }
+
+  .room-item {
+    font-size: 18px;
+  }
+
+  .room-pic-btn-wrapper {
+    height: 476px;
+  }
+
+  .bath {
+    width: 496px;
+    height: 636px;
+    top: -220px;
+  }
+
+  .shampoo {
+    width: 439px;
+    height: 219px;
+    top: -12px;
+    left: 528px;
+  }
+
+  .mobile-room-button {
+    top: 239px;
+    left: 528px;
   }
 }
