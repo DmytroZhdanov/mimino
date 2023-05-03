@@ -141,7 +141,7 @@
 }
 .review-background-2{
     position: absolute;
-    /* z-index: 2; */
+    z-index: 2;
     top: 32%;
     background: #121212;
     box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
