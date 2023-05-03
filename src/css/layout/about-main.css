@@ -7,12 +7,12 @@
     padding-bottom: 32px;
 }
 
-.about-main-position{
+/* .about-main-position{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;    
-}
+} */
 
 .section-2-part-1{
     position: relative;
