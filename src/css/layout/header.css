@@ -25,6 +25,8 @@
   padding: 0;
 }
 .mobile-menu-icon {
+  width: 28px;
+  height: 28px;
   display: block;
   stroke: var(--light-text-color-primary);
 }
@@ -109,7 +111,7 @@
   .logo-header {
     font-size: 20px;
     line-height: 1.22;
-    margin-right: 177px;
+    margin-right: 173px;
     /* margin-right: auto; */
   }
   .logo-header-piece {
@@ -118,21 +120,21 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .site-header{
-        position: absolute;
-        background-color: transparent;
-        z-index: 2;
-        left: 50%;
-        transform: translate(-702px, 0);
-    }
-    .light{
-        position: static;
-        background-color: #FFFFFF; 
-    }
+  .site-header {
+    position: absolute;
+    background-color: transparent;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-702px, 0);
+  }
+  .light {
+    position: static;
+    background-color: #ffffff;
+  }
 
-.site-header.light {
-  transform: translateX(0);
-}
+  .site-header.light {
+    transform: translateX(0);
+  }
   .header-box {
     justify-content: flex-start;
   }
@@ -209,6 +211,9 @@
   }
 
   .mobile-menu-close-btn {
+    position: absolute;
+    left: 20px;
+    top: 25px;
     background-color: transparent;
     border: none;
     padding: 0;
@@ -216,6 +221,8 @@
   }
 
   .mobile-menu-close-icon {
+    width: 28px;
+    height: 28px;
     stroke: var(--light-text-color-primary);
     transition: var(--transition-dur-and-func);
   }
@@ -229,12 +236,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
   }
 
   .mob-menu-header-wrapper::after {
+    content: '';
+    position: absolute;
     width: 100vw;
-    border-bottom: solid 1px var(--light-text-color-secondary);
+    top: 78px;
+    border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
   }
 
   .mobile-menu-item {
@@ -261,7 +270,7 @@
   .mobile-menu-soc-list {
     margin-top: auto;
     margin-bottom: 24px;
-    padding-top: 24px;
+    padding-top: 25px;
     display: flex;
     gap: 14px;
   }
@@ -309,26 +318,45 @@
     bottom: 0;
     left: 27px;
   }
+  .mobile-menu-soc-icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1439px) {
+  .mobile-menu-container {
+    padding-left: 32px;
+  }
+
+  .mobile-menu-close-btn {
+    left: 32px;
+  }
+
+  .mobile-menu-close-icon {
+    width: 32px;
+    height: 32px;
+  }
+
   .mobile-menu-soc-list {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 32px;
   }
 
   .mobile-menu-item {
     font-size: 24px;
   }
 
-  .mob-logo-header-link {
-    font-size: 20px;
-  }
-  .mob-logo-header-piece {
-    font-size: 10px;
+  .logo-header.mob {
+    margin-right: auto;
+    margin-left: auto;
   }
 
+  .mobile-menu-soc-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
