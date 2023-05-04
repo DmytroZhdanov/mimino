@@ -29,11 +29,7 @@
   gap: 27px;
 }
 .hotel-main-item-second {
-  display: flex;
-  gap: 20px;
-}
-.hotel-main-item-last {
-  display: none;
+  width: 100%;
 }
 .hotel-main-btn {
   font-family: 'DM Sans';
@@ -55,6 +51,14 @@
 .view-btn {
   padding: 8px 18px;
 }
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .hotel-main-item-second {
+    width: 355px;
+    margin-left: 20px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .section-hotel-main {
     padding-top: 44px;
@@ -76,20 +80,16 @@
     line-height: 1.35;
   }
   .hotel-main-img {
-    gap: 16px;
+    position: relative;
   }
-  .hotel-main-item-first {
-    order: 2;
-  }
+
   .hotel-main-item-second {
-    order: 1;
-    flex-direction: column;
-    gap: 16px;
-  }
-  .hotel-main-item-last {
+    height: 417px;
+    position: absolute;
     display: flex;
     flex-direction: column;
-    order: 3;
+    flex-wrap: wrap;
+    align-content: space-between;
     gap: 16px;
   }
   .hotel-main-btn {
@@ -109,7 +109,6 @@
 @media screen and (min-width: 1440px) {
   .hotel-main-container {
     position: relative;
-    /* max-width: 1376px; */
   }
   .hotel-main {
     justify-content: flex-start;
@@ -126,8 +125,9 @@
     width: 420px;
   }
   .hotel-main-item-second {
-    width: 320px;
-    gap: 28px;
+    column-gap: 484px;
+    height: 548px;
+    align-content: center;
   }
   .img-three {
     height: auto;

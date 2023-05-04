@@ -71,6 +71,21 @@
   left: 0;
 }
 
+.main-hotel-slider .slick-arrow {
+  width: 24px;
+  height: 24px;
+}
+
+.main-hotel-slider .slick-prev {
+  top: calc(100% + 18px);
+  left: 0;
+}
+
+.main-hotel-slider .slick-next {
+  top: calc(100% + 18px);
+  left: 44px;
+}
+
 .hero-slider .slick-arrow {
   top: calc(100% + 24px);
 }
@@ -104,12 +119,10 @@
   .hero-slider .slick-next {
     left: 299px;
   }
-
-  .main-restaurant-slider .slick-arrow {
-  top: calc(100% + 32px);
-  width: 36px;
-  height: 36px;
-}
+  .main-hotel-slider .slick-prev,
+  .main-hotel-slider .slick-next {
+    top: 146px;
+  }
 }
 
 @media screen and (max-width: 768px) {
