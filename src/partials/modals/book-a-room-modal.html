@@ -1,83 +1,115 @@
 <!-- Book a Room Modal Window -->
 
 <div class="backdrop is-hidden" data-modal-room>
-<div class="modal">
-        <p class="modal-title">BOOK A <span class="text">ROOM</span></p>
-    <button data-modal-room-close type="button" class="modal-close"><svg class="icon-clos" width="28" height="28">
+  <div class="modal">
+    <p class="modal-title">BOOK A <span class="text">ROOM</span></p>
+    <button data-modal-room-close type="button" class="modal-close">
+      <svg class="icon-clos" width="28" height="28">
         <use href="./img/icons.svg#icon-close"></use>
-    </svg></button>
+      </svg>
+    </button>
     <form class="modal-form" name="book-a-room">
-        <div class="modal-container">
-            <div class="margin">
-                <input
-                type="text"
-                class="modal-name"
-                placeholder=" YOUR NAME"
-                name="custom-name"
-                id="Name"
-                pattern = "[A-Za-z0-9]{2,}"
-                title ="Name coudn`t be less than 2 Latin characters"
-                autocomplete="on" 
-                required/>
-                <label for="Name"><span class="label-name">Who should book a table for?</spn ></label>
-            </div>
-            <div class="margin">
-                <input
-                    type="tel"
-                    class="modal-name"
-                    placeholder="+38()"
-                    name="custom-phone"
-                    id="phone"
-                    pattern="[\+]\d{3}\d{2}\d{3}\d{2}\d{2}"
-                    title ="Phone should  contain +  and coudn`t be less than 12 digits"
-                    autocomplete="on" 
-                    required/>
-                <label  for="phone"><span class="label-name">Phone number</span> </label>
-            </div>
-            <div class="margin">
-                <div class="select">
-                    <input 
-                    name="trip-start"
-                    placeholder="TODAY"
-                    class="modal-name"
-                    type="text"
-                    onfocus="(this.type='date')"
-                    onblur="(this.type='text')"
-                    id="date" 
-                    min="2023-02-01"
-                    max="2025-12-31"
-                    required/></div>
-                <label for="date"><span class="label-name">Check-in date</spn ></label>
-            </div>
-            <div class="margin">
-                <div class="select">
-                    <input class="modal-name"
-                        placeholder="25/04/2023"
-                        type="text"
-                        onfocus="(this.type='date')"
-                        onblur="(this.type='text')"
-                        id="data_reservation_input"
-                        min="2023-02-01"
-                        max="2025-12-31"
-                        required/>
-                </div>
-                <label  for="data_reservation_input"><span class="label-name">Check-out date</span></label>
-            </div>
-            <div>
-                <div class="select">
-                    <select required 
-                    class="modal-name"
-                    name="room-reservation" 
-                    id="booking_room_input">
-                        <option class="option-style" value="double-suite" selected>DOUBLE SUITE</option>
-                        <option class="option-style" value="triple-room">TRIPLE SUITE</option>
-                        <option class="option-style" value="four-room">FOUR SEATER SUITE</option>
-                    </select>
-                </div>
-                <label  for="booking_room_input"><span class="label-name">Number category</span></label>
-            </div>
+      <div class="modal-container">
+        <div class="margin">
+          <input
+            type="text"
+            class="modal-name"
+            placeholder=" YOUR NAME"
+            name="custom-name"
+            id="visitor-name"
+            pattern="[A-Za-z0-9]{2,}"
+            title="Name coudn`t be less than 2 Latin characters"
+            autocomplete="on"
+            required
+          />
+          <label for="visitor-name"
+            ><span class="label-name">Who should book a table for?</span></label
+          >
         </div>
-        <button type="submit" class="btn-modal button-black" id="reservation-button">Make a reservation</button>
+        <div class="margin">
+          <input
+            type="tel"
+            class="modal-name"
+            placeholder="+38()"
+            name="custom-phone"
+            id="visitor-phone-number"
+            pattern="[\+]\d{3}\d{2}\d{3}\d{2}\d{2}"
+            title="Phone should  contain +  and coudn`t be less than 12 digits"
+            autocomplete="on"
+            required
+          />
+          <label for="visitor-phone-number"
+            ><span class="label-name">Phone number</span>
+          </label>
+        </div>
+        <div class="margin">
+          <div class="select">
+            <input
+              name="trip-start"
+              placeholder="TODAY"
+              class="modal-name"
+              type="date"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              id="check-in-date"
+              min="2023-02-01"
+              max="2025-12-31"
+              required
+            />
+          </div>
+          <label for="check-in-date"
+            ><span class="label-name">Check-in date</span></label
+          >
+        </div>
+        <div class="margin">
+          <div class="select">
+            <input
+              class="modal-name"
+              placeholder="25/04/2023"
+              type="date"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              id="data_reservation_input"
+              min="2023-02-01"
+              max="2025-12-31"
+              required
+            />
+          </div>
+          <label for="data_reservation_input"
+            ><span class="label-name">Check-out date</span></label
+          >
+        </div>
+        <div>
+          <div class="select">
+            <select
+              required
+              class="modal-name"
+              name="room-reservation"
+              id="booking_room_input"
+            >
+              <option class="option-style" value="double-suite" selected>
+                DOUBLE SUITE
+              </option>
+              <option class="option-style" value="triple-room">
+                TRIPLE SUITE
+              </option>
+              <option class="option-style" value="four-room">
+                FOUR SEATER SUITE
+              </option>
+            </select>
+          </div>
+          <label for="booking_room_input"
+            ><span class="label-name">Number category</span></label
+          >
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="btn-modal button-black"
+        id="reservation-button"
+      >
+        Make a reservation
+      </button>
     </form>
-</div>
+  </div>
 </div>
