@@ -1009,14 +1009,12 @@
           <div class="select">
             <input
               name="trip-start"
+              type="text"
               placeholder="TODAY"
               class="modal-name"
-              type="date"
-              onfocus="(this.type='date')"
+              onfocus="(this.type='date', this.min='2023-02-01', this.max='2025-12-31')"
               onblur="(this.type='text')"
               id="check-in-date"
-              min="2023-02-01"
-              max="2025-12-31"
               required
             />
           </div>
@@ -1028,13 +1026,11 @@
           <div class="select">
             <input
               class="modal-name"
+              type="text"
               placeholder="25/04/2023"
-              type="date"
-              onfocus="(this.type='date')"
+              onfocus="(this.type='date', this.min='2023-02-01', this.max='2025-12-31')"
               onblur="(this.type='text')"
               id="data_reservation_input"
-              min="2023-02-01"
-              max="2025-12-31"
               required
             />
           </div>
@@ -1050,7 +1046,10 @@
               name="room-reservation"
               id="booking_room_input"
             >
-              <option class="option-style" value="double-suite" selected>
+              <option class="option-style" value="" disabled>
+                DOUBLE SUITE
+              </option>
+              <option class="option-style" value="double-suite">
                 DOUBLE SUITE
               </option>
               <option class="option-style" value="triple-room">
