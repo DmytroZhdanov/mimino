@@ -23,9 +23,9 @@
     />
     <!-- styles -->
     
-    <script type="module" crossorigin src="/mimino/assets/hotel-1de06548.js"></script>
-    <link rel="modulepreload" crossorigin href="/mimino/assets/styles-b81b6349.js">
-    <link rel="stylesheet" href="/mimino/assets/styles-ed39e148.css">
+    <script type="module" crossorigin src="/mimino/assets/hotel-33b2d07f.js"></script>
+    <link rel="modulepreload" crossorigin href="/mimino/assets/styles-9a24b6c9.js">
+    <link rel="stylesheet" href="/mimino/assets/styles-4e5edb4c.css">
   </head>
   <body>
     <header class="site-header light">
@@ -685,128 +685,180 @@
     <!-- Prices per Room Modal window -->
 
 <div class="backdrop is-hidden" data-modal-prices>
-<div class="modal-price">
-        <p class="modal-title">PRICES PER <span class="text">ROOM</span></p>
-    <button data-modal-prices-close type="button" class="modal-close"><svg class="icon-clos" width="28" height="28">
+  <div class="modal-price">
+    <p class="modal-title">PRICES PER <span class="text">ROOM</span></p>
+    <button data-modal-prices-close type="button" class="modal-close">
+      <svg class="icon-clos" width="28" height="28">
         <use href="/mimino/assets/icons-e40b9642.svg#icon-close"></use>
-    </svg></button>
+      </svg>
+    </button>
     <form class="modal-form" name="room-price">
-        <h2 class="room-to-book">DOUBLE SUITE</h2>
-<div class="modal-container-price">
+      <h2 class="room-to-book">DOUBLE SUITE</h2>
+      <div class="modal-container-price">
         <div class="select">
-                <select required class="modal-name" id="booking_number_input" name="seats" >
-                <option class="option-style"  value="" >1</option>
-                <option class="option-style"  value="2">2</option>
-                <option class="option-style"  value="3">3</option>
-                <option class="option-style"  value="4">4</option>
-                <option class="option-style"  value="5">5</option>
-                <option class="option-style"  value="6">6</option>
-                <option class="option-style"  value="7">7</option>
-                <option class="option-style"  value="8">8</option>
-                <option class="option-style"  value="9">9</option>
-                <option class="option-style"  value="10">10</option>
-                <option class="option-style"  value="11">11</option>
-                <option class="option-style"  value="12">12</option>
-                <option class="option-style"  value="13">13</option>
-                <option class="option-style"  value="14">14</option>
-            </select>
-        <label  for="booking_number_input"><span class="label-name">NUMBER OF NIGHTS</spn ></label></div>
-        <div>
-            <input
-                class="modal-name"
-                type="text"
-                placeholder="1000"
-                id="price"
-                disabled>
-            <label for="price"><span class="label-name">UAH</span></label>
+          <select
+            required
+            class="modal-name"
+            id="booking_number_input"
+            name="seats"
+          >
+            <option class="option-style" value="1">1</option>
+            <option class="option-style" value="2">2</option>
+            <option class="option-style" value="3">3</option>
+            <option class="option-style" value="4">4</option>
+            <option class="option-style" value="5">5</option>
+            <option class="option-style" value="6">6</option>
+            <option class="option-style" value="7">7</option>
+            <option class="option-style" value="8">8</option>
+            <option class="option-style" value="9">9</option>
+            <option class="option-style" value="10">10</option>
+            <option class="option-style" value="11">11</option>
+            <option class="option-style" value="12">12</option>
+            <option class="option-style" value="13">13</option>
+            <option class="option-style" value="14">14</option>
+          </select>
+          <label for="booking_number_input"
+            ><span class="label-name">NUMBER OF NIGHTS</span></label
+          >
         </div>
-</div>
-    <button type="button" class="btn-modal button-black" data-modal-room-open-d data-modal-room-open-e data-modal-prices-open-e >Make a reservation</button>
+        <div>
+          <input
+            class="modal-name"
+            type="text"
+            placeholder="1000"
+            id="price"
+            disabled
+          />
+          <label for="price"><span class="label-name">UAH</span></label>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="btn-modal button-black"
+        data-modal-room-open-d
+        data-modal-room-open-e
+        data-modal-prices-open-e
+      >
+        Make a reservation
+      </button>
     </form>
+  </div>
 </div>
-</div>
+
     <!-- Book a Room Modal Window -->
 
 <div class="backdrop is-hidden" data-modal-room>
-<div class="modal">
-        <p class="modal-title">BOOK A <span class="text">ROOM</span></p>
-    <button data-modal-room-close type="button" class="modal-close"><svg class="icon-clos" width="28" height="28">
+  <div class="modal">
+    <p class="modal-title">BOOK A <span class="text">ROOM</span></p>
+    <button data-modal-room-close type="button" class="modal-close">
+      <svg class="icon-clos" width="28" height="28">
         <use href="/mimino/assets/icons-e40b9642.svg#icon-close"></use>
-    </svg></button>
+      </svg>
+    </button>
     <form class="modal-form" name="book-a-room">
-        <div class="modal-container">
-            <div class="margin">
-                <input
-                type="text"
-                class="modal-name"
-                placeholder=" YOUR NAME"
-                name="custom-name"
-                id="Name"
-                pattern = "[A-Za-z0-9]{2,}"
-                title ="Name coudn`t be less than 2 Latin characters"
-                autocomplete="on" 
-                required/>
-                <label for="Name"><span class="label-name">Who should book a table for?</spn ></label>
-            </div>
-            <div class="margin">
-                <input
-                    type="tel"
-                    class="modal-name"
-                    placeholder="+38()"
-                    name="custom-phone"
-                    id="phone"
-                    pattern="[\+]\d{3}\d{2}\d{3}\d{2}\d{2}"
-                    title ="Phone should  contain +  and coudn`t be less than 12 digits"
-                    autocomplete="on" 
-                    required/>
-                <label  for="phone"><span class="label-name">Phone number</span> </label>
-            </div>
-            <div class="margin">
-                <div class="select">
-                    <input 
-                    name="trip-start"
-                    placeholder="TODAY"
-                    class="modal-name"
-                    type="text"
-                    onfocus="(this.type='date')"
-                    onblur="(this.type='text')"
-                    id="date" 
-                    min="2023-02-01"
-                    max="2025-12-31"
-                    required/></div>
-                <label for="date"><span class="label-name">Check-in date</spn ></label>
-            </div>
-            <div class="margin">
-                <div class="select">
-                    <input class="modal-name"
-                        placeholder="25/04/2023"
-                        type="text"
-                        onfocus="(this.type='date')"
-                        onblur="(this.type='text')"
-                        id="data_reservation_input"
-                        min="2023-02-01"
-                        max="2025-12-31"
-                        required/>
-                </div>
-                <label  for="data_reservation_input"><span class="label-name">Check-out date</span></label>
-            </div>
-            <div>
-                <div class="select">
-                    <select required 
-                    class="modal-name"
-                    name="room-reservation" 
-                    id="booking_room_input">
-                        <option class="option-style" value="double-suite" selected>DOUBLE SUITE</option>
-                        <option class="option-style" value="triple-room">TRIPLE SUITE</option>
-                        <option class="option-style" value="four-room">FOUR SEATER SUITE</option>
-                    </select>
-                </div>
-                <label  for="booking_room_input"><span class="label-name">Number category</span></label>
-            </div>
+      <div class="modal-container">
+        <div class="margin">
+          <input
+            type="text"
+            class="modal-name"
+            placeholder=" YOUR NAME"
+            name="custom-name"
+            id="visitor-name"
+            pattern="[A-Za-z0-9]{2,}"
+            title="Name coudn`t be less than 2 Latin characters"
+            autocomplete="on"
+            required
+          />
+          <label for="visitor-name"
+            ><span class="label-name">Who should book a table for?</span></label
+          >
         </div>
-        <button type="submit" class="btn-modal button-black" id="reservation-button">Make a reservation</button>
+        <div class="margin">
+          <input
+            type="tel"
+            class="modal-name"
+            placeholder="+38()"
+            name="custom-phone"
+            id="visitor-phone-number"
+            pattern="[\+]\d{3}\d{2}\d{3}\d{2}\d{2}"
+            title="Phone should  contain +  and coudn`t be less than 12 digits"
+            autocomplete="on"
+            required
+          />
+          <label for="visitor-phone-number"
+            ><span class="label-name">Phone number</span>
+          </label>
+        </div>
+        <div class="margin">
+          <div class="select">
+            <input
+              name="trip-start"
+              placeholder="TODAY"
+              class="modal-name"
+              type="date"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              id="check-in-date"
+              min="2023-02-01"
+              max="2025-12-31"
+              required
+            />
+          </div>
+          <label for="check-in-date"
+            ><span class="label-name">Check-in date</span></label
+          >
+        </div>
+        <div class="margin">
+          <div class="select">
+            <input
+              class="modal-name"
+              placeholder="25/04/2023"
+              type="date"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              id="data_reservation_input"
+              min="2023-02-01"
+              max="2025-12-31"
+              required
+            />
+          </div>
+          <label for="data_reservation_input"
+            ><span class="label-name">Check-out date</span></label
+          >
+        </div>
+        <div>
+          <div class="select">
+            <select
+              required
+              class="modal-name"
+              name="room-reservation"
+              id="booking_room_input"
+            >
+              <option class="option-style" value="double-suite" selected>
+                DOUBLE SUITE
+              </option>
+              <option class="option-style" value="triple-room">
+                TRIPLE SUITE
+              </option>
+              <option class="option-style" value="four-room">
+                FOUR SEATER SUITE
+              </option>
+            </select>
+          </div>
+          <label for="booking_room_input"
+            ><span class="label-name">Number category</span></label
+          >
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="btn-modal button-black"
+        id="reservation-button"
+      >
+        Make a reservation
+      </button>
     </form>
-</div>
+  </div>
 </div>
 
 
