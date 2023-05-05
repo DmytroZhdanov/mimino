@@ -70,3 +70,7 @@ body {
   color: var(--dark-theme-color-primary);
   font-family: var(--primary-font-family);
 }
+
+.disabled-scroll {
+  overflow: hidden;
+}

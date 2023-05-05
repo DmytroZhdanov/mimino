@@ -4,6 +4,7 @@
     openSecondModalBtn: document.querySelector('[data-modal-room-open-f]'),
     closeModalBtn: document.querySelector('[data-modal-room-close]'),
     modal: document.querySelector('[data-modal-room]'),
+    body: document.body,
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -12,5 +13,6 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    refs.body.classList.toggle('disabled-scroll');
   }
 })();
