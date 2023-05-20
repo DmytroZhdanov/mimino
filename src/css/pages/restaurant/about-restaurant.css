@@ -1,117 +1,116 @@
 /* Section About kitchen Restaurant page */
 
 .section-about-restaurant {
-    padding-top: 64px;
-    padding-bottom: 64px;
-    background-color: var(--light-background-color-primary);
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: var(--light-background-color-primary);
 }
 
 .pic-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 20px;
-    margin-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  margin-bottom: 32px;
 }
 
 .about-restaurant-list {
-    display: flex;
-    flex-wrap: nowrap;
-    column-gap: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 20px;
 }
 
 .about-restaurant-text {
-    font-family:'DMSans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: #000000;
-    text-align: start;
+  font-family: 'DMSans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: start;
 }
 
 p.text-margin {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .italic {
-    font-family: 'DMSans', sans-serif;
-    src: url(/src/fonts/DMSans-Italic.woff), url(/src/fonts/DMSans-Italic.woff2);
-    font-weight: 400;
-    font-style: italic;
+  font-family: 'DMSans', sans-serif;
+  src: url(/src/fonts/DMSans-Italic.woff), url(/src/fonts/DMSans-Italic.woff2);
+  font-weight: 400;
+  font-style: italic;
 }
 
 @media screen and (min-width: 768px) {
-
-    .section-about-restaurant {
+  .section-about-restaurant {
     padding-top: 80px;
     padding-bottom: 80px;
-    } 
+  }
 
-    .pic-wrapper {
+  .pic-wrapper {
     flex-direction: row-reverse;
     column-gap: 32px;
     row-gap: 40px;
-    }
+  }
 
-    .about-restaurant-list {
+  .about-restaurant-list {
     flex-direction: column;
     row-gap: 16px;
-    }
+  }
 
-    .about-restaurant-text {
+  .about-restaurant-text {
     font-size: 18px;
     line-height: 1.33;
-    }
+  }
 
-    .about-restaurant-list-text {
+  .about-restaurant-list-text {
     display: flex;
     justify-content: space-between;
     column-gap: 32px;
-    }
+  }
 
-    p.text-margin {
+  p.text-margin {
     margin-bottom: 0px;
-    }
+  }
 }
 
-    @media screen and (min-width: 1440px) {
-
-    .section-about-restaurant {
+@media screen and (min-width: 1440px) {
+  .section-about-restaurant {
     position: relative;
-    }
+  }
 
-    .section-about-restaurant {
+  .section-about-restaurant {
     padding-top: 100px;
     padding-bottom: 100px;
-    }
+  }
 
-    .pic-wrapper {
+  .about-restaurant-wrap {
+    position: relative;
+  }
+
+  .pic-wrapper {
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    flex-wrap: nowrap;
     margin-bottom: 0;
-    }
+  }
 
-    .about-restaurant-list {
+  .about-restaurant-list {
     flex-direction: row;
     column-gap: 32px;
-    }
+  }
 
-    .about-restaurant-text {
+  .about-restaurant-text {
     max-width: 453px;
-    }
+  }
 
-    .about-restaurant-list-text {
+  .about-restaurant-list-text {
     position: absolute;
-    bottom: 15%;
-    /* right: 3%; */
-    left: 50%;
-    transform: translateX(-145px);
-}
+    top: 412px;
+    left: 534px;
+  }
 
-    p.text-margin {
+  p.text-margin {
     max-width: 334px;
-    }
-    }
+  }
+}
